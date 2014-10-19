@@ -1,4 +1,4 @@
-# Contributing to ListeningPost
+# Contributing to HealthWatch
 
 ♥ [HealthWatch](#) and want to get involved?
 Thanks! There are plenty of ways you can help!
