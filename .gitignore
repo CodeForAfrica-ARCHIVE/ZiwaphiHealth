@@ -1,3 +1,8 @@
-/bootstrap/compiled.php
-.env.*.php
-.env.php
+/Code/bootstrap/compiled.php
+/Code/vendor
+/Code/composer.phar
+/Code/composer.lock
+/Code/.env.*.php
+/Code/.env.php
+/Code/.DS_Store
+/COde/Thumbs.db
