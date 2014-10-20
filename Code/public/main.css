@@ -1,0 +1,11 @@
+.app-container h4{
+    display:inline;
+    vertical-align:center;
+    text-transform: uppercase;
+}
+.app-icon{
+    margin-right: 10px;
+}
+.app-container .icon-2x{
+    font-size: 1.4em !important;
+}

@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Foundation Template | Orbit Home</title>
-    <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
-    <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
-    <meta name="copyright" content="ZURB, inc. Copyright (c) 2014"/>
+    <title>HealthWatch | Home</title>
+    <meta name="description" content="Nigeria Health Portal"/>
+    <meta name="author" content="Nick Hargreaves"/>
+    <meta name="copyright" content="CodeForAfrica Copyright (c) 2014"/>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="icons/foundation-icons/foundation-icons.css" />
 
     <script src="js/vendor/modernizr.js"></script>
@@ -41,8 +43,8 @@
 <hr/>
 
 <div class="row">
-    <div class="large-4 columns">
-        <i class="icon-user-md icon-2x"></i>
+    <div class="large-4 columns app-container">
+        <i class="icon-user-md icon-2x app-icon"></i>
         <h4>Dodgy Doctors</h4>
         <p>Check to see if your doctor is registered, their certified area of practice and whether they are free from malpractice.</p>
         <p>
@@ -51,7 +53,7 @@
                         <input type="text" placeholder="Start typing name..." />
                     </div>
                     <div class="small-3 columns">
-                        <span class="postfix"><i class="fi-burst-new"></i></span>
+                        <span class="postfix"><i class="icon-search"></i></span>
                     </div>
                 </div>
         </p>
