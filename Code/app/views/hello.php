@@ -40,9 +40,19 @@
 
 <div class="row">
     <div class="large-4 columns">
-        <img src="http://placehold.it/400x300&text=[img]"/>
-        <h4>This is a content section.</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+        <i class="icon-user-md icon-2x"></i>
+        <h4>Dodgy Doctors</h4>
+        <p>Check to see if your doctor is registered, their certified area of practice and whether they are free from malpractice.</p>
+        <p>
+                <div class="row collapse">
+                    <div class="small-9 columns">
+                        <input type="text" placeholder="Start typing name..." />
+                    </div>
+                    <div class="small-3 columns">
+                        <span class="postfix"></span>
+                    </div>
+                </div>
+        </p>
     </div>
     <div class="large-4 columns">
         <img src="http://placehold.it/400x300&text=[img]"/>
