@@ -50,7 +50,25 @@
         <p>
                 <div class="row collapse">
                     <div class="small-9 columns">
-                        <input type="text" placeholder="Start typing name..." />
+                        <link rel="stylesheet" type="text/css" href="autocomplete/jquery.autocomplete.css">
+                        <script type="text/javascript" src="autocomplete/jquery.js"></script>
+                        <script type='text/javascript' src='autocomplete/jquery.autocomplete.js'></script>
+                        <script type="text/javascript">
+                            $.noConflict();
+                            jQuery(document).ready(function($) {
+                                $("#dodgy_docs_input").autocomplete("doctor", {
+                                    width: 260,
+                                    matchContains: true,
+                                    //mustMatch: true,
+                                    //minChars: 0,
+                                    //multiple: true,
+                                    //highlight: false,
+                                    //multipleSeparator: ",",
+                                    selectFirst: false
+                                });
+                            });
+                        </script>
+                        <input type="text" placeholder="Start typing name..." id="dodgy_docs_input"/>
                     </div>
                     <div class="small-3 columns">
                         <span class="postfix"><i class="icon-search"></i></span>
@@ -223,11 +241,13 @@
         '.js><\/script>')
 </script>
 <script src="js/vendor/jquery.js"></script>
+
 <script src="js/foundation.min.js"></script>
 <script>
     $(document).foundation();
 </script>
-<script src="js/vendor/jquery.js"></script>
+
+
 <script src="js/foundation/foundation.js"></script>
 <script>
     $(document).foundation();
@@ -235,5 +255,6 @@
     var doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 </script>
+
 </body>
 </html>
