@@ -9,6 +9,8 @@
     <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
     <meta name="copyright" content="ZURB, inc. Copyright (c) 2014"/>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="icons/foundation-icons/foundation-icons.css" />
+
     <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
@@ -49,7 +51,7 @@
                         <input type="text" placeholder="Start typing name..." />
                     </div>
                     <div class="small-3 columns">
-                        <span class="postfix"></span>
+                        <span class="postfix"><i class="fi-burst-new"></i></span>
                     </div>
                 </div>
         </p>
