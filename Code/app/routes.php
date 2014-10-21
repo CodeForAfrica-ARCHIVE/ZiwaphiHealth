@@ -15,16 +15,28 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
-Route::get('doctor/{q}', 'DoctorController@getData');
-Route::get('user/{q}', 'UserController@getData');
+
 Route::get('doctor', function()
 {
     $term = Input::get('q');
 
+    $name = Input::get('name');
+
     $result = '';
+
     if(isset($term)){
         $result = DoctorController::getData($term);
+    }
+    return $result;
+});
+Route::get('doctordetails', function()
+{
+    $name = Input::get('name');
 
+    $result = '';
+
+    if(isset($name)){
+        $result = DoctorController::singleDoctor($name);
     }
     return $result;
 });

@@ -1,6 +1,5 @@
 .app-container h4{
     display:inline;
-    vertical-align:center;
     text-transform: uppercase;
 }
 .app-icon{
@@ -8,4 +7,37 @@
 }
 .app-container .icon-2x{
     font-size: 1.4em !important;
+}
+.sidebar h5{
+    font-weight:bold;
+}
+.feedback p{
+    font-size:0.8em !important;
+}
+.feedback{
+    text-align: center;
+}
+.linksholder{
+    text-align: center;
+}
+.linksholder p{
+    margin-bottom: 30px;
+}
+.big-title{
+    font-weight:bold;
+    border-bottom: 4px solid lightgrey;
+    border-top: 4px solid lightgrey;
+    margin-bottom: 10px;
+}
+.story{
+    margin-top: -10px;
+}
+.story img{
+    float:left;
+    margin-right: 10px;
+}
+.story-metadata{
+    font-size: 0.7em;
+    color:darkgrey;
+    text-align: center;
 }
