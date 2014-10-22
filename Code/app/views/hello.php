@@ -30,7 +30,6 @@
     </div>
 </div>
 
-
 <div class="row">
     <div class="large-4 columns app-container">
         <i class="icon-user-md icon-2x app-icon"></i>
@@ -57,7 +56,7 @@
                         });
                     });
                 </script>
-                <input type="text" placeholder="Start typing name..." id="dodgy_docs_input"/>
+                <input type="text" placeholder="Start typing doctor's name" class="search form-control ac_input" name="dodgydoc" id="dodgy_docs_input" autocomplete="off">
             </div>
             <div class="small-3 columns">
                 <a href="#" data-reveal-id="myModal"><span class="postfix" id="grabDetails"><i class="icon-search"></i></span></a>
@@ -86,7 +85,7 @@
 
                         $("#loading").show();
 
-                        $.ajax({url:"http://localhost/HealthWatch/Code/public/doctordetails?name=" + name,success:function(result){
+                        $.ajax({url:"doctordetails?name=" + name,success:function(result){
 
                             $("#doctorDetails").html(result);
 
