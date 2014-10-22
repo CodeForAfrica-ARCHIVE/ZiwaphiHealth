@@ -41,3 +41,9 @@
     color:darkgrey;
     text-align: center;
 }
+.embed{
+    font-size: 0.8em;
+}
+.embed img{
+    height:15px;
+}

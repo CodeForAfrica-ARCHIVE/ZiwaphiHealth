@@ -15,7 +15,10 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
-
+Route::get('dodgydocs_embed/', function()
+{
+    return View::make('dodgydocs_embed');
+});
 Route::get('doctor', function()
 {
     $term = Input::get('q');

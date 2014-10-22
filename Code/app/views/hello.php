@@ -61,6 +61,14 @@
             <div class="small-3 columns">
                 <a href="#" data-reveal-id="myModal"><span class="postfix" id="grabDetails"><i class="icon-search"></i></span></a>
             </div>
+
+        </div>
+        <span class="embed"><a href="#" data-reveal-id="embedModal"><img src="img/embed.png"> Embed this widget</a></span>
+        <!-- Modal for embed doctor details -->
+        <div id="embedModal" class="reveal-modal" data-reveal>
+            <div><h4>Copy code below to embed this widget on your website</h4></div>
+                <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/');?>/dodgydocs_embed" scrolling="no" frameborder="0"></iframe></textarea>
+            <a class="close-reveal-modal">&#215;</a>
         </div>
 
         <!-- Modal for doctor details -->
