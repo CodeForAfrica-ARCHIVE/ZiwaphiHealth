@@ -63,7 +63,8 @@
             </div>
 
         </div>
-        <span class="embed"><a href="#" data-reveal-id="embedModal"><img src="img/embed.png"> Embed this widget</a></span>
+        <div class="row" style="text-align: center"><span class="embed"><a href="#" data-reveal-id="embedModal"><img src="img/embed.png"> Embed this widget</a></span></div>
+
         <!-- Modal for embed doctor details -->
         <div id="embedModal" class="reveal-modal" data-reveal>
             <div><h4>Copy code below to embed this widget on your website</h4></div>
@@ -122,6 +123,7 @@
                 <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
             </div>
         </div>
+        <div class="row" style="text-align: center"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
         </p>
     </div>
     <div class="large-4 columns app-container">
@@ -138,6 +140,8 @@
                 <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
             </div>
         </div>
+        <div class="row" style="text-align: center"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
+
         </p>
     </div>
 </div>

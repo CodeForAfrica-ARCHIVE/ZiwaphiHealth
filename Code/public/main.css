@@ -1,6 +1,6 @@
 .app-container h4{
     display:inline;
-    text-transform: uppercase;
+    font-family: georgia,serif;
 }
 .app-icon{
     margin-right: 10px;
@@ -10,6 +10,7 @@
 }
 .sidebar h5{
     font-weight:bold;
+    font-family: georgia,serif;
 }
 .feedback p{
     font-size:0.8em !important;
@@ -25,6 +26,7 @@
 }
 .big-title{
     font-weight:bold;
+    font-family: georgia,serif;
     border-bottom: 4px solid lightgrey;
     border-top: 4px solid lightgrey;
     margin-bottom: 10px;
@@ -36,6 +38,9 @@
     float:left;
     margin-right: 10px;
 }
+.story h4{
+    font-family: georgia,serif;
+}
 .story-metadata{
     font-size: 0.7em;
     color:darkgrey;
@@ -46,4 +51,7 @@
 }
 .embed img{
     height:15px;
+}
+.embed a{
+    color:darkgrey;
 }
