@@ -17,16 +17,49 @@
 </head>
 <body>
 <div class="row">
-    <div class="large-3 columns">
-        <img src="http://placehold.it/400x100&text=Logo"/>
-    </div>
-    <div class="large-9 columns">
-        <ul class="right button-group">
-            <li><a href="#" class="button">Link 1</a></li>
-            <li><a href="#" class="button">Link 2</a></li>
-            <li><a href="#" class="button">Link 3</a></li>
-            <li><a href="#" class="button">Link 4</a></li>
-        </ul>
+    <div class="large-12 columns">
+        <nav class="top-bar" data-topbar="" role="navigation">
+            <!-- Title -->
+            <ul class="title-area">
+                <li class="name"><h1><a href="#"> <img src="http://placehold.it/150x30&text=Logo"/></a></h1></li>
+
+                <!-- Mobile Menu Toggle -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <!-- Top Bar Section -->
+
+            <section class="top-bar-section">
+
+
+
+                <!-- Top Bar Right Nav Elements -->
+                <ul class="left">
+                    <li><a href="#">Link 0</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li class="divider"></li>
+                </ul>
+                <ul class="right">
+
+                    <!-- Search | has-form wrapper -->
+                    <li class="has-form">
+                        <div class="row collapse">
+                            <div class="large-8 small-9 columns">
+                                <input type="text" placeholder="Enter key words">
+                            </div>
+                            <div class="large-4 small-3 columns">
+                                <a href="#" class="button expand">Search</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
     </div>
 </div>
 
