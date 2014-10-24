@@ -67,7 +67,7 @@
     <div class="large-4 columns app-container">
         <i class="icon-user-md icon-2x app-icon"></i>
         <h4>Dodgy Doctors</h4>
-        <p>Check to see if your doctor is registered, their certified area of practice and whether they are free from malpractice.</p>
+        <p class="app_description">Check to see if your doctor is registered, their certified area of practice and whether they are free from malpractice.</p>
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
@@ -144,8 +144,8 @@
     </div>
     <div class="large-4 columns app-container">
         <i class="icon-medkit icon-2x app-icon"></i>
-        <h4>Lorem Ipsum</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
+        <h4>What should it cost?</h4>
+        <p class="app_description">Check if you are being overcharged for your prescription medicine.</p>
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
@@ -161,8 +161,8 @@
     </div>
     <div class="large-4 columns app-container">
         <i class="icon-hospital icon-2x app-icon"></i>
-        <h4>Lorem Ipsum</h4>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
+        <h4>Nearest specialist</h4>
+        <p class="app_description">Find the nearest specialist doctor or health facility.</p>
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
