@@ -144,8 +144,8 @@
     </div>
     <div class="large-4 columns app-container">
         <i class="icon-medkit icon-2x app-icon"></i>
-        <h4>What should it cost?</h4>
-        <p class="app_description">Check if you are being overcharged for your prescription medicine.</p>
+        <h4>Fake Drugs</h4>
+        <p class="app_description">Check to see if the drugs you are being sold are not fake.</p>
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
@@ -161,7 +161,7 @@
     </div>
     <div class="large-4 columns app-container">
         <i class="icon-hospital icon-2x app-icon"></i>
-        <h4>Nearest specialist</h4>
+        <h4>Nearest Specialist</h4>
         <p class="app_description">Find the nearest specialist doctor or health facility.</p>
         <p>
         <div class="row collapse">
