@@ -52,7 +52,7 @@
                             //multiple: true,
                             //highlight: false,
                             //multipleSeparator: ",",
-                            selectFirst: false
+                            selectFirst: true
                         });
                     });
                 </script>
@@ -261,7 +261,7 @@
 
     <aside class="large-3 columns hide-for-small linksholder">
         <h4 class="big-title">Links</h4>
-        <p><a href="http://code4kenya.org" target="_blank"><img style="height: 80px" src="img/c4k_logo.png" id="c4k_partner"></a>
+        <p><img style="height: 80px" src="img/c4nigeria.png" id="c4k_partner">
             <br/>
             The data driven journalism + tools in HealthWatch section were kickstarted by <a href="http://code4kenya.org" target="_blank">Code4Kenya</a>
         </p>
