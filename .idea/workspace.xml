@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/app/config/fusion_tables.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/config/fusion_tables.php" afterPath="$PROJECT_DIR$/Code/app/config/fusion_tables.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +30,11 @@
       <file leaf-file-name="dodgydocs_embed.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/views/dodgydocs_embed.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="42" selection-start="1875" selection-end="1875" vertical-scroll-proportion="-13.75" vertical-offset="180" max-vertical-offset="1740">
-              <folding />
+            <state line="16" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1740">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,7 +42,7 @@
       <file leaf-file-name="DoctorController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/DoctorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.216" vertical-offset="0" max-vertical-offset="1620">
+            <state line="51" column="56" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.744" vertical-offset="300" max-vertical-offset="1515">
               <folding>
                 <element signature="e#6#86#0" expanded="true" />
               </folding>
@@ -52,7 +56,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5956" column="102" selection-start="918775" selection-end="918779" vertical-scroll-proportion="-10.192307" vertical-offset="89075" max-vertical-offset="89685">
+            <state line="5969" column="40" selection-start="920683" selection-end="920683" vertical-scroll-proportion="-17.692308" vertical-offset="89075" max-vertical-offset="89685">
               <folding />
             </state>
           </provider>
@@ -70,7 +74,7 @@
       <file leaf-file-name="fusion_tables.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/config/fusion_tables.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="5" selection-start="73" selection-end="73" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
+            <state line="3" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -90,6 +94,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Code/app/config/fusion_tables.php" />
+        <option value="$PROJECT_DIR$/Code/app/views/dodgydocs_embed.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" />
       </list>
     </option>
@@ -240,6 +245,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -313,10 +340,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5969" column="40" selection-start="920683" selection-end="920683" vertical-scroll-proportion="-17.692308" vertical-offset="89075" max-vertical-offset="89685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/dodgydocs_embed.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="42" selection-start="1875" selection-end="1875" vertical-scroll-proportion="-13.75" vertical-offset="180" max-vertical-offset="1740">
-          <folding />
+        <state line="16" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1740">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -329,24 +369,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/config/fusion_tables.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="73" selection-end="73" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
+        <state line="3" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5956" column="102" selection-start="918775" selection-end="918779" vertical-scroll-proportion="-10.192307" vertical-offset="89075" max-vertical-offset="89685">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="649">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.384" vertical-offset="0" max-vertical-offset="625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/controllers/DoctorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.216" vertical-offset="0" max-vertical-offset="1620">
+        <state line="51" column="56" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.744" vertical-offset="300" max-vertical-offset="1515">
           <folding>
             <element signature="e#6#86#0" expanded="true" />
           </folding>

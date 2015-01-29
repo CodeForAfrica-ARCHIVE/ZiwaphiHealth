@@ -12,25 +12,17 @@ class DoctorController extends BaseController {
      * Show the profile for the given user.
      */
 
-    var $key;
-    var $table;
 
-    public function __constructor(){
-        parent::_construct();
-
-        $this->key = Config('fusion_tables.api_key');
-        $this->table = Config('fusion_tables.table');
-
-    }
-
-    public function getData($q)
+    public static function getData($q)
     {
+        $key = Config::get('fusion_tables.api_key');
+        $table = Config::get('fusion_tables.table');
 
         $url = "https://www.googleapis.com/fusiontables/v1/query?";
 
-        $sql = "SELECT * FROM ".$this->table." WHERE Name LIKE '%".$q."%'";
+        $sql = "SELECT * FROM ".$table." WHERE Name LIKE '%".$q."%'";
 
-        $options = array("sql"=>$sql, "key"=>$this->key, "sensor"=>"false");
+        $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
 
         $url .= http_build_query($options,'','&');
 
@@ -50,19 +42,20 @@ class DoctorController extends BaseController {
         return $result;
     }
 
-    public function singleDoctor($name){
+    public static function singleDoctor($name){
 
         if($name==''){
             $result = "Please enter a name!";
         }else{
 
-
+            $key = Config::get('fusion_tables.api_key');
+            $table = Config::get('fusion_tables.table');
 
             $url = "https://www.googleapis.com/fusiontables/v1/query?";
 
-            $sql = "SELECT * FROM ".$this->table." WHERE Name = '".$name."'";
+            $sql = "SELECT * FROM ".$table." WHERE Name = '".$name."'";
 
-            $options = array("sql"=>$sql, "key"=>$this->key, "sensor"=>"false");
+            $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
 
             $url .= http_build_query($options,'','&');
 
