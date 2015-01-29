@@ -59,5 +59,17 @@
     margin-bottom: 20px;
 }
 .app_description{
-    min-height:70px;
+    min-height:80px;
+}
+.report_malpractice{
+    margin-left: 10px;
+}
+.help-block{
+    margin-top:-10px;
+    font-size:0.6em;
+    text-align: right;
+}
+.row {
+    min-width: 90% !important;
+    margin:auto !important:
 }

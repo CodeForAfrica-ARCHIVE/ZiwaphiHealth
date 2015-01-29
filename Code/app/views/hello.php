@@ -145,7 +145,7 @@
     <div class="large-4 columns app-container">
         <i class="icon-medkit icon-2x app-icon"></i>
         <h4>Fake Drugs</h4>
-        <p class="app_description">Check to see if the drugs you are being sold are not fake.</p>
+        <p class="app_description">Check to see if the drugs you are being sold are real.</p>
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
@@ -162,18 +162,176 @@
     <div class="large-4 columns app-container">
         <i class="icon-hospital icon-2x app-icon"></i>
         <h4>Nearest Specialist</h4>
-        <p class="app_description">Find the nearest specialist doctor or health facility.</p>
+        <p class="app_description">Find the nearest specialist doctor or facility.<select id="specialist" class="form-control">
+                <option>Select specialty</option>
+                <option>Antenatal Care (care of mother while pregnant)</option><option>Anteretroviral Therapy ( drugs for HIV)</option><option>Beoc</option><option>Blood</option><option>Caeserean section</option><option>Ceoc</option><option>C-IMCI</option><option>Epidemiology ( study of disease spread and distribution)</option><option>Family planning</option><option>GROWM</option><option>Heamogram ( blood test checking all blood parameters)</option><option>Heamatocrit ( simple blood test to analyse anaemia)</option><option>In- patient department</option><option>Out -patient  department</option><option>Outreach programs ie. go out and give treatment in the villages</option><option>Prevention of mother to child transmission ( of HIV/AIDS)</option><option>Radiology/ x-ray</option><option>Reproductive health treatment center/diagnostic center ( I think need to confirm)</option><option>Tuberculosis diagnosis</option><option>Tuberculosis treatment</option><option>Youth</option><option>Tuberculosis laboratory work up</option>								</select>
+            <select id="county_s" class="form-control">
+                <option>Select county</option>
+                <option>Baringo</option><option>Bomet</option><option>Bungoma</option><option>Busia</option><option>Elgeyo/Marakwet</option><option>Embu</option><option>Garissa</option><option>Homa Bay</option><option>Isiolo</option><option>Kajiado</option><option>Kakamega</option><option>Kericho</option><option>Kiambu</option><option>Kilifi</option><option>Kirinyaga</option><option>Kisii</option><option>Kisumu</option><option>Kitui</option><option>Kwale</option><option>Laikipia</option><option>Lamu</option><option>Machakos</option><option>Makueni</option><option>Mandera</option><option>Marsabit</option><option>Meru</option><option>Migori</option><option>Mombasa</option><option>Muranga</option><option>Nairobi</option><option>Nakuru</option><option>Nandi</option><option>Narok</option><option>Nyamira</option><option>Nyandarua</option><option>Nyeri</option><option>Samburu</option><option>Siaya</option><option>Taita Taveta</option><option>Tana River</option><option>Tharaka Nithi</option><option>Trans Nzoia</option><option>Turkana</option><option>Uasin Gishu</option><option>Vihiga</option><option>Wajir</option><option>West Pokot</option>								</select>
+        </p>
         <p>
-        <div class="row collapse">
-            <div class="small-9 columns">
+        <div class="row" style="text-align: center">
 
-                <input type="text"/>
-            </div>
-            <div class="small-3 columns">
-                <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
+            <span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span>
+            <span class="embed report_malpractice"><a href="#"><img src="img/alert.png"> <a href="#" data-reveal-id="reportModal">Report malpractice</a></span>
+            <!-- Modal for doctor details -->
+            <div id="reportModal" class="reveal-modal" data-reveal>
+                <div id="reportForm">
+                    <form class="form-horizontal" onsubmit="try { validateandsubmitform(); } catch (e) { }; return false;" id="negligence_form">
+                        <fieldset>
+                            <!-- Form Name -->
+                            <legend>Submit your complaint</legend>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Full Name" required="">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input class="form-control" id="phone" name="phone" type="text" placeholder="Your phone number for us to be able to reach you." required="">
+                                </div>
+                            </div>
+
+                            <!-- Multiple Radios (inline) -->
+                            <div class="control-group">
+                                Gender:
+
+                                        <input type="radio" name="gender" id="gender-0" value="Male" checked="checked">
+                                        Male
+
+                                        <input type="radio" name="gender" id="gender-1" value="Female">
+                                        Female
+
+                                </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input class="form-control" id="hospital_name" name="hospital_name" type="text" placeholder="Name of the Hospital" required="">
+
+                                </div>
+                            </div>
+
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                                <div class="controls">
+                                    <select class="form-control" id="state" name="state">
+                                        <option>Select State</option>
+                                        <option>ABIA</option>
+                                        <option>ADAMAWA</option>
+                                        <option>AKWA IBOM</option>
+                                        <option>ANAMBRA</option>
+                                        <option>BAUCHI</option>
+                                        <option>BENUE</option>
+                                        <option>BORNO</option>
+                                        <option>BAYELSA</option>
+                                        <option>CROSS RIVER</option>
+                                        <option>DELTA</option>
+                                        <option>EBONYI</option>
+                                        <option>EDO</option>
+                                        <option>EKITI</option>
+                                        <option>ENUGU</option>
+                                        <option>FCT</option>
+                                        <option>GOMBE</option>
+                                        <option>IMO</option>
+                                        <option>JIGAWA</option>
+                                        <option>KEBBI</option>
+                                        <option>KADUNA</option>
+                                        <option>KOGI</option>
+                                        <option>KANO</option>
+                                        <option>KATSINA</option>
+                                        <option>KWARA</option>
+                                        <option>LAGOS</option>
+                                        <option>NIGER</option>
+                                        <option>NASARAWA</option>
+                                        <option>ONDO</option>
+                                        <option>OGUN</option>
+                                        <option>OSUN</option>
+                                        <option>OYO</option>
+                                        <option>PLATEAU</option>
+                                        <option>RIVERS</option>
+                                        <option>SOKOTO</option>
+                                        <option>TARABA</option>
+                                        <option>YOBE</option>
+                                        <option>ZAMFARA</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input class="form-control" id="contact_person" name="contact_person" type="text" placeholder="Name of the doctor/nurse/receptionist or whoever you had primary contact with">
+                                </div>
+                            </div>
+
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                                <div class="controls">
+                                    <select class="form-control" id="reason" name="reason">
+                                        <option>Reason for visiting hospital</option>
+                                        <option>Sickness</option>
+                                        <option>Operation</option>
+                                        <option>Diagnosis</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Select Basic -->
+                            <div class="control-group">
+
+                                <div class="controls">
+                                    <select class="form-control" id="negligence" name="negligence">
+                                        <option>Kind of Negligence experienced</option>
+                                        <option>Wrongful death</option>
+                                        <option>Surgical errors and complications</option>
+                                        <option>Birth injuries</option>
+                                        <option>Misdiagnosis</option>
+                                        <option>Wrongful medication</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="control-group">
+                                <div class="controls">
+                                    <textarea class="form-control" id="comment" name="comment" placeholder="You can write a comment on your complaint with no restrictions."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Multiple Radios (inline) -->
+                            <div class="control-group">
+                                Share Publicly:
+                                        <input type="radio" name="share" id="share-0" value="Yes" checked="checked">
+                                        Yes
+
+                                        <input type="radio" name="share" id="share-1" value="No">
+                                        No
+                            </div>
+
+
+                            <!-- Button -->
+                            <div class="control-group">
+                                <label class="control-label" for="submitbutton"></label>
+                                <div class="controls">
+                                    <button id="submitbutton" name="submitbutton" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+                <a class="close-reveal-modal">&#215;</a>
             </div>
         </div>
-        <div class="row" style="text-align: center"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
 
         </p>
     </div>
