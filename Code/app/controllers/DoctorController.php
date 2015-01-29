@@ -11,16 +11,26 @@ class DoctorController extends BaseController {
     /**
      * Show the profile for the given user.
      */
-    public static function getData($q)
+
+    var $key;
+    var $table;
+
+    public function __constructor(){
+        parent::_construct();
+
+        $this->key = Config('fusion_tables.api_key');
+        $this->table = Config('fusion_tables.table');
+
+    }
+
+    public function getData($q)
     {
-        $key = "AIzaSyCAI2GoGWfLBvgygLKQp5suUk3RCG7r_ME";
-        $table = "1qJ0yblV9aQWps3IICJdh6OSlWLGzXXgdi81RoVdh";
 
         $url = "https://www.googleapis.com/fusiontables/v1/query?";
 
-        $sql = "SELECT * FROM ".$table." WHERE Name LIKE '%".$q."%'";
+        $sql = "SELECT * FROM ".$this->table." WHERE Name LIKE '%".$q."%'";
 
-        $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
+        $options = array("sql"=>$sql, "key"=>$this->key, "sensor"=>"false");
 
         $url .= http_build_query($options,'','&');
 
@@ -40,20 +50,19 @@ class DoctorController extends BaseController {
         return $result;
     }
 
-    public static function singleDoctor($name){
+    public function singleDoctor($name){
 
         if($name==''){
             $result = "Please enter a name!";
         }else{
 
-            $key = "AIzaSyCAI2GoGWfLBvgygLKQp5suUk3RCG7r_ME";
-            $table = "1qJ0yblV9aQWps3IICJdh6OSlWLGzXXgdi81RoVdh";
+
 
             $url = "https://www.googleapis.com/fusiontables/v1/query?";
 
-            $sql = "SELECT * FROM ".$table." WHERE Name = '".$name."'";
+            $sql = "SELECT * FROM ".$this->table." WHERE Name = '".$name."'";
 
-            $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
+            $options = array("sql"=>$sql, "key"=>$this->key, "sensor"=>"false");
 
             $url .= http_build_query($options,'','&');
 
