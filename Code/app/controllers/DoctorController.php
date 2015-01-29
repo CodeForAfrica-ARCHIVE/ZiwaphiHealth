@@ -15,6 +15,8 @@ class DoctorController extends BaseController {
 
     public static function getData($q)
     {
+        $q = strtoupper($q);
+
         $key = Config::get('fusion_tables.api_key');
         $table = Config::get('fusion_tables.table');
 
