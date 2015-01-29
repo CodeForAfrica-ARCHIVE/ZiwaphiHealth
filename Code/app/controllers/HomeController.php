@@ -17,6 +17,14 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
+
+        /*
+                $other_news = $this->getOtherNews();
+                $major_stories = $this->getMajorStories();
+                $featured_story= $this->getFeaturedStory();
+                $story_so_far = $this->getStorySoFar($featured_story->id);
+        */
+
 		return View::make('hello');
 	}
 

@@ -47,10 +47,13 @@ class DoctorController extends BaseController {
     public static function singleDoctor($name){
 
         if($name==''){
+
             $result = "Please enter a name!";
+
         }else{
 
             $key = Config::get('fusion_tables.api_key');
+
             $table = Config::get('fusion_tables.table');
 
             $url = "https://www.googleapis.com/fusiontables/v1/query?";
@@ -65,8 +68,6 @@ class DoctorController extends BaseController {
 
             $data = json_decode($page, TRUE);
 
-
-
             $rows = $data['rows'];
 
             $total = 0;
@@ -76,18 +77,20 @@ class DoctorController extends BaseController {
             foreach($rows as $doc){
                 $total++;
                 $result .= "<p>";
-                $result .= "Address: ".$doc['1'];
+                $result .= "Registration Number: ".$doc['4'];
                 $result .= "<br />";
-                $result .= "Telephone: ".$doc['2'];
+                $result .= "Registration Status: ".$doc['5'];
                 $result .= "<br />";
-                $result .= "Email: ".$doc['3'];
+                $result .= "Qualification: ".$doc['8'];
                 $result .= "<br />";
-                $result .= "Specialty: ".$doc['4'];
+                $result .= "Board: ".$doc['7'];
                 $result .= "</p>";
             }
+
             if($total<1){
                 $result .= "No registered doctor found with that name!";
             }
+
         }
 
         return $result;

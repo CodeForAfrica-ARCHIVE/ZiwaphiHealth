@@ -144,16 +144,46 @@
     </div>
     <div class="large-4 columns app-container">
         <i class="icon-medkit icon-2x app-icon"></i>
-        <h4>Fake Drugs</h4>
-        <p class="app_description">Check to see if the drugs you are being sold are real.</p>
+        <h4>Medicine Prices</h4>
+        <p class="app_description">Find out what you should pay for your medicine.</p>
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $("#medicine_name").keyup(function(event){
+                            if(event.keyCode == 13){
+                                $("#search_medicine").click();
+                            }
+                        });
 
-                <input type="text"/>
+
+
+                        $("#search_medicine").click(function(){
+
+                            var medicine_name = document.getElementById("medicine_name").value;
+
+                            var url = 'http://mpr.code4sa.org/#search:' + medicine_name;
+
+                            var win = window.open(url, '_blank');
+
+                            if(win){
+                                //Browser has allowed it to be opened
+                                win.focus();
+                            }else{
+                                //Broswer has blocked it
+                                alert('Please allow popups for this site');
+                            }
+                        });
+                    });
+
+
+
+                </script>
+                <input type="text" id="medicine_name" placeholder="Type medicine name"/>
             </div>
-            <div class="small-3 columns">
-                <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
+            <div class="small-3 columns" id="search_medicine">
+                <a href="#"><span class="postfix"><i class="icon-search"></i></span></a>
             </div>
         </div>
         <div class="row" style="text-align: center"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
