@@ -280,11 +280,11 @@
 
             print '<ul class="side-nav" style="padding:0 !important;">';
 
-                print '<li style="margin:3px !important;" class="filterFeed" data-tag="All">All</li>';
+                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="All">All</a></li>';
 
             foreach($tags as $tag=>$count){
 
-                print '<li style="margin:3px !important;" class="filterFeed" data-tag="'.$tag.'">'.$tag." (".$count.")".'</li>';
+                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="'.$tag.'">'.$tag." (".$count.")".'</a></li>';
 
             }
 
