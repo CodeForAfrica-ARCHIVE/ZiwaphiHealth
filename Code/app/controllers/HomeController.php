@@ -87,6 +87,22 @@ class HomeController extends BaseController {
                     //first major story is featured
                     $sorted_posts['featured'] = $p;
 
+
+                    //add story so far
+                    $sorted_posts['related'] = array();
+
+                    if(property_exists($p->custom_fields, 'related')){
+
+                        $custom_fields = $p->custom_fields;
+                        $related = $custom_fields->related;
+
+                        foreach($related as $r){
+                            $sorted_posts['related'][] = $this->getRelated($r);
+                        }
+
+                    }
+
+
                     $featured = 1;
 
                 }else{
@@ -109,6 +125,16 @@ class HomeController extends BaseController {
 
     }
 
+
+    public function getRelated($id){
+        $url = "http://localhost/ziwaphi/?json=get_post&id=" . $id;
+
+        $result = json_decode($this->file_get_contents_curl($url));
+
+        return $result->post;
+    }
+
+
     public function filterFeed(){
 
         if($_GET['tag']!='all'){
@@ -128,7 +154,6 @@ class HomeController extends BaseController {
             $finalPosts = array();
 
             foreach($posts as $p){
-
                 $major_story = false;
 
                 foreach($p->tags as $tag){
@@ -136,11 +161,9 @@ class HomeController extends BaseController {
                         $major_story = true;
                     }
                 }
-
                 if($major_story!=true){
                     $finalPosts[] = $p;
                 }
-
             }
         }
 
