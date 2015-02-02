@@ -203,11 +203,12 @@
             <a href="<?php print $featured->url;?>"><h4 class="featured_title"><?php print $featured->title;?></h4></a>
             <?php print $featured->excerpt;?>
             <h5>The story so far</h5>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+                <ul class="side-nav" style="padding:0 !important;">
+                    <li style="margin:3px !important;"><a href="" data-search="">Getting Started</a></li>
+                    <li style="margin:3px !important;"><a href="" data-search="">Getting Started</a></li>
+                    <li style="margin:3px !important;"><a href="" data-search="">Getting Started</a></li>
+
+                </ul>
             <h5>Evidence dossier</h5>
             Data Repository
         </div>
