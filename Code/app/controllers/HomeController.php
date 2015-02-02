@@ -50,14 +50,6 @@ class HomeController extends BaseController {
 
         $posts = $result->posts;
 
-
-
-        //if has add to major stories array
-                //pick first major story as featured
-                    //get related stories
-        //else
-                //add to other stories
-
         $sorted_posts = array("major_stories"=>array(), "other_stories"=>array(), "tags"=>array());
 
         $featured = 0;
@@ -73,10 +65,10 @@ class HomeController extends BaseController {
                     $major_story = true;
                 }else{
                     //add tags + count of total articles with tags
-                    if(!array_key_exists($tag->slug, $sorted_posts['tags'])){
-                        $sorted_posts['tags'][$tag->slug] = 1;
+                    if(!array_key_exists($tag->title, $sorted_posts['tags'])){
+                        $sorted_posts['tags'][$tag->title] = 1;
                     }else{
-                        $sorted_posts['tags'][$tag->slug]++;
+                        $sorted_posts['tags'][$tag->title]++;
                     }
                 }
             }
@@ -106,6 +98,28 @@ class HomeController extends BaseController {
         }
 
         return $sorted_posts;
+
+    }
+
+    public function filterFeed(){
+
+        $url = "http://localhost/ziwaphi/?json=get_tag_posts&tag=" . urlencode($_GET['tag']);
+
+        $result = json_decode($this->file_get_contents_curl($url));
+
+        $posts = $result->posts;
+
+        foreach($posts as $story){
+            print '<div class="story">';
+            print '<a href="'.$story->url.'"><h4>'.$story->title.'</h4></a>';
+            if(property_exists($story, 'thumbnail')){
+                print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
+            }
+            print $story->excerpt.'</p>
+                <p class="story-metadata">Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</p>
+            </div>
+            <hr/>';
+        }
 
     }
 

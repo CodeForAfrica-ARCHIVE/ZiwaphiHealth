@@ -47,8 +47,8 @@
 }
 .story-metadata{
     font-size: 0.7em;
-    color:darkgrey;
-    text-align: center;
+    color: #818181;
+    text-align:right;
 }
 .embed{
     font-size: 0.8em;

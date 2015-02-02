@@ -280,9 +280,11 @@
 
             print '<ul class="side-nav" style="padding:0 !important;">';
 
+                print '<li style="margin:3px !important;" class="filterFeed" data-tag="All">All</li>';
+
             foreach($tags as $tag=>$count){
 
-                print '<li style="margin:3px !important;"><a href="" data-search="">'.$tag." (".$count.")".'</a></li>';
+                print '<li style="margin:3px !important;" class="filterFeed" data-tag="'.$tag.'">'.$tag." (".$count.")".'</li>';
 
             }
 
@@ -292,11 +294,35 @@
 
     </div>
 
+    <script>
+        $(document).ready(function(){
+            $(".filterFeed").click(function(){
+                var tag = $(this).data('tag');
 
+                $("#tagName").html("<h4>" + tag + "</h4>");
+
+                $("#newsFeed").html("");
+
+                $("#loadingFeed").show();
+
+                $.ajax({url:"filterFeed?tag=" + tag,success:function(result){
+
+                    $("#newsFeed").html(result);
+
+                    $("#loadingFeed").hide();
+                }});
+            });
+        });
+    </script>
 
     <div class="large-6 columns">
-        <h4 class="big-title">Other Health News</h4>
-
+        <h4 class="big-title">Other News</h4>
+        <div class="tagName" style="text-align:center;" id="tagName">
+        </div>
+        <div class="loadingFeed" style="text-align:center;display:none" id="loadingFeed">
+            <img src="img/preloader.gif" style="height:80px;">
+        </div>
+        <div id="newsFeed">
 
             <?php
 
@@ -314,9 +340,7 @@
 
             ?>
 
-
-
-
+        </div>
 
     </div>
 

@@ -15,6 +15,12 @@ Route::get('/', function()
 {
 	return (new HomeController())->showWelcome();
 });
+
+Route::get('/filterFeed', function()
+{
+    return (new HomeController())->filterFeed();
+});
+
 Route::get('dodgydocs_embed/', function()
 {
     return View::make('dodgydocs_embed');
