@@ -24,6 +24,10 @@
 .linksholder p{
     margin-bottom: 30px;
 }
+.featured_title{
+    font-weight:bold;
+    font-family: georgia,serif;
+}
 .big-title{
     font-weight:bold;
     font-family: georgia,serif;
