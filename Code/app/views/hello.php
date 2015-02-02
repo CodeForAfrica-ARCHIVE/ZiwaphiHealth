@@ -280,11 +280,11 @@
 
             print '<ul class="side-nav" style="padding:0 !important;">';
 
-                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="All">All</a></li>';
+                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="All" data-tagtitle="All">All</a></li>';
 
-            foreach($tags as $tag=>$count){
+            foreach($tags as $slug=>$title){
 
-                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="'.$tag.'">'.$tag." (".$count.")".'</a></li>';
+                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="'.$slug.'" data-tagtitle="'.$title.'">'.$title.'</a></li>';
 
             }
 
@@ -298,8 +298,9 @@
         $(document).ready(function(){
             $(".filterFeed").click(function(){
                 var tag = $(this).data('tag');
+                var tagTitle = $(this).data('tagtitle');
 
-                $("#tagName").html("<h4>" + tag + "</h4>");
+                $("#tagName").html("<h4>" + tagTitle + "</h4>");
 
                 $("#newsFeed").html("");
 

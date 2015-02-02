@@ -64,11 +64,18 @@ class HomeController extends BaseController {
                     //is major story
                     $major_story = true;
                 }else{
+                    /*
                     //add tags + count of total articles with tags
                     if(!array_key_exists($tag->title, $sorted_posts['tags'])){
                         $sorted_posts['tags'][$tag->title] = 1;
                     }else{
                         $sorted_posts['tags'][$tag->title]++;
+                    }
+                    */
+
+                    //add tag slug + title
+                    if(!array_key_exists($tag->slug, $sorted_posts['tags'])){
+                        $sorted_posts['tags'][$tag->slug] = $tag->title;
                     }
                 }
             }
