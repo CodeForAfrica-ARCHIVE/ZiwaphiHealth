@@ -222,19 +222,19 @@
     </div>
     <div class="large-3 columns sidebar">
         <h3 class="big-title">Help Desk</h3>
-        <h5>Helplines</h5>
+        <h5><i class="icon-phone"></i> Helplines</h5>
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
-        <h5>Support groups</h5>
+        <h5><i class="fi-anchor"></i> Support groups</h5>
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
-        <h5>Social media</h5>
+        <h5><i class="fi-torsos-all"></i> Social media</h5>
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
@@ -263,7 +263,7 @@
                     print '<div id="major-story-panel'.$i.'" class="content">';
                 }
                 if(property_exists($story, 'thumbnail')){
-                    print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
+                    print '<img src="'.$story->thumbnail.'" style="width:100%">';
                 }
                 print $story->excerpt;
 
