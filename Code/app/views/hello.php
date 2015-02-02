@@ -64,7 +64,7 @@
 </div>
 
 <div class="row">
-    <div class="large-4 columns app-container">
+    <div class="large-5 columns app-container">
         <i class="icon-user-md icon-2x app-icon"></i>
         <h4>Dodgy Doctors</h4>
         <p class="app_description">Check to see if your doctor is registered, their certified area of practice and whether they are free from malpractice.</p>
@@ -189,16 +189,16 @@
         <div class="row" style="text-align: center; display: none;"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
         </p>
     </div>
-    <div class="large-4 columns app-container">
+    <div class="large-3 columns app-container">
         <i class="icon-hospital icon-2x app-icon"></i>
         <h4>Find a Hospital</h4>
         <p>Find right public hospital near you</p>
-        <div style="text-align: center; margin-top:60px;"><a href="http://hospitals.code4sa.org/" target="_blank"><button>Launch App</button></a></div>
+        <div style="text-align: center; margin-top:30px;"><a href="http://hospitals.code4sa.org/" target="_blank"><button>Launch App</button></a></div>
     </div>
 </div>
 
 <div class="row">
-    <div class="large-3 columns sidebar">
+    <div class="large-5 columns sidebar">
         <h4 class="featured_title"><?php print $featured->title;?></h4>
         <?php print $featured->excerpt;?>
         <h5>The story so far</h5>
@@ -210,7 +210,7 @@
         <h5>Evidence dossier</h5>
         Data Repository
     </div>
-    <div class="large-6 columns">
+    <div class="large-4 columns">
         <img src="<?php print $featured->thumbnail;?>" width="100%" height="150px">
         <div class="panel feedback">
             <a href="#">Tell us More</a>
@@ -269,26 +269,23 @@
         <h4 class="big-title">Other Health News</h4>
 
 
-            <div class="story">
-                <p><h4>Story title goes here</h4><img src="http://placehold.it/80x80&text=[img]"/>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-                <p class="story-metadata">Written by John Smith | Posted on September 22, 2014</p>
+            <?php
+
+                    foreach($other_stories as $story){
+                        print '<div class="story">
+                <p><h4>'.$story->title.'</h4>';
+                        if(property_exists($story, 'thumbnail')){
+                            print '<img src="'.$story->thumbnail.'" width="100px">';
+                        }
+                print $story->excerpt.'</p>
+                <p class="story-metadata">Written by '.$story->author->nickname.' | Posted on '.$story->date.'</p>
             </div>
-            <hr/>
-            <div class="story">
-                <p><h4>Story title goes here</h4><img src="http://placehold.it/80x80&text=[img]"/>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-                <p class="story-metadata">Written by John Smith | Posted on September 22, 2014</p>
-            </div>
-            <hr/>
-            <div class="story">
-                <p><h4>Story title goes here</h4><img src="http://placehold.it/80x80&text=[img]"/>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-                <p class="story-metadata">Written by John Smith | Posted on September 22, 2014</p>
-            </div>
-            <hr/>
-            <div class="story">
-                <p><h4>Story title goes here</h4><img src="http://placehold.it/80x80&text=[img]"/>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-                <p class="story-metadata">Written by John Smith | Posted on September 22, 2014</p>
-            </div>
-            <hr/>
+            <hr/>';
+                    }
+
+            ?>
+
+
 
 
 
