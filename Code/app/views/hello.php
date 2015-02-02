@@ -197,7 +197,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
         <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;">
             <h4 class="featured_title"><?php print $featured->title;?></h4>
@@ -245,24 +245,28 @@
 
 <div class="row further-reading">
     <div class="large-3 columns ">
-
         <h4 class="big-title">Major Stories</h4>
 
-        <div class="panel">
-            <a href="#"><img src="http://placehold.it/300x240&text=[img]"/></a>
-            <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+        <dl class="accordion" data-accordian="">
+
+            <dd class="accordion-navigation">
 
                 <?php
 
-                    foreach($major_stories as $story){
-                        print '<section class="section">
-                    <h5 class="title"><a href="'.$story->url.'">'.$story->title.'</a></h5>
-                </section>';
-                    }
+                foreach($major_stories as $story){
+                    print '<dd class="accordion-navigation">
+                    <a href="#usage-panel" style="font-size: 0.8em">'.$story->title.'</a>
+                <div id="usage-panel" class="content">
+                    '.$story->excerpt.'
+                </div>
+                </dd>';
+                }
                 ?>
-            </div>
+            </dd>
 
-        </div>
+
+        </dl>
+
     </div>
 
 
@@ -349,8 +353,8 @@
     $(document).foundation();
 </script>
 <script src="js/foundation/foundation.reveal.js"></script>
-
 <script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.accordion.js"></script>
 <script>
     $(document).foundation();
 
