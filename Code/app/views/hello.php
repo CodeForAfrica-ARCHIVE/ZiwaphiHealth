@@ -200,7 +200,7 @@
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
         <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem; border: 1px solid #cacaca; border-right: none;">
-            <h4 class="featured_title"><?php print $featured->title;?></h4>
+            <a href="<?php print $featured->url;?>"><h4 class="featured_title"><?php print $featured->title;?></h4></a>
             <?php print $featured->excerpt;?>
             <h5>The story so far</h5>
             <ul>
@@ -247,27 +247,31 @@
     <div class="large-3 columns ">
         <h4 class="big-title">Major Stories</h4>
 
-        <dl class="accordion" data-accordian="">
 
-            <dd class="accordion-navigation">
 
-                <?php
-
-                foreach($major_stories as $story){
-                    print '<dd class="accordion-navigation">
-                    <a href="#usage-panel" style="font-size: 0.8em">'.$story->title.'</a>
-                <div id="usage-panel" class="content">';
-                    if(property_exists($story, 'thumbnail')){
-                        print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
-                    }
-                    print $story->excerpt.'
-                </div>
-                </dd>';
+        <dl class="accordion" data-accordion>
+            <?php
+            $i = 0;
+            foreach($major_stories as $story){
+                $i++;
+            print'<dd class="accordion-navigation">
+                <a href="#major-story-panel'.$i.'">'.$story->title.'</a>';
+                if($i==1){
+                    print '<div id="major-story-panel'.$i.'" class="content active">';
+                }else{
+                    print '<div id="major-story-panel'.$i.'" class="content">';
                 }
-                ?>
-            </dd>
+                if(property_exists($story, 'thumbnail')){
+                    print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
+                }
+                print $story->excerpt;
 
+                print '<a href="'.$story->url.'">...more</a>';
 
+                print '</div>
+            </dd>';
+            }
+            ?>
         </dl>
 
     </div>
@@ -281,8 +285,8 @@
             <?php
 
                     foreach($other_stories as $story){
-                        print '<div class="story">
-                <p><h4>'.$story->title.'</h4>';
+                        print '<div class="story">';
+                        print '<a href="'.$story->url.'"><h4>'.$story->title.'</h4></a>';
                         if(property_exists($story, 'thumbnail')){
                             print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
                         }
