@@ -199,7 +199,7 @@
 
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
-        <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem; border: 1px solid #cacaca; border-right: none;">
+        <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
             <a href="<?php print $featured->url;?>"><h4 class="featured_title"><?php print $featured->title;?></h4></a>
             <?php print $featured->excerpt;?>
             <h5>The story so far</h5>
@@ -212,7 +212,7 @@
             <h5>Evidence dossier</h5>
             Data Repository
         </div>
-        <div class="large-5 columns" style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;  border: 1px solid #cacaca; border-left: none;">
+        <div class="large-5 columns" style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
             <img src="<?php print $featured->thumbnail;?>" width="100%" height="150px">
             <div class="feedback">
                 <a href="#">Tell us More</a>
