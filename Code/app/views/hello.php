@@ -193,13 +193,13 @@
         <i class="icon-hospital icon-2x app-icon"></i>
         <h4>Find a Hospital</h4>
         <p>Find right public hospital near you</p>
-        <div style="text-align: center; margin-top:30px;"><a href="http://hospitals.code4sa.org/" target="_blank"><button>Launch App</button></a></div>
+        <div style="text-align: center; margin-top:45px;"><a href="http://hospitals.code4sa.org/" target="_blank"><span class="postfix" style="border-left: 1px solid #cccccc;">Launch App <i class="icon-globe"></i></span></a></div>
     </div>
 </div>
 
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
-        <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;">
+        <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem; border: 1px solid #cacaca; border-right: none;">
             <h4 class="featured_title"><?php print $featured->title;?></h4>
             <?php print $featured->excerpt;?>
             <h5>The story so far</h5>
@@ -211,7 +211,7 @@
             <h5>Evidence dossier</h5>
             Data Repository
         </div>
-        <div class="large-5 columns" style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;">
+        <div class="large-5 columns" style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;  border: 1px solid #cacaca; border-left: none;">
             <img src="<?php print $featured->thumbnail;?>" width="100%" height="150px">
             <div class="feedback">
                 <a href="#">Tell us More</a>
@@ -256,8 +256,11 @@
                 foreach($major_stories as $story){
                     print '<dd class="accordion-navigation">
                     <a href="#usage-panel" style="font-size: 0.8em">'.$story->title.'</a>
-                <div id="usage-panel" class="content">
-                    '.$story->excerpt.'
+                <div id="usage-panel" class="content">';
+                    if(property_exists($story, 'thumbnail')){
+                        print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
+                    }
+                    print $story->excerpt.'
                 </div>
                 </dd>';
                 }
@@ -281,7 +284,7 @@
                         print '<div class="story">
                 <p><h4>'.$story->title.'</h4>';
                         if(property_exists($story, 'thumbnail')){
-                            print '<img src="'.$story->thumbnail.'" width="100px">';
+                            print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
                         }
                 print $story->excerpt.'</p>
                 <p class="story-metadata">Written by '.$story->author->nickname.' | Posted on '.$story->date.'</p>
