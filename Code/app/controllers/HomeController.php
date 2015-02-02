@@ -37,18 +37,68 @@ class HomeController extends BaseController {
                 return View::make('hello', $data);
         */
 
-        return $this->getStories();
+        $data = $this->getStories();
+        return View::make('hello', $data);
 	}
 
     public function getStories(){
+
         //get all stories, loop and classify
         $url = "http://localhost/ziwaphi/?json=get_category_posts&id=8";
 
-        $posts = $this->file_get_contents_curl($url);
+        $result = json_decode($this->file_get_contents_curl($url));
 
-                
+        $posts = $result->posts;
 
-        return $posts;
+
+
+        //if has add to major stories array
+                //pick first major story as featured
+                    //get related stories
+        //else
+                //add to other stories
+
+        $sorted_posts = array("major_stories"=>array(), "other_stories"=>array());
+
+        $featured = 0;
+
+        foreach($posts as $p){
+
+            $major_story = false;
+
+            //get posts tags
+            foreach($p->tags as $tag){
+                if($tag->slug == "featured"){
+                    //is major story
+                    $major_story = true;
+                }
+            }
+
+            if($major_story){
+
+                if($featured==0){
+                    //first major story is featured
+                    $sorted_posts['featured'] = $p;
+
+                    $featured = 1;
+
+                }else{
+
+                    $sorted_posts['major_stories'][] = $p;
+
+                }
+
+
+            }else{
+
+                $sorted_posts['other_stories'][] = $p;
+
+            }
+
+
+        }
+
+        return $sorted_posts;
 
     }
 

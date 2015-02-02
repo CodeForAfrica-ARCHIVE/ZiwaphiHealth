@@ -201,7 +201,7 @@
     <div class="large-3 columns sidebar">
         <h3 class="big-title">Back Story</h3>
         <h5>Overview</h5>
-        Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.
+        <?php print $featured->excerpt;?>
         <h5>The story so far</h5>
         <ul>
             <li>Item 1</li>
@@ -212,11 +212,7 @@
         Data Repository
     </div>
     <div class="large-6 columns">
-        <ul class="example-orbit" data-orbit>
-            <li><img src="http://placehold.it/1000x500&amp;text=[%20img%201%20]"></li>
-            <li><img src="http://placehold.it/1000x500&amp;text=[%20img%202%20]"></li>
-            <li><img src="http://placehold.it/1000x500&amp;text=[%20img%203%20]"></li>
-        </ul>
+        <img src="<?php print $featured->thumbnail;?>" width="100%">
         <div class="panel feedback">
             <a href="#">Tell us More</a>
             <p>Do you have more information? Help us improve this story by sharing your experiences/evidence.</p>
