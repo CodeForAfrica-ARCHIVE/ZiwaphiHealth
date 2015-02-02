@@ -278,11 +278,15 @@
         <h4 class="big-title">Feed Filters</h4>
         <?php
 
+            print '<ul class="side-nav" style="padding:0 !important;">';
+
             foreach($tags as $tag=>$count){
 
-                print $tag." (".$count.")";
+                print '<li style="margin:3px !important;"><a href="" data-search="">'.$tag." (".$count.")".'</a></li>';
 
             }
+
+            print '</ul>';
 
         ?>
 
