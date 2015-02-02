@@ -249,24 +249,15 @@
         <div class="panel">
             <a href="#"><img src="http://placehold.it/300x240&text=[img]"/></a>
             <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-                <section class="section">
-                    <h5 class="title"><a href="#">Story 1</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Story 2</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Story 3</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Story 4</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Story 5</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Story 6</a></h5>
-                </section>
+
+                <?php
+
+                    foreach($major_stories as $story){
+                        print '<section class="section">
+                    <h5 class="title"><a href="'.$story->url.'">'.$story->title.'</a></h5>
+                </section>';
+                    }
+                ?>
             </div>
 
         </div>
