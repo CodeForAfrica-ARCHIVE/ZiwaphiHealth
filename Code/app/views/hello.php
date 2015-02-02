@@ -280,7 +280,7 @@
 
             print '<ul class="side-nav" style="padding:0 !important;">';
 
-                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="All" data-tagtitle="All">All</a></li>';
+                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="all" data-tagtitle="All">All</a></li>';
 
             foreach($tags as $slug=>$title){
 

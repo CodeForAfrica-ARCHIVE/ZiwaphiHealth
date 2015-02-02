@@ -43,6 +43,7 @@ class HomeController extends BaseController {
 
     public function getStories(){
 
+
         //get all stories, loop and classify
         $url = "http://localhost/ziwaphi/?json=get_category_posts&id=8";
 
@@ -110,13 +111,40 @@ class HomeController extends BaseController {
 
     public function filterFeed(){
 
-        $url = "http://localhost/ziwaphi/?json=get_tag_posts&tag=" . urlencode($_GET['tag']);
+        if($_GET['tag']!='all'){
+            $url = "http://localhost/ziwaphi/?json=get_tag_posts&tag=" . urlencode($_GET['tag']);
 
-        $result = json_decode($this->file_get_contents_curl($url));
+            $result = json_decode($this->file_get_contents_curl($url));
 
-        $posts = $result->posts;
+            $finalPosts = $result->posts;
+        }else{
 
-        foreach($posts as $story){
+            $url = "http://localhost/ziwaphi/?json=get_category_posts&id=8";
+
+            $result = json_decode($this->file_get_contents_curl($url));
+
+            $posts = $result->posts;
+
+            $finalPosts = array();
+
+            foreach($posts as $p){
+
+                $major_story = false;
+
+                foreach($p->tags as $tag){
+                    if($tag->slug == "featured"){
+                        $major_story = true;
+                    }
+                }
+
+                if($major_story!=true){
+                    $finalPosts[] = $p;
+                }
+
+            }
+        }
+
+        foreach($finalPosts as $story){
             print '<div class="story">';
             print '<a href="'.$story->url.'"><h4>'.$story->title.'</h4></a>';
             if(property_exists($story, 'thumbnail')){
