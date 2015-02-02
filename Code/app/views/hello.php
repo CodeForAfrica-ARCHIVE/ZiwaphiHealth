@@ -257,11 +257,11 @@
                 $i++;
             print'<dd class="accordion-navigation">
                 <a href="#major-story-panel'.$i.'">'.$story->title.'</a>';
-                if($i==1){
-                    print '<div id="major-story-panel'.$i.'" class="content active">';
-                }else{
+                //if($i==1){
+                //    print '<div id="major-story-panel'.$i.'" class="content active">';
+                //}else{
                     print '<div id="major-story-panel'.$i.'" class="content">';
-                }
+                //}
                 if(property_exists($story, 'thumbnail')){
                     print '<img src="'.$story->thumbnail.'" style="width:100%">';
                 }
@@ -274,6 +274,17 @@
             }
             ?>
         </dl>
+
+        <h4 class="big-title">Feed Filters</h4>
+        <?php
+
+            foreach($tags as $tag=>$count){
+
+                print $tag." (".$count.")";
+
+            }
+
+        ?>
 
     </div>
 

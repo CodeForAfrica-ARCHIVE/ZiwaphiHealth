@@ -58,7 +58,7 @@ class HomeController extends BaseController {
         //else
                 //add to other stories
 
-        $sorted_posts = array("major_stories"=>array(), "other_stories"=>array());
+        $sorted_posts = array("major_stories"=>array(), "other_stories"=>array(), "tags"=>array());
 
         $featured = 0;
 
@@ -72,6 +72,14 @@ class HomeController extends BaseController {
                     //is major story
                     $major_story = true;
                 }
+
+                //add tags + count of total articles with tags
+                if(!array_key_exists($tag->slug, $sorted_posts['tags'])){
+                    $sorted_posts['tags'][$tag->slug] = 1;
+                }else{
+                    $sorted_posts['tags'][$tag->slug]++;
+                }
+
             }
 
             if($major_story){
