@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return (new HomeController())->showWelcome();
 });
 Route::get('dodgydocs_embed/', function()
 {
