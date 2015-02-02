@@ -198,23 +198,25 @@
 </div>
 
 <div class="row">
-    <div class="large-5 columns sidebar">
-        <h4 class="featured_title"><?php print $featured->title;?></h4>
-        <?php print $featured->excerpt;?>
-        <h5>The story so far</h5>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <h5>Evidence dossier</h5>
-        Data Repository
-    </div>
-    <div class="large-4 columns">
-        <img src="<?php print $featured->thumbnail;?>" width="100%" height="150px">
-        <div class="panel feedback">
-            <a href="#">Tell us More</a>
-            <p>Do you have more information? Help us improve this story by sharing your experiences/evidence.</p>
+    <div class="large-9 columns sidebar">
+        <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;">
+            <h4 class="featured_title"><?php print $featured->title;?></h4>
+            <?php print $featured->excerpt;?>
+            <h5>The story so far</h5>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h5>Evidence dossier</h5>
+            Data Repository
+        </div>
+        <div class="large-5 columns" style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;">
+            <img src="<?php print $featured->thumbnail;?>" width="100%" height="150px">
+            <div class="feedback">
+                <a href="#">Tell us More</a>
+                <p>Do you have more information? Help us improve this story by sharing your experiences/evidence.</p>
+            </div>
         </div>
     </div>
     <div class="large-3 columns sidebar">
