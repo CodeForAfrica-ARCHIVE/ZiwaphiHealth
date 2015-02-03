@@ -60,10 +60,13 @@ class HomeController extends BaseController {
                     //add story so far
                     $sorted_posts['related'] = array();
 
-                    if(property_exists($p->custom_fields, 'related')){
+                    if(property_exists($p->custom_fields, 'related_posts')){
 
                         $custom_fields = $p->custom_fields;
-                        $related = $custom_fields->related;
+
+                        $related_posts = $custom_fields->related_posts[0];
+
+                        $related = unserialize($related_posts);
 
                         foreach($related as $r){
                             $sorted_posts['related'][] = $this->getRelated($r);

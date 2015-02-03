@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>HealthWatch | Home</title>
+    <title>ZiwaphiHealth | Home</title>
     <meta name="description" content="Nigeria Health Portal"/>
     <meta name="author" content="Nick Hargreaves"/>
     <meta name="copyright" content="CodeForAfrica Copyright (c) 2014"/>
@@ -369,10 +369,10 @@
         <h4 class="big-title">Links</h4>
         <p><a href="http://code4sa.org" target="_blank"><img style="height: 80px" src="img/c4sa.png" id="c4sa_partner"></a>
             <br/>
-            The data driven journalism + tools in HealthWatch section were kickstarted by <a href="http://code4kenya.org" target="_blank">Code4Kenya</a>
+            The data driven journalism + tools in ZiwaphiHealth section were kickstarted by <a href="http://code4kenya.org" target="_blank">Code4Kenya</a>
         </p>
         <p>
-            <a href="http://github.com/CodeForAfrica/HealthWatch"><img src="img/github.png" id="cfa_icon"></a>
+            <a href="http://github.com/CodeForAfrica/ZiwaphiHealth"><img src="img/github.png" id="cfa_icon"></a>
             <a href="http://data.the-star.co.ke"><img style="height:32px;margin-left:25px" src="img/data.png" id="ckan_icon"></a>
             <br/>
             The code & data for this page are open source. You can re-use it by visiting the above repositories.
