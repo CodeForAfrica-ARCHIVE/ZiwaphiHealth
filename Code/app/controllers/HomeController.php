@@ -2,40 +2,9 @@
 
 class HomeController extends BaseController {
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
 
 	public function showWelcome()
 	{
-
-        /*
-                        $other_news = "";//$this->getOtherNews();
-
-                        $major_stories = "";//$this->getMajorStories();
-
-                        $featured_story= "";//$this->getFeaturedStory();
-
-                        $story_so_far = "";//$this->getStorySoFar($featured_story->id);
-
-                        $data = array(
-                            "other_news"=>$other_news,
-                            "major_stories"=>$major_stories,
-                            "featured_story"=>$featured_story,
-                            "story_so_far"=>$story_so_far
-                        );
-
-                return View::make('hello', $data);
-        */
 
         $data = $this->getStories();
         return View::make('hello', $data);
@@ -45,7 +14,7 @@ class HomeController extends BaseController {
 
 
         //get all stories, loop and classify
-        $url = "http://localhost/ziwaphi/?json=get_category_posts&id=8";
+        $url = Config::get('custom_config.WPFeedRoot') . "?json=get_category_posts&id=2";
 
         $result = json_decode($this->file_get_contents_curl($url));
 
@@ -117,17 +86,14 @@ class HomeController extends BaseController {
                 $sorted_posts['other_stories'][] = $p;
 
             }
-
-
         }
-
         return $sorted_posts;
-
     }
 
 
     public function getRelated($id){
-        $url = "http://localhost/ziwaphi/?json=get_post&id=" . $id;
+        $url = Config::get('custom_config.WPFeedRoot') . "?json=get_post&id=" . $id;
+
 
         $result = json_decode($this->file_get_contents_curl($url));
 
@@ -138,14 +104,14 @@ class HomeController extends BaseController {
     public function filterFeed(){
 
         if($_GET['tag']!='all'){
-            $url = "http://localhost/ziwaphi/?json=get_tag_posts&tag=" . urlencode($_GET['tag']);
+            $url = Config::get('custom_config.WPFeedRoot') . "?json=get_tag_posts&tag=" . urlencode($_GET['tag']);
 
             $result = json_decode($this->file_get_contents_curl($url));
 
             $finalPosts = $result->posts;
         }else{
 
-            $url = "http://localhost/ziwaphi/?json=get_category_posts&id=8";
+            $url = Config::get('custom_config.WPFeedRoot') . "?json=get_category_posts&id=2";
 
             $result = json_decode($this->file_get_contents_curl($url));
 

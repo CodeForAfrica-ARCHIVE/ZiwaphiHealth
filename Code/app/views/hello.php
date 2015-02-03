@@ -207,6 +207,9 @@
             <ul class="side-nav" style="padding:0 !important;">
 
             <?php
+            if(count($related)<1){
+                print "<h5 style='text-align:center'>No related stories at this time</h5>";
+            }
                     foreach($related as $r){
                         print '<li style="margin:3px !important;"><a href="'.$r->url.'" data-search="">'.$r->title.'</a></li>';
                     }
@@ -216,7 +219,14 @@
             Data Repository
         </div>
         <div class="large-5 columns" style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
-            <img src="<?php print $featured->thumbnail;?>" width="100%" height="150px">
+            <?php
+                if(!property_exists($featured, 'thumbnail')){
+                    print '<img src="http://placehold.it/500x500&amp;text=[%20img%201%20]" width="100%">';
+                }else{
+
+                    print '<img src="'.$featured->thumbnail.'" width="100%">';
+                }
+            ?>
             <div class="feedback">
                 <a href="#">Tell us More</a>
                 <p>Do you have more information? Help us improve this story by sharing your experiences/evidence.</p>
@@ -255,6 +265,9 @@
 
         <dl class="accordion" data-accordion>
             <?php
+            if(count($major_stories)<1){
+                print "<h3 style='text-align:center'>No major stories found</h3>";
+            }
             $i = 0;
             foreach($major_stories as $story){
                 $i++;
@@ -330,16 +343,20 @@
 
             <?php
 
+                    if(count($other_stories)<1){
+                        print "<h3 style='text-align:center'>No stories found</h3>";
+                    }
+
                     foreach($other_stories as $story){
                         print '<div class="story">';
                         print '<a href="'.$story->url.'"><h4>'.$story->title.'</h4></a>';
                         if(property_exists($story, 'thumbnail')){
                             print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
                         }
-                print $story->excerpt.'</p>
-                <p class="story-metadata">Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</p>
-            </div>
-            <hr/>';
+                        print $story->excerpt.'</p>
+                                <p class="story-metadata">Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</p>
+                            </div>
+                            <hr/>';
                     }
 
             ?>
@@ -348,11 +365,9 @@
 
     </div>
 
-
-
     <aside class="large-3 columns hide-for-small linksholder">
         <h4 class="big-title">Links</h4>
-        <p><img style="height: 80px" src="img/c4nigeria.png" id="c4k_partner">
+        <p><a href="http://code4sa.org" target="_blank"><img style="height: 80px" src="img/c4sa.png" id="c4sa_partner"></a>
             <br/>
             The data driven journalism + tools in HealthWatch section were kickstarted by <a href="http://code4kenya.org" target="_blank">Code4Kenya</a>
         </p>
