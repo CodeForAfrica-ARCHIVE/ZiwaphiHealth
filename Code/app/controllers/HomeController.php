@@ -74,7 +74,6 @@ class HomeController extends BaseController {
 
                     }
 
-
                     $featured = 1;
 
                 }else{
@@ -102,7 +101,6 @@ class HomeController extends BaseController {
 
         return $result->post;
     }
-
 
     public function filterFeed(){
 
