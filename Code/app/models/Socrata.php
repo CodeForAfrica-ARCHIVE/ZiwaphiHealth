@@ -6,7 +6,8 @@
  * Time: 1:07 PM
  */
 
-class Socrata {
+class Socrata extends Eloquent{
+
     // The base URL for this Socrata API, ex: http://data.medicare.gov or http://www.socrata.com
     private $root_url = "http://opendata.socrata.com";
     // App Token
@@ -15,6 +16,7 @@ class Socrata {
     private $user_name = "";
     private $password = "";
     // Basic constructor
+
     public function __construct($root_url = "", $app_token = "",  $user_name = "", $password = "") {
         $this->root_url = $root_url;
         $this->app_token = $app_token;
@@ -128,10 +130,12 @@ class Socrata {
         return json_decode($response, true);
     }
 }
+/*
 // Convenience functions
-function array_get($needle, $haystack) {
+function array_get2($needle, $haystack) {
     return (in_array($needle, array_keys($haystack)) ? $haystack[$needle] : NULL);
 }
+*/
 function pre_dump($var) {
     echo "<pre>" . print_r($var) . "</pre>";
 }

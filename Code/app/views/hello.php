@@ -77,14 +77,16 @@
                 <script type="text/javascript">
                     $.noConflict();
                     jQuery(document).ready(function($) {
-                        $("#dodgy_docs_input").autocomplete("doctor", {
+                        $("#dodgy_docs_input").autocomplete("index.php/doctor", {
                             width: 260,
                             matchContains: true,
-                            //mustMatch: true,
-                            //minChars: 0,
-                            //multiple: true,
-                            //highlight: false,
-                            //multipleSeparator: ",",
+                            selectFirst: true
+                        });
+                    });
+                    jQuery(document).ready(function($) {
+                        $("#medicine_name").autocomplete("index.php/medicine_price", {
+                            width: 260,
+                            matchContains: true,
                             selectFirst: true
                         });
                     });
@@ -127,7 +129,28 @@
 
                         $("#loading").show();
 
-                        $.ajax({url:"doctordetails?name=" + name,success:function(result){
+                        $.ajax({url:"index.php/doctordetails?name=" + name,success:function(result){
+
+                            $("#doctorDetails").html(result);
+
+                            $("#loading").hide();
+                        }});
+                    });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function(){
+                    $("#searchMedicine").click(function(){
+                        var name = $("#medicine_name").val();
+
+                        $("#dname").html("<h4>" + name + "</h4>");
+
+                        $("#doctorDetails").html("");
+
+                        $("#loading").show();
+
+                        $.ajax({url:"index.php/medicine_price?q=" + name,success:function(result){
 
                             $("#doctorDetails").html(result);
 
@@ -149,44 +172,13 @@
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
-                <script type="text/javascript">
-                    $(document).ready(function(){
-                        $("#medicine_name").keyup(function(event){
-                            if(event.keyCode == 13){
-                                $("#search_medicine").click();
-                            }
-                        });
-
-
-
-                        $("#search_medicine").click(function(){
-
-                            var medicine_name = document.getElementById("medicine_name").value;
-
-                            var url = 'http://mpr.code4sa.org/#search:' + medicine_name;
-
-                            var win = window.open(url, '_blank');
-
-                            if(win){
-                                //Browser has allowed it to be opened
-                                win.focus();
-                            }else{
-                                //Broswer has blocked it
-                                alert('Please allow popups for this site');
-                            }
-                        });
-                    });
-
-
-
-                </script>
-                <input type="text" id="medicine_name" placeholder="Type medicine name"/>
+                <input type="text" id="medicine_name" placeholder="e.g. salbutamol or asthavent"/>
             </div>
             <div class="small-3 columns" id="search_medicine">
                 <a href="#"><span class="postfix"><i class="icon-search"></i></span></a>
             </div>
         </div>
-        <div class="row" style="text-align: center; display: none;"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
+        <div class="row"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
         </p>
     </div>
     <div class="large-3 columns app-container">

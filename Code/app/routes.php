@@ -49,3 +49,14 @@ Route::get('doctordetails', function()
     }
     return $result;
 });
+Route::get('medicine_price', function()
+{
+    $name = Input::get('q');
+
+    $result = '';
+
+    if(isset($name)){
+        $result = MedicineController::getPrice($name);
+    }
+    return $result;
+});
