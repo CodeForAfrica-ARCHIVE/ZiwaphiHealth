@@ -48,6 +48,67 @@ class MedicineController extends BaseController {
 
         return $result;
     }
+    public static function getGeneric($q){
+        $view_uid = "mba4-xngh";
+        $root_url = "https://data.code4sa.org/";
+        $app_token = "j2sV7o19f9ZLBipzxb64KJSR9";
+        $response = NULL;
+
+        $socrata = new Socrata($root_url, $app_token);
+
+        $params = array("\$q" => "$q");
+
+        $response = $socrata->get("/resource/$view_uid.json", $params);
+
+        $total = 0;
+
+        $result = "";
+
+        if(count($response)<1){
+            $result .= "No drugs found with that name!";
+        }else{
+
+
+
+            foreach($response as $drug){
+
+                if(array_key_exists('originator_or_generic', $drug)){
+                    if($drug['originator_or_generic'] == 'Generic'){
+
+                        $total++;
+
+                        $result .='<div>';
+                        $result .= $drug['proprietary_name'] ." (". $drug['strength'].$drug['unit'].")";
+                        $result .='</div>';
+
+                    }
+                }
+
+            }
+            $result .= "Found ".$total." results for '".$q."'";
+            $total = 0;
+
+            foreach($response as $drug){
+
+                if(array_key_exists('originator_or_generic', $drug)){
+                    if($drug['originator_or_generic'] == 'Generic'){
+
+                        $total++;
+
+                        $result .='<div>';
+                        $result .= $drug['proprietary_name'] ." (". $drug['strength'].$drug['unit'].")";
+                        $result .='</div>';
+
+                    }
+                }
+
+            }
+
+        }
+
+
+        return $result;
+    }
 
     /*
     public static function getPrice($q)

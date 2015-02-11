@@ -64,10 +64,10 @@
 </div>
 
 <div class="row">
-    <div class="large-5 columns app-container">
+    <div class="large-3 columns app-container">
         <i class="icon-user-md icon-2x app-icon"></i>
         <h4>Dodgy Doctors</h4>
-        <p class="app_description">Check to see if your doctor is registered, their certified area of practice and whether they are free from malpractice.</p>
+        <p class="app_description">Is your doctor registered in their area of practice?</p>
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
@@ -130,9 +130,6 @@
                         }});
                     });
                 });
-            </script>
-
-            <script>
                 $(document).ready(function(){
                     $("#searchMedicine").click(function(){
                         var name = $("#medicine_name").val();
@@ -151,6 +148,24 @@
                         }});
                     });
                 });
+                $(document).ready(function(){
+                    $("#searchGeneric").click(function(){
+                        var name = $("#medicine_name2").val();
+
+                        $("#dname").html("<h4>" + name + "</h4>");
+
+                        $("#doctorDetails").html("");
+
+                        $("#loading").show();
+
+                        $.ajax({url:"index.php/medicine_generics?q=" + name,success:function(result){
+
+                            $("#doctorDetails").html(result);
+
+                            $("#loading").hide();
+                        }});
+                    });
+                });
             </script>
 
             <a class="close-reveal-modal">&#215;</a>
@@ -158,10 +173,10 @@
 
         </p>
     </div>
-    <div class="large-4 columns app-container">
+    <div class="large-3 columns app-container">
         <i class="icon-medkit icon-2x app-icon"></i>
         <h4>Medicine Prices</h4>
-        <p class="app_description">Find out what you should pay for your medicine.</p>
+        <p class="app_description">What should you pay for your medicine</p>
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
@@ -175,9 +190,25 @@
         </p>
     </div>
     <div class="large-3 columns app-container">
+        <i class="icon-medkit icon-2x app-icon"></i>
+        <h4>Find Generics</h4>
+        <p class="app_description">What generics are available for your drug</p>
+        <p>
+        <div class="row collapse">
+            <div class="small-9 columns">
+                <input type="text" id="medicine_name2" placeholder="e.g. salbutamol or asthavent"/>
+            </div>
+            <div class="small-3 columns" id="searchGeneric">
+                <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
+            </div>
+        </div>
+        <div class="row"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
+        </p>
+    </div>
+    <div class="large-3 columns app-container">
         <i class="icon-hospital icon-2x app-icon"></i>
         <h4>Find a Hospital</h4>
-        <p>Find right public hospital near you</p>
+        <p>Which hospitals are around you</p>
         <div style="text-align: center; margin-top:45px;"><a href="http://hospitals.code4sa.org/" target="_blank"><span class="postfix" style="border-left: 1px solid #cccccc;">Launch App <i class="icon-globe"></i></span></a></div>
     </div>
 </div>

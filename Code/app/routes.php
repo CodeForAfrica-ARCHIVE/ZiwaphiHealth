@@ -60,3 +60,14 @@ Route::get('medicine_price', function()
     }
     return $result;
 });
+Route::get('medicine_generics', function()
+{
+    $name = Input::get('q');
+
+    $result = '';
+
+    if(isset($name)){
+        $result = MedicineController::getGeneric($name);
+    }
+    return $result;
+});
