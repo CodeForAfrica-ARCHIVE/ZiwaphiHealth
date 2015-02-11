@@ -20,15 +20,98 @@ class MedicineController extends BaseController {
 
         $response = $socrata->get("/resource/$view_uid.json", $params);
 
+        $total = 0;
+
         $result = "";
 
-        foreach($response as $row){
-            $cname = $row['active_ingredients'];
+        if(count($response)<1){
+            $result .= "No drugs found with that name!";
+        }else{
+
+            $result .= "Found ".count($response)." results for '".$q."'";
+
+            foreach($response as $drug){
+
+                if(array_key_exists('proprietary_name', $drug)){
+
+                    $total++;
+
+                    $result .='<div>';
+                    $result .= $drug['proprietary_name'] ." (". $drug['strength'].$drug['unit'].")";
+                    $result .='</div>';
+
+                }
+            }
+
+        }
+
+
+        return $result;
+    }
+
+    /*
+    public static function getPrice($q)
+    {
+        $q = ucwords($q);
+
+        $key = Config::get('custom_config.api_key');
+        $table = Config::get('custom_config.medicine_table');
+
+        $url = "https://www.googleapis.com/fusiontables/v1/query?";
+
+        //Fusion Tables does not support OR WTF?
+        //$sql = "SELECT * FROM ".$table." WHERE ProprietaryName LIKE '%".$q."%' OR ActiveIngredients LIKE '%".$q."%'";
+
+        $sql = "SELECT * FROM ".$table." WHERE ProprietaryName LIKE '%".$q."%'";
+
+        $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
+
+        $url .= http_build_query($options,'','&');
+
+        $page = file_get_contents($url);
+
+        $data = json_decode($page, TRUE);
+
+        $rows = array();
+
+        if(array_key_exists('rows', $data)){
+            $rows = $data['rows'];
+        }
+
+        //then do similar search for active ingredients :(
+
+        $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients LIKE '%".$q."%'";
+        $options = array("sql"=>$sql2, "key"=>$key, "sensor"=>"false");
+
+        $url .= http_build_query($options,'','&');
+
+
+        $page = file_get_contents($url);
+
+        $data = json_decode($page, TRUE);
+
+        if(array_key_exists('rows', $data)){
+            //check if rows already added
+            foreach($data['rows'] as $row){
+
+
+
+            }
+
+        }
+
+
+        $result = "";
+
+
+        foreach($rows as $row){
+            $cname = $row['4'];
             $result .= "$cname\n";
         }
 
         return $result;
     }
+    */
 
 }
 

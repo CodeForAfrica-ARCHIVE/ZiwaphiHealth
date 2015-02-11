@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/app/classes/socrata.php" afterPath="$PROJECT_DIR$/Code/app/models/Socrata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/start/global.php" afterPath="$PROJECT_DIR$/Code/app/start/global.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/config/custom_config.php" afterPath="$PROJECT_DIR$/Code/app/config/custom_config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/routes.php" afterPath="$PROJECT_DIR$/Code/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
@@ -33,14 +31,8 @@
       <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="48" selection-start="3590" selection-end="3590" vertical-scroll-proportion="-2.6470587" vertical-offset="1080" max-vertical-offset="6435">
-              <folding>
-                <marker date="1423556461900" expanded="false" signature="8755:8772" placeholder="..." />
-                <marker date="1423556461900" expanded="false" signature="10731:10748" placeholder="..." />
-                <marker date="1423556461900" expanded="false" signature="11719:11740" placeholder="..." />
-                <marker date="1423556461900" expanded="false" signature="11780:11802" placeholder="..." />
-                <marker date="1423556461900" expanded="false" signature="13206:13223" placeholder="..." />
-              </folding>
+            <state line="250" column="8" selection-start="10293" selection-end="11286" vertical-scroll-proportion="0.0" vertical-offset="3645" max-vertical-offset="6330">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,7 +40,7 @@
       <file leaf-file-name="DoctorController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/DoctorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="8" selection-start="738" selection-end="918" vertical-scroll-proportion="-13.125" vertical-offset="120" max-vertical-offset="1515">
+            <state line="72" column="12" selection-start="1597" selection-end="2234" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1590">
               <folding />
             </state>
           </provider>
@@ -57,7 +49,7 @@
       <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="9" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="1410" max-vertical-offset="2580">
+            <state line="146" column="9" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="2190" max-vertical-offset="2580">
               <folding />
             </state>
           </provider>
@@ -66,7 +58,7 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="26" selection-start="1092" selection-end="1106" vertical-scroll-proportion="-14.166667" vertical-offset="290" max-vertical-offset="870">
+            <state line="51" column="26" selection-start="1092" selection-end="1106" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -75,7 +67,18 @@
       <file leaf-file-name="MedicineController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="508" selection-end="508" vertical-scroll-proportion="0.41379312" vertical-offset="0" max-vertical-offset="580">
+            <state line="41" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.5026455" vertical-offset="255" max-vertical-offset="1770">
+              <folding>
+                <marker date="1423662874268" expanded="true" signature="552:597" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom_config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/app/config/custom_config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="2" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -93,7 +96,7 @@
       <file leaf-file-name="laravel.log" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7218" column="101" selection-start="1088320" selection-end="1088323" vertical-scroll-proportion="0.0" vertical-offset="107998" max-vertical-offset="108585">
+            <state line="8614" column="16" selection-start="1175664" selection-end="1175980" vertical-scroll-proportion="0.0" vertical-offset="128930" max-vertical-offset="129585">
               <folding />
             </state>
           </provider>
@@ -121,13 +124,13 @@
         <option value="$PROJECT_DIR$/Code/public/main.css" />
         <option value="$PROJECT_DIR$/Code/public/.htaccess" />
         <option value="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" />
-        <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/Code/app/routes.php" />
         <option value="$PROJECT_DIR$/Code/app/classes/socrata.php" />
         <option value="$PROJECT_DIR$/Code/app/start/global.php" />
         <option value="$PROJECT_DIR$/Code/app/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/Code/app/models/Socrata.php" />
+        <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
       </list>
@@ -166,6 +169,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -386,9 +390,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,7 +483,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19601838" sideWeight="0.49960968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32006246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19601838" sideWeight="0.5003903" order="8" side_tool="true" content_ui="tabs" />
@@ -466,11 +491,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34150076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34150076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -549,13 +574,7 @@
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="377" column="106" selection-start="15163" selection-end="15163" vertical-scroll-proportion="0.0" vertical-offset="5423" max-vertical-offset="6555">
-          <folding>
-            <marker date="1423556461900" expanded="false" signature="8755:8772" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="10731:10748" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11719:11740" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11780:11802" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="13206:13223" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -598,13 +617,7 @@
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="377" column="106" selection-start="15163" selection-end="15163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6555">
-          <folding>
-            <marker date="1423556461900" expanded="false" signature="8755:8772" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="10731:10748" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11719:11740" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11780:11802" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="13206:13223" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -647,13 +660,7 @@
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="348" column="10" selection-start="13639" selection-end="13639" vertical-scroll-proportion="0.0" vertical-offset="5096" max-vertical-offset="6300">
-          <folding>
-            <marker date="1423556461900" expanded="false" signature="8755:8772" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="10731:10748" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11719:11740" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11780:11802" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="13206:13223" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -696,13 +703,7 @@
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="348" column="10" selection-start="13639" selection-end="13639" vertical-scroll-proportion="0.0" vertical-offset="5096" max-vertical-offset="6300">
-          <folding>
-            <marker date="1423556461900" expanded="false" signature="8755:8772" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="10731:10748" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11719:11740" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11780:11802" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="13206:13223" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -745,13 +746,7 @@
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="76" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.0" vertical-offset="2535" max-vertical-offset="5730">
-          <folding>
-            <marker date="1423556461900" expanded="false" signature="8755:8772" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="10731:10748" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11719:11740" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11780:11802" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="13206:13223" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -772,13 +767,7 @@
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="112" selection-start="8356" selection-end="8356" vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="5730">
-          <folding>
-            <marker date="1423556461900" expanded="false" signature="8755:8772" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="10731:10748" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11719:11740" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11780:11802" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="13206:13223" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -816,18 +805,6 @@
         <state line="11" column="52" selection-start="399" selection-end="399" vertical-scroll-proportion="0.264" vertical-offset="0" max-vertical-offset="3000" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/config/custom_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="54" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="9" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="1410" max-vertical-offset="2580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/bootstrap/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215" />
@@ -857,9 +834,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="26" selection-start="1092" selection-end="1106" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/config/custom_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/DoctorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="12" selection-start="1597" selection-end="2234" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="9" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="2190" max-vertical-offset="2580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="250" column="8" selection-start="10293" selection-end="11286" vertical-scroll-proportion="0.0" vertical-offset="3645" max-vertical-offset="6330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7218" column="101" selection-start="1088320" selection-end="1088323" vertical-scroll-proportion="0.0" vertical-offset="107998" max-vertical-offset="108585">
+        <state line="8614" column="16" selection-start="1175664" selection-end="1175980" vertical-scroll-proportion="0.0" vertical-offset="128930" max-vertical-offset="129585">
           <folding />
         </state>
       </provider>
@@ -867,37 +879,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="26" selection-start="1092" selection-end="1106" vertical-scroll-proportion="-14.166667" vertical-offset="290" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="48" selection-start="3590" selection-end="3590" vertical-scroll-proportion="-2.6470587" vertical-offset="1080" max-vertical-offset="6435">
-          <folding>
-            <marker date="1423556461900" expanded="false" signature="8755:8772" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="10731:10748" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11719:11740" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="11780:11802" placeholder="..." />
-            <marker date="1423556461900" expanded="false" signature="13206:13223" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/DoctorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="8" selection-start="738" selection-end="918" vertical-scroll-proportion="-13.125" vertical-offset="120" max-vertical-offset="1515">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="508" selection-end="508" vertical-scroll-proportion="0.41379312" vertical-offset="0" max-vertical-offset="580">
-          <folding />
+        <state line="41" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.5026455" vertical-offset="255" max-vertical-offset="1770">
+          <folding>
+            <marker date="1423662874268" expanded="true" signature="552:597" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

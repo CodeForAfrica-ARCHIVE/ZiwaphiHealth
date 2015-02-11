@@ -83,13 +83,6 @@
                             selectFirst: true
                         });
                     });
-                    jQuery(document).ready(function($) {
-                        $("#medicine_name").autocomplete("index.php/medicine_price", {
-                            width: 260,
-                            matchContains: true,
-                            selectFirst: true
-                        });
-                    });
                 </script>
                 <input type="text" placeholder="Start typing doctor's name" class="search form-control ac_input" name="dodgydoc" id="dodgy_docs_input" autocomplete="off">
             </div>
@@ -174,8 +167,8 @@
             <div class="small-9 columns">
                 <input type="text" id="medicine_name" placeholder="e.g. salbutamol or asthavent"/>
             </div>
-            <div class="small-3 columns" id="search_medicine">
-                <a href="#"><span class="postfix"><i class="icon-search"></i></span></a>
+            <div class="small-3 columns" id="searchMedicine">
+                <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
             </div>
         </div>
         <div class="row"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
