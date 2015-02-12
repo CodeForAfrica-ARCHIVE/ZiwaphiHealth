@@ -186,7 +186,7 @@
                 <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
             </div>
         </div>
-        <div class="row"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
+        <div class="row" style="text-align: center"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
         </p>
     </div>
     <div class="large-3 columns app-container">
@@ -202,14 +202,26 @@
                 <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
             </div>
         </div>
-        <div class="row"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
+        <div class="row" style="text-align: center"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
         </p>
     </div>
     <div class="large-3 columns app-container">
         <i class="icon-hospital icon-2x app-icon"></i>
         <h4>Find a Hospital</h4>
-        <p>Which hospitals are around you</p>
-        <div style="text-align: center; margin-top:45px;"><a href="http://hospitals.code4sa.org/" target="_blank"><span class="postfix" style="border-left: 1px solid #cccccc;">Launch App <i class="icon-globe"></i></span></a></div>
+        <p class="app_description">Which hospitals are around you?</p>
+        <p>
+        <div class="row collapse">
+            <div class="small-9 columns">
+                <input type="text" id="medicine_name2" placeholder="Eg. Hillbrow, Johannesburg" />
+            </div>
+            <div class="small-3 columns" id="searchGeneric">
+                <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
+            </div>
+        </div>
+        <div class="row" style="text-align: center">
+
+            <span class="embed"><i class="icon-location-arrow"></i> Hospitals Near Me &nbsp; <a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
+        </p>
     </div>
 </div>
 
