@@ -30,7 +30,53 @@ class HospitalsController extends BaseController {
 
         $result = "";
 
-        print_r($response);
+        $hospitals = array();
+
+        foreach($response as $r){
+
+            $lat1 = $r['location_1']['latitude'];
+            $lon1 = $r['location_1']['longitude'];
+
+            if(!array_key_exists('classification', $r)){
+                $r['classification'] = "General";
+            }
+            
+            $hospitals[] = array(
+                "name"=>$r['name'],
+                "distance"=>round($this->distance($lat1, $lon1, $latitude, $longitude), 2),
+                "type"=>$r['classification']
+            );
+        }
+
+        //sort results according to proximty
+        $prox = array();
+
+        foreach ($hospitals as $key => $row)
+        {
+            $prox[$key] = $row['distance'];
+        }
+
+        array_multisort($prox, SORT_ASC, $hospitals);
+
+
+        //format result and return nearest 10
+        $i = 0;
+
+        foreach($hospitals as $h){
+
+            if($i<10000){
+
+                $result .= "<div>";
+                $result .= $h['name'];
+                $result .= $h['distance']. " Km away";
+
+                $result .= "</div>";
+
+            }
+
+            $i++;
+        }
+
 
         return $result;
     }
@@ -42,11 +88,24 @@ class HospitalsController extends BaseController {
 
         if($response->status =="OK"){
             return $response->results[0]->geometry->location;
-
         }else{
             return null;
         }
 
     }
+
+    public function distance($lat1, $lon1, $lat2, $lon2) {
+
+        $theta = $lon1 - $lon2;
+        $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+        $dist = acos($dist);
+        $dist = rad2deg($dist);
+
+        $miles = $dist * 60 * 1.1515;
+
+        return ($miles * 1.609344);
+
+    }
+
 
 }
