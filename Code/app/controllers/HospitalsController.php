@@ -20,7 +20,7 @@ class HospitalsController extends BaseController {
             return "Location not found! Try different address/name.";
         }
 
-        $range = 100000;
+        $range = 10000;
 
         $params = array("\$where" => "within_circle(location_1, $latitude, $longitude, $range)");
 
@@ -40,11 +40,15 @@ class HospitalsController extends BaseController {
             if(!array_key_exists('classification', $r)){
                 $r['classification'] = "General";
             }
-            
+            if(!array_key_exists('overall_performance', $r)){
+                $r['overall_performance'] = "0";
+            }
+
             $hospitals[] = array(
                 "name"=>$r['name'],
                 "distance"=>round($this->distance($lat1, $lon1, $latitude, $longitude), 2),
-                "type"=>$r['classification']
+                "type"=>$r['classification'],
+                "rating"=>$r['overall_performance']
             );
         }
 
@@ -64,12 +68,14 @@ class HospitalsController extends BaseController {
 
         foreach($hospitals as $h){
 
-            if($i<10000){
+            if($i<15){
 
                 $result .= "<div>";
-                $result .= $h['name'];
+                $result .= $h['name']." (";
+                $result .= $h['type'].")";
+                $result .= "<span style='float:right;'>".round($h['rating']/20, 0)."<i class='fa fa-star'></i></span>";
+                $result .= "<br />";
                 $result .= $h['distance']. " Km away";
-
                 $result .= "</div>";
 
             }

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,8 +65,10 @@
       <file leaf-file-name="HospitalsController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="12" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.34391534" vertical-offset="435" max-vertical-offset="1740">
-              <folding />
+            <state line="75" column="105" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.5026455" vertical-offset="840" max-vertical-offset="1830">
+              <folding>
+                <marker date="1423803829943" expanded="true" signature="2099:2111" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -988,8 +989,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="12" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.34391534" vertical-offset="435" max-vertical-offset="1740">
-          <folding />
+        <state line="75" column="105" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.5026455" vertical-offset="840" max-vertical-offset="1830">
+          <folding>
+            <marker date="1423803829943" expanded="true" signature="2099:2111" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
