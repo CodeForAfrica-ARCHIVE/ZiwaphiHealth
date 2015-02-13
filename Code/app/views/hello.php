@@ -166,6 +166,24 @@
                         }});
                     });
                 });
+                $(document).ready(function(){
+                    $("#searchHospitals").click(function(){
+                        var name = $("#hospital_location").val();
+
+                        $("#dname").html("<h4>" + name + "</h4>");
+
+                        $("#doctorDetails").html("");
+
+                        $("#loading").show();
+
+                        $.ajax({url:"index.php/find_hospitals?q=" + name,success:function(result){
+
+                            $("#doctorDetails").html(result);
+
+                            $("#loading").hide();
+                        }});
+                    });
+                });
             </script>
 
             <a class="close-reveal-modal">&#215;</a>
@@ -212,9 +230,9 @@
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
-                <input type="text" id="medicine_name2" placeholder="Eg. Hillbrow, Johannesburg" />
+                <input type="text" id="hospital_location" placeholder="Eg. Hillbrow, Johannesburg" />
             </div>
-            <div class="small-3 columns" id="searchGeneric">
+            <div class="small-3 columns" id="searchHospitals">
                 <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
             </div>
         </div>

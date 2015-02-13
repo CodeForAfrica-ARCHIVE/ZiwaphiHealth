@@ -71,3 +71,14 @@ Route::get('medicine_generics', function()
     }
     return $result;
 });
+Route::get('find_hospitals', function()
+{
+    $name = Input::get('q');
+
+    $result = '';
+
+    if(isset($name)){
+        $result = HospitalsController::getHospitals($name);
+    }
+    return $result;
+});
