@@ -78,7 +78,7 @@ Route::get('find_hospitals', function()
     $result = '';
 
     if(isset($name)){
-        $result = HospitalsController::getHospitals($name);
+        $result = (new HospitalsController())->getHospitals($name);
     }
     return $result;
 });

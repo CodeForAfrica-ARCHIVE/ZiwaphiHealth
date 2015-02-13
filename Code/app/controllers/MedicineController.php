@@ -9,9 +9,9 @@
 class MedicineController extends BaseController {
 
     public static function getPrice($q){
-        $view_uid = "mba4-xngh";
+        $view_uid = Config::get('custom_config.socrata_medicine_table');
         $root_url = "https://data.code4sa.org/";
-        $app_token = "j2sV7o19f9ZLBipzxb64KJSR9";
+        $app_token = Config::get('custom_config.app_token');
         $response = NULL;
 
         $socrata = new Socrata($root_url, $app_token);
@@ -49,9 +49,9 @@ class MedicineController extends BaseController {
         return $result;
     }
     public static function getGeneric($q){
-        $view_uid = "mba4-xngh";
+        $view_uid = Config::get('custom_config.socrata_medicine_table');
         $root_url = "https://data.code4sa.org/";
-        $app_token = "j2sV7o19f9ZLBipzxb64KJSR9";
+        $app_token = Config::get('custom_config.app_token');
         $response = NULL;
 
         $socrata = new Socrata($root_url, $app_token);
