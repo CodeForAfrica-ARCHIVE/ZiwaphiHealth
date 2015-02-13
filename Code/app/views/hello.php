@@ -264,7 +264,7 @@
         </div>
         <div class="row" style="text-align: center">
 
-            <span class="embed"><span class="near_me"><i class="icon-location-arrow"></i> <span id="get_location_text" style="">Hospitals Near Me</span></span> &nbsp; <a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
+            <span class="embed"><span class="near_me" style="cursor: pointer;"><i class="icon-location-arrow"></i> <span id="get_location_text" style="">Hospitals Near Me</span></span> &nbsp; <a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
         </p>
     </div>
 </div>
