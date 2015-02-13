@@ -70,10 +70,22 @@ class HospitalsController extends BaseController {
 
             if($i<15){
 
+                $rating = round($h['rating']/20, 0);
+
                 $result .= "<div>";
                 $result .= $h['name']." (";
                 $result .= $h['type'].")";
-                $result .= "<span style='float:right;'>".round($h['rating']/20, 0)."<i class='fa fa-star'></i></span>";
+                $result .= "<span style='float:right;'>";
+
+                for($j=0; $j<5; $j++){
+                    if($rating>$j){
+                        $result .= "<i class='fa fa-star'></i>";
+                    }else{
+                        $result .= "<i class='fa fa-star-o'></i>";
+                    }
+                }
+
+                $result .= "</span>";
                 $result .= "<br />";
                 $result .= $h['distance']. " Km away";
                 $result .= "</div>";

@@ -5,13 +5,14 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ZiwaphiHealth | Home</title>
-    <meta name="description" content="Nigeria Health Portal"/>
+    <meta name="description" content="South Africa Health Portal"/>
     <meta name="author" content="Nick Hargreaves"/>
     <meta name="copyright" content="CodeForAfrica Copyright (c) 2014"/>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="main.css" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="icons/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <script src="js/vendor/modernizr.js"></script>
 </head>

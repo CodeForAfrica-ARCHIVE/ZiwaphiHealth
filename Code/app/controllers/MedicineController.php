@@ -67,9 +67,6 @@ class MedicineController extends BaseController {
         if(count($response)<1){
             $result .= "No drugs found with that name!";
         }else{
-
-
-
             foreach($response as $drug){
 
                 if(array_key_exists('originator_or_generic', $drug)){
