@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/routes.php" afterPath="$PROJECT_DIR$/Code/app/routes.php" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="65" selection-start="8289" selection-end="8289" vertical-scroll-proportion="-6.1764708" vertical-offset="2670" max-vertical-offset="7620">
+            <state line="208" column="71" selection-start="8814" selection-end="8814" vertical-scroll-proportion="0.5833333" vertical-offset="2805" max-vertical-offset="7635">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -47,12 +45,21 @@
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
-                <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
-                <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
-                <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
-                <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
+                <marker date="1423836915997" expanded="false" signature="12131:12148" placeholder="..." />
+                <marker date="1423836915997" expanded="false" signature="14107:14124" placeholder="..." />
+                <marker date="1423836915997" expanded="false" signature="15095:15116" placeholder="..." />
+                <marker date="1423836915997" expanded="false" signature="15156:15178" placeholder="..." />
+                <marker date="1423836915997" expanded="false" signature="16582:16599" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.autocomplete.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="4" selection-start="606" selection-end="679" vertical-scroll-proportion="-11.925926" vertical-offset="218" max-vertical-offset="795">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HospitalsController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HospitalsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="42" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.2857143" vertical-offset="1638" max-vertical-offset="2205">
+            <state line="120" column="42" selection-start="3416" selection-end="3416" vertical-scroll-proportion="-6.75" vertical-offset="1638" max-vertical-offset="2205">
               <folding>
                 <marker date="1423835259933" expanded="true" signature="2153:2165" placeholder="..." />
               </folding>
@@ -118,7 +125,7 @@
       <file leaf-file-name="laravel.log" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9026" column="126" selection-start="1327968" selection-end="1327968" vertical-scroll-proportion="-9.615385" vertical-offset="135140" max-vertical-offset="135705">
+            <state line="9084" column="112" selection-start="1335328" selection-end="1335328" vertical-scroll-proportion="-9.615385" vertical-offset="136010" max-vertical-offset="136575">
               <folding />
             </state>
           </provider>
@@ -155,8 +162,8 @@
         <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
         <option value="$PROJECT_DIR$/Code/app/routes.php" />
-        <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
+        <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
       </list>
     </option>
   </component>
@@ -387,6 +394,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autocomplete" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -410,50 +461,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZiwaphiHealth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZiwaphiHealth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZiwaphiHealth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZiwaphiHealth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -584,13 +591,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2198" selection-end="2198" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="2595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="840">
@@ -632,11 +632,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="12131:12148" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="14107:14124" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15095:15116" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15156:15178" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="16582:16599" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -696,11 +696,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="12131:12148" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="14107:14124" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15095:15116" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15156:15178" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="16582:16599" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -760,11 +760,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="12131:12148" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="14107:14124" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15095:15116" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15156:15178" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="16582:16599" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -824,11 +824,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="12131:12148" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="14107:14124" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15095:15116" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15156:15178" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="16582:16599" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -888,11 +888,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="12131:12148" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="14107:14124" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15095:15116" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15156:15178" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="16582:16599" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -930,11 +930,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="12131:12148" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="14107:14124" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15095:15116" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15156:15178" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="16582:16599" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1016,16 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9026" column="126" selection-start="1327968" selection-end="1327968" vertical-scroll-proportion="-9.615385" vertical-offset="135140" max-vertical-offset="135705">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1136" selection-end="1136" vertical-scroll-proportion="-19.375" vertical-offset="120" max-vertical-offset="2640">
@@ -1049,9 +1039,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9084" column="112" selection-start="1335328" selection-end="1335328" vertical-scroll-proportion="-9.615385" vertical-offset="136010" max-vertical-offset="136575">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="42" selection-start="3416" selection-end="3416" vertical-scroll-proportion="-6.75" vertical-offset="1638" max-vertical-offset="2205">
+          <folding>
+            <marker date="1423835259933" expanded="true" signature="2153:2165" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="4" selection-start="606" selection-end="679" vertical-scroll-proportion="-11.925926" vertical-offset="218" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="65" selection-start="8289" selection-end="8289" vertical-scroll-proportion="-6.1764708" vertical-offset="2670" max-vertical-offset="7620">
+        <state line="208" column="71" selection-start="8814" selection-end="8814" vertical-scroll-proportion="0.5833333" vertical-offset="2805" max-vertical-offset="7635">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1068,20 +1084,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
-            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="42" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.2857143" vertical-offset="1638" max-vertical-offset="2205">
-          <folding>
-            <marker date="1423835259933" expanded="true" signature="2153:2165" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="12131:12148" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="14107:14124" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15095:15116" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="15156:15178" placeholder="..." />
+            <marker date="1423836915997" expanded="false" signature="16582:16599" placeholder="..." />
           </folding>
         </state>
       </provider>

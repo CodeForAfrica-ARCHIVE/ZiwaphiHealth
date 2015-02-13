@@ -192,6 +192,7 @@
                 });
 
                 function initiate_geolocation() {
+                    $("#hospital_location").css("background", "white url('autocomplete/indicator.gif') right center no-repeat");
                     navigator.geolocation.getCurrentPosition(handle_geolocation_query);
                 }
 
@@ -205,9 +206,9 @@
                         $("#hospital_location").val(result);
 
                         //$("#loading_hospitals").hide();
-                    }});
+                        $("#hospital_location").css("background", "none");
 
-                    $("#hospital_location").val(position.coords.latitude + ', ' + position.coords.longitude);
+                    }});
                 }
             </script>
 
