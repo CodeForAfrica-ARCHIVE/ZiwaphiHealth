@@ -185,6 +185,27 @@
                         }});
                     });
                 });
+
+                $(document).ready(function(){
+                    $(".near_me").click(function(){
+
+                        $("#doctorDetails").html("");
+
+                    });
+                });
+
+                $(document).ready(function(){
+                    jQuery(".near_me").click(initiate_geolocation);
+                });
+
+                function initiate_geolocation() {
+                    navigator.geolocation.getCurrentPosition(handle_geolocation_query);
+                }
+
+                function handle_geolocation_query(position){
+
+                    $("#hospital_location").val(position.coords.latitude + ' ' + position.coords.longitude);
+                }
             </script>
 
             <a class="close-reveal-modal">&#215;</a>
@@ -239,7 +260,7 @@
         </div>
         <div class="row" style="text-align: center">
 
-            <span class="embed"><i class="icon-location-arrow"></i> Hospitals Near Me &nbsp; <a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
+            <span class="embed"><span class="near_me"><i class="icon-location-arrow"></i> <span id="get_location_text" style="">Hospitals Near Me</span></span> &nbsp; <a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
         </p>
     </div>
 </div>
