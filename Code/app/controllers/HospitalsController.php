@@ -112,6 +112,19 @@ class HospitalsController extends BaseController {
 
     }
 
+    public function geocode($q){
+        $geocode_url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=".$q."&key=".Config::get("custom_config.google_api_key");
+
+        $response = json_decode(file_get_contents($geocode_url));
+
+        if($response->status =="OK"){
+            return $response->results[0]->formatted_address;
+        }else{
+            return null;
+        }
+
+    }
+
     public function distance($lat1, $lon1, $lat2, $lon2) {
 
         $theta = $lon1 - $lon2;

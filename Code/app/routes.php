@@ -82,3 +82,14 @@ Route::get('find_hospitals', function()
     }
     return $result;
 });
+Route::get('reverse_geocode', function()
+{
+    $name = Input::get('q');
+
+    $result = '';
+
+    if(isset($name)){
+        $result = (new HospitalsController())->geocode($name);
+    }
+    return $result;
+});

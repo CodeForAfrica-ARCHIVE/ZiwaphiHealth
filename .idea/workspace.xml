@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/routes.php" afterPath="$PROJECT_DIR$/Code/app/routes.php" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="262" column="126" selection-start="10968" selection-end="10968" vertical-scroll-proportion="0.6296296" vertical-offset="3573" max-vertical-offset="7575">
+            <state line="199" column="65" selection-start="8289" selection-end="8289" vertical-scroll-proportion="-6.1764708" vertical-offset="2670" max-vertical-offset="7620">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,11 +47,11 @@
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1423821714597" expanded="false" signature="11717:11734" placeholder="..." />
-                <marker date="1423821714597" expanded="false" signature="13693:13710" placeholder="..." />
-                <marker date="1423821714597" expanded="false" signature="14681:14702" placeholder="..." />
-                <marker date="1423821714597" expanded="false" signature="14742:14764" placeholder="..." />
-                <marker date="1423821714597" expanded="false" signature="16168:16185" placeholder="..." />
+                <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
+                <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
+                <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
+                <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
+                <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -67,18 +69,18 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="44" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-18.541666" vertical-offset="620" max-vertical-offset="1200">
+            <state line="84" column="27" selection-start="1704" selection-end="1719" vertical-scroll-proportion="-14.166667" vertical-offset="785" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HospitalsController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HospitalsController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="37" selection-start="2483" selection-end="2483" vertical-scroll-proportion="-13.75" vertical-offset="975" max-vertical-offset="2010">
+            <state line="120" column="42" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.2857143" vertical-offset="1638" max-vertical-offset="2205">
               <folding>
-                <marker date="1423804904558" expanded="true" signature="2153:2165" placeholder="..." />
+                <marker date="1423835259933" expanded="true" signature="2153:2165" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -116,7 +118,7 @@
       <file leaf-file-name="laravel.log" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9007" column="158" selection-start="1325471" selection-end="1325471" vertical-scroll-proportion="-9.615385" vertical-offset="134855" max-vertical-offset="135420">
+            <state line="9026" column="126" selection-start="1327968" selection-end="1327968" vertical-scroll-proportion="-9.615385" vertical-offset="135140" max-vertical-offset="135705">
               <folding />
             </state>
           </provider>
@@ -151,10 +153,10 @@
         <option value="$PROJECT_DIR$/Code/app/controllers/Hospitals.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" />
         <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
-        <option value="$PROJECT_DIR$/Code/app/routes.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
-        <option value="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
+        <option value="$PROJECT_DIR$/Code/app/routes.php" />
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
+        <option value="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
       </list>
     </option>
   </component>
@@ -630,11 +632,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423821714597" expanded="false" signature="11717:11734" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="13693:13710" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14681:14702" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14742:14764" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="16168:16185" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -694,11 +696,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423821714597" expanded="false" signature="11717:11734" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="13693:13710" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14681:14702" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14742:14764" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="16168:16185" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -758,11 +760,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423821714597" expanded="false" signature="11717:11734" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="13693:13710" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14681:14702" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14742:14764" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="16168:16185" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -822,11 +824,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423821714597" expanded="false" signature="11717:11734" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="13693:13710" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14681:14702" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14742:14764" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="16168:16185" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -886,11 +888,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423821714597" expanded="false" signature="11717:11734" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="13693:13710" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14681:14702" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14742:14764" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="16168:16185" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -928,11 +930,11 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423821714597" expanded="false" signature="11717:11734" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="13693:13710" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14681:14702" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14742:14764" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="16168:16185" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1014,23 +1016,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="40.625" vertical-offset="1350" max-vertical-offset="2580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="44" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-18.541666" vertical-offset="620" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9007" column="158" selection-start="1325471" selection-end="1325471" vertical-scroll-proportion="-9.615385" vertical-offset="134855" max-vertical-offset="135420">
+        <state line="9026" column="126" selection-start="1327968" selection-end="1327968" vertical-scroll-proportion="-9.615385" vertical-offset="135140" max-vertical-offset="135705">
           <folding />
         </state>
       </provider>
@@ -1047,18 +1035,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="37" selection-start="2483" selection-end="2483" vertical-scroll-proportion="-13.75" vertical-offset="975" max-vertical-offset="2010">
-          <folding>
-            <marker date="1423804904558" expanded="true" signature="2153:2165" placeholder="..." />
-          </folding>
+        <state line="25" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="40.625" vertical-offset="1350" max-vertical-offset="2580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="27" selection-start="1704" selection-end="1719" vertical-scroll-proportion="-14.166667" vertical-offset="785" max-vertical-offset="1365">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="126" selection-start="10968" selection-end="10968" vertical-scroll-proportion="0.6296296" vertical-offset="3573" max-vertical-offset="7575">
+        <state line="199" column="65" selection-start="8289" selection-end="8289" vertical-scroll-proportion="-6.1764708" vertical-offset="2670" max-vertical-offset="7620">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1075,11 +1068,20 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1423821714597" expanded="false" signature="11717:11734" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="13693:13710" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14681:14702" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="14742:14764" placeholder="..." />
-            <marker date="1423821714597" expanded="false" signature="16168:16185" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="12037:12054" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="14013:14030" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15001:15022" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="15062:15084" placeholder="..." />
+            <marker date="1423835048177" expanded="false" signature="16488:16505" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="42" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.2857143" vertical-offset="1638" max-vertical-offset="2205">
+          <folding>
+            <marker date="1423835259933" expanded="true" signature="2153:2165" placeholder="..." />
           </folding>
         </state>
       </provider>

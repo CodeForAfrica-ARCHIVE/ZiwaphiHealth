@@ -187,15 +187,8 @@
                 });
 
                 $(document).ready(function(){
-                    $(".near_me").click(function(){
-
-                        $("#doctorDetails").html("");
-
-                    });
-                });
-
-                $(document).ready(function(){
                     jQuery(".near_me").click(initiate_geolocation);
+                    //$("#loading_hospitals").show();
                 });
 
                 function initiate_geolocation() {
@@ -203,8 +196,18 @@
                 }
 
                 function handle_geolocation_query(position){
+                    //Get cordinates on complete
+                    var autoCords = position.coords.latitude + ',' + position.coords.longitude;
 
-                    $("#hospital_location").val(position.coords.latitude + ' ' + position.coords.longitude);
+                    //make ajax request to reverse geocode coordinates
+                    $.ajax({url:"index.php/reverse_geocode?q=" + autoCords,success:function(result){
+
+                        $("#hospital_location").val(result);
+
+                        //$("#loading_hospitals").hide();
+                    }});
+
+                    $("#hospital_location").val(position.coords.latitude + ', ' + position.coords.longitude);
                 }
             </script>
 
