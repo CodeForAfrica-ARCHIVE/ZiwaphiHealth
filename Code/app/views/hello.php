@@ -272,21 +272,24 @@
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
         <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
-            <a href="<?php print $featured->url;?>"><h4 class="featured_title"><?php print $featured->title;?></h4></a>
-            <?php print $featured->excerpt;?>
-            <h5>The story so far</h5>
-
-            <ul class="side-nav" style="padding:0 !important;">
-
             <?php
-            if(count($related)<1){
-                print "<h5 style='text-align:center'>No related stories at this time</h5>";
-            }
+            if($featured != null){
+                ?>
+                <a href="<?php print $featured->url;?>"><h4 class="featured_title"><?php print $featured->title;?></h4></a>
+                <?php print $featured->excerpt;?>
+                <h5>The story so far</h5>
+
+                <ul class="side-nav" style="padding:0 !important;">
+
+                    <?php
+                    if(count($related)<1){
+                        print "<h5 style='text-align:center'>No related stories at this time</h5>";
+                    }
                     foreach($related as $r){
                         print '<li style="margin:3px !important;"><a href="'.$r->url.'" data-search="">'.$r->title.'</a></li>';
                     }
-            ?>
-            </ul>
+                    ?>
+                </ul>
             <h5>Evidence dossier</h5>
             Data Repository
         </div>
@@ -299,10 +302,17 @@
                     print '<img src="'.$featured->thumbnail.'" width="100%">';
                 }
             ?>
+
             <div class="feedback">
                 <a href="#">Tell us More</a>
                 <p>Do you have more information? Help us improve this story by sharing your experiences/evidence.</p>
             </div>
+            <?php
+            }else{
+                   print "<h5>No featured story created</h5>";
+            }
+
+            ?>
         </div>
     </div>
     <div class="large-3 columns sidebar">

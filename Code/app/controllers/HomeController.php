@@ -18,78 +18,83 @@ class HomeController extends BaseController {
 
         $result = json_decode($this->file_get_contents_curl($url));
 
-        $posts = $result->posts;
+        $sorted_posts = array("major_stories"=>array(), "other_stories"=>array(), "tags"=>array(), "featured"=>null);
 
-        $sorted_posts = array("major_stories"=>array(), "other_stories"=>array(), "tags"=>array());
+        if ($result != null){
+            $posts = $result->posts;
 
-        $featured = 0;
 
-        foreach($posts as $p){
+            $featured = 0;
 
-            $major_story = false;
+            foreach($posts as $p){
 
-            //get posts tags
-            foreach($p->tags as $tag){
-                if($tag->slug == "featured"){
-                    //is major story
-                    $major_story = true;
-                }else{
-                    /*
-                    //add tags + count of total articles with tags
-                    if(!array_key_exists($tag->title, $sorted_posts['tags'])){
-                        $sorted_posts['tags'][$tag->title] = 1;
+                $major_story = false;
+
+                //get posts tags
+                foreach($p->tags as $tag){
+                    if($tag->slug == "featured"){
+                        //is major story
+                        $major_story = true;
                     }else{
-                        $sorted_posts['tags'][$tag->title]++;
-                    }
-                    */
+                        /*
+                        //add tags + count of total articles with tags
+                        if(!array_key_exists($tag->title, $sorted_posts['tags'])){
+                            $sorted_posts['tags'][$tag->title] = 1;
+                        }else{
+                            $sorted_posts['tags'][$tag->title]++;
+                        }
+                        */
 
-                    //add tag slug + title
-                    if(!array_key_exists($tag->slug, $sorted_posts['tags'])){
-                        $sorted_posts['tags'][$tag->slug] = $tag->title;
+                        //add tag slug + title
+                        if(!array_key_exists($tag->slug, $sorted_posts['tags'])){
+                            $sorted_posts['tags'][$tag->slug] = $tag->title;
+                        }
                     }
                 }
-            }
 
-            if($major_story){
+                if($major_story){
 
-                if($featured==0){
-                    //first major story is featured
-                    $sorted_posts['featured'] = $p;
+                    if($featured==0){
+                        //first major story is featured
+                        $sorted_posts['featured'] = $p;
 
 
-                    //add story so far
-                    $sorted_posts['related'] = array();
+                        //add story so far
+                        $sorted_posts['related'] = array();
 
-                    if(property_exists($p->custom_fields, 'related_posts')){
+                        if(property_exists($p->custom_fields, 'related_posts')){
 
-                        $custom_fields = $p->custom_fields;
+                            $custom_fields = $p->custom_fields;
 
-                        $related_posts = $custom_fields->related_posts[0];
+                            $related_posts = $custom_fields->related_posts[0];
 
-                        $related = unserialize($related_posts);
+                            $related = unserialize($related_posts);
 
-                        foreach($related as $r){
-                            $sorted_posts['related'][] = $this->getRelated($r);
+                            foreach($related as $r){
+                                $sorted_posts['related'][] = $this->getRelated($r);
+                            }
+
                         }
 
+                        $featured = 1;
+
+                    }else{
+
+                        $sorted_posts['major_stories'][] = $p;
+
                     }
 
-                    $featured = 1;
 
                 }else{
 
-                    $sorted_posts['major_stories'][] = $p;
+                    $sorted_posts['other_stories'][] = $p;
 
                 }
-
-
-            }else{
-
-                $sorted_posts['other_stories'][] = $p;
-
             }
         }
+
         return $sorted_posts;
+
     }
 
 
