@@ -1,8 +1,60 @@
-.app-container{
-    background: #dddddd;
+.app_header{
+    color: #dddddd;
+    padding:3px !important;
+}
+.hospitals{
+    background: #3d566d;
+}
+.medicine{
+    background: #19b698;
+}
+.generics{
+    background: #ea6153;
+}
+.doctors{
+    background: #7761a7;
+}
+#grabDetails{
+    background: #7761a7;
+}
+#grabPrices{
+    background: #19b698;
+}
+#grabGenerics{
+    background: #ea6153;
+}
+#grabHospitals{
+    background: #3d566d;
+}
+.icon-search{
+    color:#fff;
 }
 
+.app_footer{
+    text-align: center;
+    padding:3px;
+    background-color: #333333;
+    color:#fff;
+}
+.app_footer a{
+    color:#fff;
+}
+#get_location_text{
+    color:#dddddd;
+}
+.app_section{
+    margin-bottom: 10px;
+}
+.app_body{
+    background-color: #fff;
+    padding:5px;
+    height:120px;
+}
+.app_body input[type="text"]{
+    margin:0px !important;
+}
 .app-container h4{
+    color: #fff;
     display:inline;
     font-family: georgia,serif;
 }

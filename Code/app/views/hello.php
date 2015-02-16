@@ -63,209 +63,228 @@
         </nav>
     </div>
 </div>
+<link rel="stylesheet" type="text/css" href="autocomplete/jquery.autocomplete.css">
+<script type="text/javascript" src="autocomplete/jquery.js"></script>
+<script type='text/javascript' src='autocomplete/jquery.autocomplete.js'></script>
+<script type="text/javascript">
+    $.noConflict();
+    jQuery(document).ready(function($) {
+        $("#dodgy_docs_input").autocomplete("index.php/doctor", {
+            width: 260,
+            matchContains: true,
+            selectFirst: true
+        });
+    });
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#grabDetails").click(function(){
+            var name = $("#dodgy_docs_input").val();
 
-<div class="row">
+            $("#dname").html("<h4>" + name + "</h4>");
+
+            $("#doctorDetails").html("");
+
+            $("#loading").show();
+
+            $.ajax({url:"index.php/doctordetails?name=" + name,success:function(result){
+
+                $("#doctorDetails").html(result);
+
+                $("#loading").hide();
+            }});
+        });
+    });
+    $(document).ready(function(){
+        $("#searchMedicine").click(function(){
+            var name = $("#medicine_name").val();
+
+            $("#dname").html("<h4>" + name + "</h4>");
+
+            $("#doctorDetails").html("");
+
+            $("#loading").show();
+
+            $.ajax({url:"index.php/medicine_price?q=" + name,success:function(result){
+
+                $("#doctorDetails").html(result);
+
+                $("#loading").hide();
+            }});
+        });
+    });
+    $(document).ready(function(){
+        $("#searchGeneric").click(function(){
+            var name = $("#medicine_name2").val();
+
+            $("#dname").html("<h4>" + name + "</h4>");
+
+            $("#doctorDetails").html("");
+
+            $("#loading").show();
+
+            $.ajax({url:"index.php/medicine_generics?q=" + name,success:function(result){
+
+                $("#doctorDetails").html(result);
+
+                $("#loading").hide();
+            }});
+        });
+    });
+    $(document).ready(function(){
+        $("#searchHospitals").click(function(){
+            var name = $("#hospital_location").val();
+
+            $("#dname").html("<h4>" + name + "</h4>");
+
+            $("#doctorDetails").html("");
+
+            $("#loading").show();
+
+            $.ajax({url:"index.php/find_hospitals?q=" + name,success:function(result){
+
+                $("#doctorDetails").html(result);
+
+                $("#loading").hide();
+            }});
+        });
+    });
+
+    $(document).ready(function(){
+        jQuery(".near_me").click(initiate_geolocation);
+        //$("#loading_hospitals").show();
+    });
+
+    function initiate_geolocation() {
+        $("#hospital_location").css("background", "white url('autocomplete/indicator.gif') right center no-repeat");
+        navigator.geolocation.getCurrentPosition(handle_geolocation_query);
+    }
+
+    function handle_geolocation_query(position){
+        //Get cordinates on complete
+        var autoCords = position.coords.latitude + ',' + position.coords.longitude;
+
+        //make ajax request to reverse geocode coordinates
+        $.ajax({url:"index.php/reverse_geocode?q=" + autoCords,success:function(result){
+
+            $("#hospital_location").val(result);
+
+            //$("#loading_hospitals").hide();
+            $("#hospital_location").css("background", "none");
+
+        }});
+    }
+</script>
+<div class="row app_section">
     <div class="large-3 columns app-container">
-        <i class="icon-user-md icon-2x app-icon"></i>
-        <h4>Dodgy Doctors</h4>
-        <p class="app_description">Is your doctor registered in their area of practice?</p>
-        <p>
-        <div class="row collapse">
-            <div class="small-9 columns">
-                <link rel="stylesheet" type="text/css" href="autocomplete/jquery.autocomplete.css">
-                <script type="text/javascript" src="autocomplete/jquery.js"></script>
-                <script type='text/javascript' src='autocomplete/jquery.autocomplete.js'></script>
-                <script type="text/javascript">
-                    $.noConflict();
-                    jQuery(document).ready(function($) {
-                        $("#dodgy_docs_input").autocomplete("index.php/doctor", {
-                            width: 260,
-                            matchContains: true,
-                            selectFirst: true
-                        });
-                    });
-                </script>
-                <input type="text" placeholder="Start typing doctor's name" class="search form-control ac_input" name="dodgydoc" id="dodgy_docs_input" autocomplete="off">
-            </div>
-            <div class="small-3 columns">
-                <a href="#" data-reveal-id="myModal"><span class="postfix" id="grabDetails"><i class="icon-search"></i></span></a>
-            </div>
-
+        <div class="app_header doctors">
+            <i class="icon-user-md icon-2x app-icon"></i>
+            <h4>Dodgy Doctors</h4>
         </div>
-        <div class="row" style="text-align: center"><span class="embed"><a href="#" data-reveal-id="embedModal"><img src="img/embed.png"> Embed this widget</a></span></div>
+        <div class="app_body">
+            Is your doctor registered in their area of practice?
+            <p>
+            <div class="row collapse">
+                <div class="small-9 columns">
 
-        <!-- Modal for embed doctor details -->
-        <div id="embedModal" class="reveal-modal" data-reveal>
-            <div><h4>Copy code below to embed this widget on your website</h4></div>
-                <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/');?>/dodgydocs_embed" scrolling="no" frameborder="0"></iframe></textarea>
-            <a class="close-reveal-modal">&#215;</a>
-        </div>
-
-        <!-- Modal for doctor details -->
-        <div id="myModal" class="reveal-modal" data-reveal>
-            <div id="dname"><h2>[Name]</h2></div>
-            <div class="loading" style="text-align:center;" id="loading">
-                <img src="img/preloader.gif" style="height:80px;">
-            </div>
-            <div id="doctorDetails">
+                    <input type="text" placeholder="Start typing doctor's name" class="search form-control ac_input" name="dodgydoc" id="dodgy_docs_input" autocomplete="off">
+                </div>
+                <div class="small-3 columns">
+                    <a href="#" data-reveal-id="myModal"><span class="postfix" id="grabDetails"><i class="icon-search"></i></span></a>
+                </div>
 
             </div>
 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script>
-                $(document).ready(function(){
-                    $("#grabDetails").click(function(){
-                        var name = $("#dodgy_docs_input").val();
+            <!-- Modal for embed doctor details -->
+            <div id="embedModal" class="reveal-modal" data-reveal>
+                <div><h4>Copy code below to embed this widget on your website</h4></div>
+                    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/');?>/dodgydocs_embed" scrolling="no" frameborder="0"></iframe></textarea>
+                <a class="close-reveal-modal">&#215;</a>
+            </div>
 
-                        $("#dname").html("<h4>" + name + "</h4>");
+            <!-- Modal for doctor details -->
+            <div id="myModal" class="reveal-modal" data-reveal>
+                <div id="dname"><h2>[Name]</h2></div>
+                <div class="loading" style="text-align:center;" id="loading">
+                    <img src="img/preloader.gif" style="height:80px;">
+                </div>
+                <div id="doctorDetails">
 
-                        $("#doctorDetails").html("");
+                </div>
+                <a class="close-reveal-modal">&#215;</a>
+            </div>
 
-                        $("#loading").show();
-
-                        $.ajax({url:"index.php/doctordetails?name=" + name,success:function(result){
-
-                            $("#doctorDetails").html(result);
-
-                            $("#loading").hide();
-                        }});
-                    });
-                });
-                $(document).ready(function(){
-                    $("#searchMedicine").click(function(){
-                        var name = $("#medicine_name").val();
-
-                        $("#dname").html("<h4>" + name + "</h4>");
-
-                        $("#doctorDetails").html("");
-
-                        $("#loading").show();
-
-                        $.ajax({url:"index.php/medicine_price?q=" + name,success:function(result){
-
-                            $("#doctorDetails").html(result);
-
-                            $("#loading").hide();
-                        }});
-                    });
-                });
-                $(document).ready(function(){
-                    $("#searchGeneric").click(function(){
-                        var name = $("#medicine_name2").val();
-
-                        $("#dname").html("<h4>" + name + "</h4>");
-
-                        $("#doctorDetails").html("");
-
-                        $("#loading").show();
-
-                        $.ajax({url:"index.php/medicine_generics?q=" + name,success:function(result){
-
-                            $("#doctorDetails").html(result);
-
-                            $("#loading").hide();
-                        }});
-                    });
-                });
-                $(document).ready(function(){
-                    $("#searchHospitals").click(function(){
-                        var name = $("#hospital_location").val();
-
-                        $("#dname").html("<h4>" + name + "</h4>");
-
-                        $("#doctorDetails").html("");
-
-                        $("#loading").show();
-
-                        $.ajax({url:"index.php/find_hospitals?q=" + name,success:function(result){
-
-                            $("#doctorDetails").html(result);
-
-                            $("#loading").hide();
-                        }});
-                    });
-                });
-
-                $(document).ready(function(){
-                    jQuery(".near_me").click(initiate_geolocation);
-                    //$("#loading_hospitals").show();
-                });
-
-                function initiate_geolocation() {
-                    $("#hospital_location").css("background", "white url('autocomplete/indicator.gif') right center no-repeat");
-                    navigator.geolocation.getCurrentPosition(handle_geolocation_query);
-                }
-
-                function handle_geolocation_query(position){
-                    //Get cordinates on complete
-                    var autoCords = position.coords.latitude + ',' + position.coords.longitude;
-
-                    //make ajax request to reverse geocode coordinates
-                    $.ajax({url:"index.php/reverse_geocode?q=" + autoCords,success:function(result){
-
-                        $("#hospital_location").val(result);
-
-                        //$("#loading_hospitals").hide();
-                        $("#hospital_location").css("background", "none");
-
-                    }});
-                }
-            </script>
-
-            <a class="close-reveal-modal">&#215;</a>
+            </p>
         </div>
-
-        </p>
+        <div class="app_footer">
+            <span class="embed"><a href="#" data-reveal-id="embedModal"><i class="icon-code"></i> Embed this widget</a></span>
+        </div>
     </div>
     <div class="large-3 columns app-container">
-        <i class="icon-medkit icon-2x app-icon"></i>
-        <h4>Medicine Prices</h4>
-        <p class="app_description">What should you pay for your medicine</p>
-        <p>
-        <div class="row collapse">
-            <div class="small-9 columns">
-                <input type="text" id="medicine_name" placeholder="e.g. salbutamol or asthavent"/>
-            </div>
-            <div class="small-3 columns" id="searchMedicine">
-                <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
-            </div>
+        <div class="app_header medicine">
+            <i class="icon-medkit icon-2x app-icon"></i>
+            <h4>Medicine Prices</h4>
         </div>
-        <div class="row" style="text-align: center"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
-        </p>
+        <div class="app_body">
+        What should you pay for your medicine
+            <p>
+            <div class="row collapse">
+                <div class="small-9 columns">
+                    <input type="text" id="medicine_name" placeholder="e.g. salbutamol or asthavent"/>
+                </div>
+                <div class="small-3 columns" id="searchMedicine">
+                    <a href="#" data-reveal-id="myModal"><span class="postfix" id="grabPrices"><i class="icon-search"></i></span></a>
+                </div>
+            </div>
+            </p>
+        </div>
+        <div class="app_footer">
+            <span class="embed"><a href="#"><i class="icon-code"></i> Embed this widget</a></span>
+        </div>
     </div>
     <div class="large-3 columns app-container">
-        <i class="icon-medkit icon-2x app-icon"></i>
-        <h4>Find Generics</h4>
-        <p class="app_description">What generics are available for your drug</p>
+        <div class="app_header generics">
+            <i class="icon-medkit icon-2x app-icon"></i>
+            <h4>Find Generics</h4>
+        </div>
+        <div class="app_body">What generics are available for your drug
         <p>
         <div class="row collapse">
             <div class="small-9 columns">
                 <input type="text" id="medicine_name2" placeholder="e.g. salbutamol or asthavent"/>
             </div>
             <div class="small-3 columns" id="searchGeneric">
-                <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
+                <a href="#" data-reveal-id="myModal"><span class="postfix" id="grabGenerics"><i class="icon-search"></i></span></a>
             </div>
         </div>
-        <div class="row" style="text-align: center"><span class="embed"><a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
         </p>
+        </div>
+        <div class="app_footer">
+            <span class="embed"><a href="#"><i class="icon-code"></i> Embed this widget</a></span>
+        </div>
     </div>
     <div class="large-3 columns app-container">
-        <i class="icon-hospital icon-2x app-icon"></i>
-        <h4>Find a Hospital</h4>
-        <p class="app_description">Which hospitals are around you?</p>
-        <p>
-        <div class="row collapse">
-            <div class="small-9 columns">
-                <input type="text" id="hospital_location" placeholder="Eg. Hillbrow, Johannesburg" />
-            </div>
-            <div class="small-3 columns" id="searchHospitals">
-                <a href="#" data-reveal-id="myModal"><span class="postfix"><i class="icon-search"></i></span></a>
-            </div>
+        <div class="app_header hospitals">
+            <i class="icon-hospital icon-2x app-icon"></i>
+            <h4>Find a Hospital</h4>
         </div>
-        <div class="row" style="text-align: center">
+        <div class="app_body">Which are the best hospitals around you?
+            <p>
+            <div class="row collapse">
+                <div class="small-9 columns">
+                    <input type="text" id="hospital_location" placeholder="Eg. Hillbrow, Johannesburg" />
+                </div>
+                <div class="small-3 columns" id="searchHospitals">
+                    <a href="#" data-reveal-id="myModal"><span class="postfix" id="grabHospitals"><i class="icon-search"></i></span></a>
+                </div>
+            </div>
+            </p>
+        </div>
+        <div class="app_footer">
+            <span class="embed"><span class="near_me" style="cursor: pointer;"><i class="icon-location-arrow"></i> <span id="get_location_text" style="">My Location</span></span> &nbsp; <a href="#"><i class="icon-code"></i> Embed this widget</a></span>
+        </div>
 
-            <span class="embed"><span class="near_me" style="cursor: pointer;"><i class="icon-location-arrow"></i> <span id="get_location_text" style="">Hospitals Near Me</span></span> &nbsp; <a href="#"><img src="img/embed.png"> Embed this widget</a></span></div>
-        </p>
     </div>
 </div>
 
