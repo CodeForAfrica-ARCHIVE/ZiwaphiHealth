@@ -20,7 +20,7 @@ class HospitalsController extends BaseController {
             return "Location not found! Try different address/name.";
         }
 
-        $range = 10000;
+        $range = 100000;
 
         $params = array("\$where" => "within_circle(location_1, $latitude, $longitude, $range)");
 
@@ -100,6 +100,9 @@ class HospitalsController extends BaseController {
     }
 
     public function reverseGeocode($q){
+
+        $q = urlencode($q);
+
         $geocode_url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$q."&key=".Config::get('custom_config.google_api_key');
 
         $response = json_decode(file_get_contents($geocode_url));

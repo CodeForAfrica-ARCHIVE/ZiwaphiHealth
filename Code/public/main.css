@@ -1,3 +1,7 @@
+.app-container{
+    background: #dddddd;
+}
+
 .app-container h4{
     display:inline;
     font-family: georgia,serif;
