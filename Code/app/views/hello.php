@@ -22,7 +22,7 @@
         <nav class="top-bar" data-topbar="" role="navigation">
             <!-- Title -->
             <ul class="title-area">
-                <li class="name"><h1><a href="#"> <img src="img/logo.png" style="height:100px;"/></a></h1></li>
+                <li class="name"><h1 style="font-size: 1.4em; margin:0 5px; color:#fff;">ZiwaphiHealth</h1></li>
                 <!-- Mobile Menu Toggle -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
@@ -284,7 +284,7 @@
 
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
-        <div class="large-7 columns"  style="background-color: #fff; height:450px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
+        <div class="large-7 columns"  style="background-color: #fff; height:500px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
             <?php
             if($featured != null){
                 ?>
@@ -306,7 +306,7 @@
             <h5>Evidence dossier</h5>
             Data Repository
         </div>
-        <div class="large-5 columns" style="background-color: #fff; height:450px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
+        <div class="large-5 columns" style="background-color: #fff; height:500px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
             <?php
                 if(!property_exists($featured, 'thumbnail')){
                     print '<img src="http://placehold.it/500x500&amp;text=[%20img%201%20]" width="100%">';
@@ -330,7 +330,7 @@
     </div>
     <div class="large-3 columns sidebar">
         <div class="big-title">Help Desk</div>
-        <div class="content_body">
+        <div class="content_body" style="height: 455px;">
             <h5><i class="icon-phone"></i> Helplines</h5>
             <ul>
                 <li>Item 1</li>
@@ -368,6 +368,7 @@
                 $i++;
             print'<dd class="accordion-navigation">
                 <a href="#major-story-panel'.$i.'">'.$story->title.'</a>';
+            print '<i class="icon-chevron-sign-down" style="float:right; margin-top:-35px; margin-right:5px;"></i>';
                 //if($i==1){
                 //    print '<div id="major-story-panel'.$i.'" class="content active">';
                 //}else{

@@ -3,25 +3,25 @@
     padding:3px !important;
 }
 .hospitals{
-    background: #3d566d;
+    background: #ed2124;
 }
 .medicine{
-    background: #643B0F;
+    background: #ed2124;
 }
 .generics{
     background: #ed2124;
 }
 .doctors{
-    background: #80828f;
+    background: #ed2124;
 }
 #grabDetails{
-    background: #80828f;
+    background: #3d566d;
 }
 #grabPrices{
-    background: #ed2124;
+    background: #3d566d;
 }
 #grabGenerics{
-    background: #ed2124;
+    background: #3d566d;
 }
 #grabHospitals{
     background: #3d566d;
@@ -69,7 +69,9 @@
 .sidebar h5{
     font-weight:bold;
     font-family: georgia,serif;
-    color:#3d566d;
+    color: #6E6E6E;
+    background: #D6E5E3;
+    padding: 5px;
 }
 .feedback p{
     font-size:0.8em !important;
@@ -86,7 +88,9 @@
 .featured_title{
     font-weight:bold;
     font-family: georgia,serif;
-    color:#3d566d;
+    color: #fff;
+    background: #3d566d;
+    padding: 5px;
 }
 .big-title{
     background-color: #3d566d;
@@ -102,6 +106,7 @@
 }
 .story{
     margin-top: -10px;
+    padding:10px;
 }
 .story img{
     float:left;
@@ -122,7 +127,7 @@
     height:15px;
 }
 .embed a{
-    color:darkgrey;
+    color:#CACFD6;
 }
 .top-bar{
     margin-bottom: 20px;

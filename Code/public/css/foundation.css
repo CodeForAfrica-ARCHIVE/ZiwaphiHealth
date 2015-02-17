@@ -1767,8 +1767,8 @@ meta.foundation-mq-topbar {
 
 .top-bar {
   overflow: hidden;
-  height: 105px;
-  line-height: 105px;
+  height: 45px;
+  line-height: 45px;
   position: relative;
   background: #333333;
   margin-bottom: 0; }
@@ -1798,7 +1798,7 @@ meta.foundation-mq-topbar {
     position: relative;
     margin: 0; }
   .top-bar .name {
-    height: 105px;
+    height: 45px;
     margin: 0;
     font-size: 16px; }
     .top-bar .name h1 {
@@ -2058,7 +2058,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #333333;
+    background: #3d566d;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -2101,12 +2101,14 @@ meta.foundation-mq-topbar {
       background: #272727;
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      padding: 0 15px;
+        font-family:georgia;
+        font-size:1.5em;
+      padding: 0 25px;
       line-height: 45px;
-      background: #333333; }
+      background: #3d566d; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #555555;
-        background: #272727; }
+        background-color: #CACFD6;
+        background: #CACFD6; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
@@ -2191,9 +2193,9 @@ meta.foundation-mq-topbar {
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background: #333333;
+      background: #3d566d;
       padding: 0 15px;
-      height: 45px; }
+      height: auto; }
     .top-bar-section .right li .dropdown {
       left: auto;
       right: 0; }
@@ -3430,13 +3432,12 @@ ul.pagination {
   list-style-position: outside;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .side-nav li {
-      background: #efefef;
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem;
     font-weight: normal; }
     .side-nav li a:not(.button) {
       display: block;
-      color: #008cba;
+      color: #3D566D;
       margin: 0;
       padding: 0.4375rem 0.875rem; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
@@ -3643,7 +3644,7 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008cba;
+  color: #3D566D;;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
