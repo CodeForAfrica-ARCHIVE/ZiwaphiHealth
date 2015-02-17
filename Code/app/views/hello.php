@@ -332,22 +332,21 @@
         <div class="big-title">Help Desk</div>
         <div class="content_body" style="height: 455px;">
             <h5><i class="icon-phone"></i> Helplines</h5>
-            <ul>
+            <ul class="side-nav">
                 <li>Item 1</li>
                 <li>Item 2</li>
                 <li>Item 3</li>
             </ul>
             <h5><i class="fi-anchor"></i> Support groups</h5>
-            <ul>
+            <ul class="side-nav">
                 <li>Item 1</li>
                 <li>Item 2</li>
                 <li>Item 3</li>
             </ul>
             <h5><i class="fi-torsos-all"></i> Social media</h5>
-            <ul>
+            <ul class="side-nav">
                 <li>Item 1</li>
                 <li>Item 2</li>
-                <li>Item 3</li>
             </ul>
         </div>
     </div>
@@ -367,8 +366,8 @@
             foreach($major_stories as $story){
                 $i++;
             print'<dd class="accordion-navigation">
-                <a href="#major-story-panel'.$i.'">'.$story->title.'</a>';
-            print '<i class="icon-chevron-sign-down" style="float:right; margin-top:-35px; margin-right:5px;"></i>';
+                <a href="#major-story-panel'.$i.'">'.$story->title.'<i class="icon-chevron-sign-down" style="float:right; margin-top:0px; margin-right:5px;"></i></a>';
+
                 //if($i==1){
                 //    print '<div id="major-story-panel'.$i.'" class="content active">';
                 //}else{

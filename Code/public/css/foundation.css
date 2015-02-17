@@ -3441,8 +3441,8 @@ ul.pagination {
       margin: 0;
       padding: 0.4375rem 0.875rem; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
-        background: rgba(166, 166, 166, 0.02);
-        color: #1cc7ff; }
+        background: #e8f3f2;
+         }
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
