@@ -59,7 +59,7 @@
 <script type="text/javascript">
     $.noConflict();
     jQuery(document).ready(function($) {
-        $("#dodgy_docs_input").autocomplete("index.php/doctor", {
+        $("#dodgy_docs_input").autocomplete("doctor", {
             width: 260,
             matchContains: true,
             selectFirst: true
@@ -78,7 +78,8 @@
 
             $("#loading").show();
 
-            $.ajax({url:"index.php/doctordetails?name=" + name,success:function(result){
+            $.ajax({url:"doctordetails?name=" + name,success:function(result){
+                $("#dodgy_docs_input").val("");
 
                 $("#doctorDetails").html(result);
 
@@ -96,7 +97,8 @@
 
             $("#loading").show();
 
-            $.ajax({url:"index.php/medicine_price?q=" + name,success:function(result){
+            $.ajax({url:"medicine_price?q=" + name,success:function(result){
+                $("#medicine_name").val("");
 
                 $("#doctorDetails").html(result);
 
@@ -114,7 +116,8 @@
 
             $("#loading").show();
 
-            $.ajax({url:"index.php/medicine_generics?q=" + name,success:function(result){
+            $.ajax({url:"medicine_generics?q=" + name,success:function(result){
+                $("#medicine_name2").val("");
 
                 $("#doctorDetails").html(result);
 
@@ -132,7 +135,8 @@
 
             $("#loading").show();
 
-            $.ajax({url:"index.php/find_hospitals?q=" + name,success:function(result){
+            $.ajax({url:"find_hospitals?q=" + name,success:function(result){
+                $("#hospital_location").val("");
 
                 $("#doctorDetails").html(result);
 
@@ -156,7 +160,7 @@
         var autoCords = position.coords.latitude + ',' + position.coords.longitude;
 
         //make ajax request to reverse geocode coordinates
-        $.ajax({url:"index.php/reverse_geocode?q=" + autoCords,success:function(result){
+        $.ajax({url:"reverse_geocode?q=" + autoCords,success:function(result){
 
             $("#hospital_location").val(result);
 
