@@ -6,22 +6,22 @@
     background: #3d566d;
 }
 .medicine{
-    background: #19b698;
+    background: #643B0F;
 }
 .generics{
-    background: #ea6153;
+    background: #ed2124;
 }
 .doctors{
-    background: #7761a7;
+    background: #80828f;
 }
 #grabDetails{
-    background: #7761a7;
+    background: #80828f;
 }
 #grabPrices{
-    background: #19b698;
+    background: #ed2124;
 }
 #grabGenerics{
-    background: #ea6153;
+    background: #ed2124;
 }
 #grabHospitals{
     background: #3d566d;
@@ -29,7 +29,9 @@
 .icon-search{
     color:#fff;
 }
-
+.footer_section{
+    background-color: #313131;
+}
 .app_footer{
     text-align: center;
     padding:3px;
@@ -67,6 +69,7 @@
 .sidebar h5{
     font-weight:bold;
     font-family: georgia,serif;
+    color:#3d566d;
 }
 .feedback p{
     font-size:0.8em !important;
@@ -83,13 +86,19 @@
 .featured_title{
     font-weight:bold;
     font-family: georgia,serif;
+    color:#3d566d;
 }
 .big-title{
-    font-weight:bold;
+    background-color: #3d566d;
+    color: #fff;
+    border-bottom: 0;
+    padding: 10px;
+    font-weight: bold;
     font-family: georgia,serif;
-    border-bottom: 4px solid lightgrey;
-    border-top: 4px solid lightgrey;
-    margin-bottom: 10px;
+}
+.content_body{
+    background-color:#fff;
+    padding:5px;
 }
 .story{
     margin-top: -10px;

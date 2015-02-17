@@ -22,18 +22,13 @@
         <nav class="top-bar" data-topbar="" role="navigation">
             <!-- Title -->
             <ul class="title-area">
-                <li class="name"><h1><a href="#"> <img src="http://placehold.it/150x30&text=Logo"/></a></h1></li>
-
+                <li class="name"><h1><a href="#"> <img src="img/logo.png" style="height:100px;"/></a></h1></li>
                 <!-- Mobile Menu Toggle -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
 
             <!-- Top Bar Section -->
-
             <section class="top-bar-section">
-
-
-
                 <!-- Top Bar Right Nav Elements -->
                 <ul class="left">
                     <li><a href="#">Link 0</a></li>
@@ -46,7 +41,6 @@
                     <li class="divider"></li>
                 </ul>
                 <ul class="right">
-
                     <!-- Search | has-form wrapper -->
                     <li class="has-form">
                         <div class="row collapse">
@@ -290,7 +284,7 @@
 
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
-        <div class="large-7 columns"  style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
+        <div class="large-7 columns"  style="background-color: #fff; height:450px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
             <?php
             if($featured != null){
                 ?>
@@ -312,7 +306,7 @@
             <h5>Evidence dossier</h5>
             Data Repository
         </div>
-        <div class="large-5 columns" style="background-color: #f6f6f6; height:450px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
+        <div class="large-5 columns" style="background-color: #fff; height:450px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
             <?php
                 if(!property_exists($featured, 'thumbnail')){
                     print '<img src="http://placehold.it/500x500&amp;text=[%20img%201%20]" width="100%">';
@@ -335,35 +329,35 @@
         </div>
     </div>
     <div class="large-3 columns sidebar">
-        <h3 class="big-title">Help Desk</h3>
-        <h5><i class="icon-phone"></i> Helplines</h5>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <h5><i class="fi-anchor"></i> Support groups</h5>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <h5><i class="fi-torsos-all"></i> Social media</h5>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+        <div class="big-title">Help Desk</div>
+        <div class="content_body">
+            <h5><i class="icon-phone"></i> Helplines</h5>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h5><i class="fi-anchor"></i> Support groups</h5>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h5><i class="fi-torsos-all"></i> Social media</h5>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
     </div>
 </div>
 
 
 <div class="row further-reading">
     <div class="large-3 columns ">
-        <h4 class="big-title">Major Stories</h4>
-
-
-
+        <div class="big-title">Major Stories</div>
+        <div class="content_body">
         <dl class="accordion" data-accordion>
             <?php
             if(count($major_stories)<1){
@@ -391,8 +385,10 @@
             }
             ?>
         </dl>
+            </div>
 
-        <h4 class="big-title">Feed Filters</h4>
+        <div class="big-title">Feed Filters</div>
+        <div class="content_body">
         <?php
 
             print '<ul class="side-nav" style="padding:0 !important;">';
@@ -408,6 +404,7 @@
             print '</ul>';
 
         ?>
+            </div>
 
     </div>
 
@@ -434,7 +431,8 @@
     </script>
 
     <div class="large-6 columns">
-        <h4 class="big-title">Other News</h4>
+        <div class="big-title">Feed</div>
+        <div class="content_body">
         <div class="tagName" style="text-align:center;" id="tagName">
         </div>
         <div class="loadingFeed" style="text-align:center;display:none" id="loadingFeed">
@@ -463,11 +461,13 @@
             ?>
 
         </div>
+            </div>
 
     </div>
 
     <aside class="large-3 columns hide-for-small linksholder">
-        <h4 class="big-title">Links</h4>
+        <div class="big-title">Links</div>
+        <div class="content_body">
         <p><a href="http://code4sa.org" target="_blank"><img style="height: 80px" src="img/c4sa.png" id="c4sa_partner"></a>
             <br/>
             The data driven journalism + tools in ZiwaphiHealth section were kickstarted by <a href="http://code4kenya.org" target="_blank">Code4Kenya</a>
@@ -485,14 +485,15 @@
             <i class="icon-twitter icon-2x app-icon"></i>
             <i class="icon-rss icon-2x app-icon"></i>
         </div>
+            </div>
     </aside>
 
 </div>
 
 
 <footer class="row">
-    <div class="large-12 columns">
-        <hr/>
+    <div class="large-12 columns footer_section">
+
         <div class="row">
             <div class="large-6 columns">
             </div>

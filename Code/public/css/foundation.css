@@ -1101,12 +1101,12 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #008cba;
+  background-color: #ed2124;
   border-color: #007095;
   color: white;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #007095; }
+    background-color: #3d566d; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -1767,8 +1767,8 @@ meta.foundation-mq-topbar {
 
 .top-bar {
   overflow: hidden;
-  height: 45px;
-  line-height: 45px;
+  height: 105px;
+  line-height: 105px;
   position: relative;
   background: #333333;
   margin-bottom: 0; }
@@ -1798,7 +1798,7 @@ meta.foundation-mq-topbar {
     position: relative;
     margin: 0; }
   .top-bar .name {
-    height: 45px;
+    height: 105px;
     margin: 0;
     font-size: 16px; }
     .top-bar .name h1 {
@@ -1914,7 +1914,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
           color: white; }
       .top-bar-section ul li > a.button.alert {
-        background-color: #f04124;
+        background-color: #ed2124;
         border-color: #cf2a0e;
         color: white; }
         .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
@@ -3430,7 +3430,7 @@ ul.pagination {
   list-style-position: outside;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .side-nav li {
-      background: rgba(0, 0, 0, 0.025);
+      background: #efefef;
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem;
     font-weight: normal; }
