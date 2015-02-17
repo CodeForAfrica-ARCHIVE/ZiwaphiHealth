@@ -21,8 +21,8 @@
     <div class="large-12 columns">
         <nav class="top-bar" data-topbar="" role="navigation">
             <!-- Title -->
-            <ul class="title-area">
-                <li class="name"><h1 style="font-size: 1.4em; margin:0 5px; color:#fff;">ZiwaphiHealth</h1></li>
+            <ul class="title-area"">
+                <li class="name"><img src="img/logo.png" style="height: 80px; margin-top: -50px; "><h1 style="font-size: 5.5em; color:#fff; font-family: georgia, serif; display: inline;">Health</h1></li>
                 <!-- Mobile Menu Toggle -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
@@ -30,15 +30,11 @@
             <!-- Top Bar Section -->
             <section class="top-bar-section">
                 <!-- Top Bar Right Nav Elements -->
-                <ul class="left">
+                <ul class="left" style="margin-left:20px; font-size: 0.8em;">
                     <li><a href="#">Link 0</a></li>
-                    <li class="divider"></li>
                     <li><a href="#">Link 1</a></li>
-                    <li class="divider"></li>
                     <li><a href="#">Link 2</a></li>
-                    <li class="divider"></li>
                     <li><a href="#">Link 3</a></li>
-                    <li class="divider"></li>
                 </ul>
                 <ul class="right">
                     <!-- Search | has-form wrapper -->

@@ -1767,8 +1767,8 @@ meta.foundation-mq-topbar {
 
 .top-bar {
   overflow: hidden;
-  height: 45px;
-  line-height: 45px;
+  height: 95px;
+  line-height: 95px;
   position: relative;
   background: #333333;
   margin-bottom: 0; }
@@ -1802,7 +1802,7 @@ meta.foundation-mq-topbar {
     margin: 0;
     font-size: 16px; }
     .top-bar .name h1 {
-      line-height: 45px;
+      line-height: 95px;
       font-size: 1.0625rem;
       margin: 0; }
       .top-bar .name h1 a {
@@ -2058,7 +2058,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #3d566d;
+    background: #010001;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -2097,21 +2097,20 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background-color: #555555;
-      background: #272727;
+      background-color: #3D566D;
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
         font-family:georgia;
         font-size:1.5em;
       padding: 0 25px;
-      line-height: 45px;
-      background: #3d566d; }
+      line-height: 95px;
+      background: #010001; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #CACFD6;
-        background: #CACFD6; }
+        background-color: #3D566D;
+        background:#3D566D; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 15px;
-      line-height: 45px;
+      line-height: 95px;
       color: white;
       background: #008cba; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
@@ -2193,7 +2192,7 @@ meta.foundation-mq-topbar {
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background: #3d566d;
+      background: #010001;
       padding: 0 15px;
       height: auto; }
     .top-bar-section .right li .dropdown {
