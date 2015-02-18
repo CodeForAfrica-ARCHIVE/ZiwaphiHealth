@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/routes.php" afterPath="$PROJECT_DIR$/Code/app/routes.php" />
-    </list>
+    <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="" />
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
