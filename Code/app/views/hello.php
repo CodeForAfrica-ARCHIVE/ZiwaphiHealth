@@ -59,7 +59,20 @@
 <script type="text/javascript">
     $.noConflict();
     jQuery(document).ready(function($) {
+        //doctors autocomplete
         $("#dodgy_docs_input").autocomplete("doctor", {
+            width: 260,
+            matchContains: true,
+            selectFirst: true
+        });
+        //drug prices autocomplete
+        $("#medicine_name").autocomplete("drugSuggestions", {
+            width: 260,
+            matchContains: true,
+            selectFirst: true
+        });
+        //drug generics autocomplete
+        $("#medicine_name2").autocomplete("drugSuggestions", {
             width: 260,
             matchContains: true,
             selectFirst: true
@@ -365,7 +378,7 @@
             $i = 0;
             foreach($major_stories as $story){
                 $i++;
-            print'<dd class="accordion-navigation">
+                print'<dd class="accordion-navigation">
                 <a href="#major-story-panel'.$i.'">'.$story->title.'<i class="icon-chevron-sign-down" style="float:right; margin-top:0px; margin-right:5px;"></i></a>';
 
                 //if($i==1){
