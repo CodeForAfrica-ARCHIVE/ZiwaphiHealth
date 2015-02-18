@@ -16,7 +16,7 @@ class MedicineController extends BaseController {
         $key = Config::get('custom_config.api_key');
         $table = Config::get('custom_config.medicine_table_ft');
 
-        $url = "https://www.googleapis.com/fusiontables/v1/query?";
+        $base_url = "https://www.googleapis.com/fusiontables/v1/query?";
 
         //Fusion Tables does not support OR WTF?
         //$sql = "SELECT * FROM ".$table." WHERE ProprietaryName CONTAINS IGNORING CASE '".$q."' OR ActiveIngredients CONTAINS IGNORING CASE '".$q."'";
@@ -25,7 +25,7 @@ class MedicineController extends BaseController {
 
         $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
 
-        $url .= http_build_query($options,'','&');
+        $url = $base_url . http_build_query($options,'','&');
 
         $page = file_get_contents($url);
 
@@ -46,7 +46,7 @@ class MedicineController extends BaseController {
         $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients CONTAINS IGNORING CASE '".$q."'";
         $options = array("sql"=>$sql2, "key"=>$key, "sensor"=>"false");
 
-        $url .= http_build_query($options,'','&');
+        $url = $base_url . http_build_query($options,'','&');
 
 
         $page = file_get_contents($url);
@@ -83,7 +83,7 @@ class MedicineController extends BaseController {
         $key = Config::get('custom_config.api_key');
         $table = Config::get('custom_config.medicine_table_ft');
 
-        $url = "https://www.googleapis.com/fusiontables/v1/query?";
+        $base_url = "https://www.googleapis.com/fusiontables/v1/query?";
 
         //Fusion Tables does not support OR WTF?
 
@@ -91,7 +91,7 @@ class MedicineController extends BaseController {
 
         $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
 
-        $url .= http_build_query($options,'','&');
+        $url = $base_url . http_build_query($options,'','&');
 
         $page = file_get_contents($url);
 
@@ -110,7 +110,7 @@ class MedicineController extends BaseController {
         $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients CONTAINS IGNORING CASE '".$q."'";
         $options = array("sql"=>$sql2, "key"=>$key, "sensor"=>"false");
 
-        $url .= http_build_query($options,'','&');
+        $url = $base_url . http_build_query($options,'','&');
 
 
         $page = file_get_contents($url);
@@ -166,7 +166,7 @@ class MedicineController extends BaseController {
         $key = Config::get('custom_config.api_key');
         $table = Config::get('custom_config.medicine_table_ft');
 
-        $url = "https://www.googleapis.com/fusiontables/v1/query?";
+        $base_url = "https://www.googleapis.com/fusiontables/v1/query?";
 
         //Fusion Tables does not support OR WTF?, hence $sql and $sql2
 
@@ -174,7 +174,7 @@ class MedicineController extends BaseController {
 
         $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
 
-        $url .= http_build_query($options,'','&');
+        $url = $base_url . http_build_query($options,'','&');
 
         $page = file_get_contents($url);
 
@@ -193,7 +193,7 @@ class MedicineController extends BaseController {
         $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients CONTAINS IGNORING CASE '".$q."' AND  originator_or_generic='Generic'";
         $options = array("sql"=>$sql2, "key"=>$key, "sensor"=>"false");
 
-        $url .= http_build_query($options,'','&');
+        $url = $base_url . http_build_query($options,'','&');
 
 
         $page = file_get_contents($url);
@@ -326,10 +326,5 @@ class MedicineController extends BaseController {
         return $result;
     }
 */
-
-
-
-
 }
-
 ?>

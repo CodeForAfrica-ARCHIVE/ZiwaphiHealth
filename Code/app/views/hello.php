@@ -13,8 +13,143 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="icons/foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
     <script src="js/vendor/modernizr.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="autocomplete/jquery.autocomplete.css">
+    <script type="text/javascript" src="autocomplete/jquery.js"></script>
+    <script type='text/javascript' src='autocomplete/jquery.autocomplete.js'></script>
+    <script type="text/javascript">
+        $.noConflict();
+        jQuery(document).ready(function($) {
+            //doctors autocomplete
+            $("#dodgy_docs_input").autocomplete("doctor", {
+                width: 260,
+                matchContains: true,
+                selectFirst: true
+            });
+            //TOTHINK: does search generic need autocomplete?
+            /*
+             //drug prices autocomplete
+             $("#medicine_name").autocomplete("drugSuggestions", {
+             width: 260,
+             matchContains: true,
+             selectFirst: true
+             });
+             //drug generics autocomplete
+             $("#medicine_name2").autocomplete("drugSuggestions", {
+             width: 260,
+             matchContains: true,
+             selectFirst: true
+             });
+             */
+        });
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#grabDetails").click(function(){
+                var name = $("#dodgy_docs_input").val();
+
+                $("#dname").html("<h4>" + name + "</h4>");
+
+                $("#doctorDetails").html("");
+
+                $("#loading").show();
+
+                $.ajax({url:"doctordetails?name=" + name,success:function(result){
+                    $("#dodgy_docs_input").val("");
+
+                    $("#doctorDetails").html(result);
+
+                    $("#loading").hide();
+                }});
+            });
+        });
+        $(document).ready(function(){
+            $("#searchMedicine").click(function(){
+                var name = $("#medicine_name").val();
+
+                $("#dname").html("<h4>" + name + "</h4>");
+
+                $("#doctorDetails").html("");
+
+                $("#loading").show();
+
+                $.ajax({url:"medicine_price?q=" + name,success:function(result){
+                    $("#medicine_name").val("");
+
+                    $("#doctorDetails").html(result);
+
+                    $("#loading").hide();
+                }});
+            });
+        });
+
+        $(document).ready(function(){
+            $("#searchGeneric").click(function(){
+                var name = $("#medicine_name2").val();
+
+                $("#dname").html("<h4>" + name + "</h4>");
+
+                $("#doctorDetails").html("");
+
+                $("#loading").show();
+
+                $.ajax({url:"medicine_generics?q=" + name,success:function(result){
+                    $("#medicine_name2").val("");
+
+                    $("#doctorDetails").html(result);
+
+                    $("#loading").hide();
+                }});
+            });
+        });
+
+        $(document).ready(function(){
+            $("#searchHospitals").click(function(){
+                var name = $("#hospital_location").val();
+
+                $("#dname").html("<h4>" + name + "</h4>");
+
+                $("#doctorDetails").html("");
+
+                $("#loading").show();
+
+                $.ajax({url:"find_hospitals?q=" + name,success:function(result){
+                    $("#hospital_location").val("");
+
+                    $("#doctorDetails").html(result);
+
+                    $("#loading").hide();
+                }});
+            });
+        });
+
+        $(document).ready(function(){
+            jQuery(".near_me").click(initiate_geolocation);
+            //$("#loading_hospitals").show();
+        });
+
+        function initiate_geolocation() {
+            $("#hospital_location").css("background", "white url('autocomplete/indicator.gif') right center no-repeat");
+            navigator.geolocation.getCurrentPosition(handle_geolocation_query);
+        }
+
+        function handle_geolocation_query(position){
+            //Get cordinates on complete
+            var autoCords = position.coords.latitude + ',' + position.coords.longitude;
+
+            //make ajax request to reverse geocode coordinates
+            $.ajax({url:"reverse_geocode?q=" + autoCords,success:function(result){
+
+                $("#hospital_location").val(result);
+
+                //$("#loading_hospitals").hide();
+                $("#hospital_location").css("background", "none");
+
+            }});
+        }
+    </script>
 </head>
 <body>
 <div class="row">
@@ -53,141 +188,7 @@
         </nav>
     </div>
 </div>
-<link rel="stylesheet" type="text/css" href="autocomplete/jquery.autocomplete.css">
-<script type="text/javascript" src="autocomplete/jquery.js"></script>
-<script type='text/javascript' src='autocomplete/jquery.autocomplete.js'></script>
-<script type="text/javascript">
-    $.noConflict();
-    jQuery(document).ready(function($) {
-        //doctors autocomplete
-        $("#dodgy_docs_input").autocomplete("doctor", {
-            width: 260,
-            matchContains: true,
-            selectFirst: true
-        });
-        //TOTHINK: does search generic need autocomplete?
-        /*
-        //drug prices autocomplete
-        $("#medicine_name").autocomplete("drugSuggestions", {
-            width: 260,
-            matchContains: true,
-            selectFirst: true
-        });
-        //drug generics autocomplete
-        $("#medicine_name2").autocomplete("drugSuggestions", {
-            width: 260,
-            matchContains: true,
-            selectFirst: true
-        });
-        */
-    });
-</script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $("#grabDetails").click(function(){
-            var name = $("#dodgy_docs_input").val();
 
-            $("#dname").html("<h4>" + name + "</h4>");
-
-            $("#doctorDetails").html("");
-
-            $("#loading").show();
-
-            $.ajax({url:"doctordetails?name=" + name,success:function(result){
-                $("#dodgy_docs_input").val("");
-
-                $("#doctorDetails").html(result);
-
-                $("#loading").hide();
-            }});
-        });
-    });
-    $(document).ready(function(){
-        $("#searchMedicine").click(function(){
-            var name = $("#medicine_name").val();
-
-            $("#dname").html("<h4>" + name + "</h4>");
-
-            $("#doctorDetails").html("");
-
-            $("#loading").show();
-
-            $.ajax({url:"medicine_price?q=" + name,success:function(result){
-                $("#medicine_name").val("");
-
-                $("#doctorDetails").html(result);
-
-                $("#loading").hide();
-            }});
-        });
-    });
-
-    $(document).ready(function(){
-        $("#searchGeneric").click(function(){
-            var name = $("#medicine_name2").val();
-
-            $("#dname").html("<h4>" + name + "</h4>");
-
-            $("#doctorDetails").html("");
-
-            $("#loading").show();
-
-            $.ajax({url:"medicine_generics?q=" + name,success:function(result){
-                $("#medicine_name2").val("");
-
-                $("#doctorDetails").html(result);
-
-                $("#loading").hide();
-            }});
-        });
-    });
-
-    $(document).ready(function(){
-        $("#searchHospitals").click(function(){
-            var name = $("#hospital_location").val();
-
-            $("#dname").html("<h4>" + name + "</h4>");
-
-            $("#doctorDetails").html("");
-
-            $("#loading").show();
-
-            $.ajax({url:"find_hospitals?q=" + name,success:function(result){
-                $("#hospital_location").val("");
-
-                $("#doctorDetails").html(result);
-
-                $("#loading").hide();
-            }});
-        });
-    });
-
-    $(document).ready(function(){
-        jQuery(".near_me").click(initiate_geolocation);
-        //$("#loading_hospitals").show();
-    });
-
-    function initiate_geolocation() {
-        $("#hospital_location").css("background", "white url('autocomplete/indicator.gif') right center no-repeat");
-        navigator.geolocation.getCurrentPosition(handle_geolocation_query);
-    }
-
-    function handle_geolocation_query(position){
-        //Get cordinates on complete
-        var autoCords = position.coords.latitude + ',' + position.coords.longitude;
-
-        //make ajax request to reverse geocode coordinates
-        $.ajax({url:"reverse_geocode?q=" + autoCords,success:function(result){
-
-            $("#hospital_location").val(result);
-
-            //$("#loading_hospitals").hide();
-            $("#hospital_location").css("background", "none");
-
-        }});
-    }
-</script>
 <div class="row app_section">
     <div class="large-3 columns app-container">
         <div class="app_header doctors">
