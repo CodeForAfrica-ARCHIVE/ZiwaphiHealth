@@ -8,7 +8,9 @@
 
 class MedicineController extends BaseController {
 
-    public static function getPrice($q){
+
+
+    public function getPrice($q){
         $view_uid = Config::get('custom_config.socrata_medicine_table');
         $root_url = "https://data.code4sa.org/";
         $app_token = Config::get('custom_config.app_token');
@@ -48,7 +50,7 @@ class MedicineController extends BaseController {
 
         return $result;
     }
-    public static function getGeneric($q){
+    public function getGeneric($q){
         $view_uid = Config::get('custom_config.socrata_medicine_table');
         $root_url = "https://data.code4sa.org/";
         $app_token = Config::get('custom_config.app_token');
@@ -107,13 +109,14 @@ class MedicineController extends BaseController {
         return $result;
     }
 
-    /*
-    public static function getPrice($q)
+
+    public function matchSearch($q)
     {
+
         $q = ucwords($q);
 
         $key = Config::get('custom_config.api_key');
-        $table = Config::get('custom_config.medicine_table');
+        $table = Config::get('custom_config.medicine_table_ft');
 
         $url = "https://www.googleapis.com/fusiontables/v1/query?";
 
@@ -133,7 +136,13 @@ class MedicineController extends BaseController {
         $rows = array();
 
         if(array_key_exists('rows', $data)){
-            $rows = $data['rows'];
+            foreach($data['rows'] as $row){
+
+                $drug_id = $row[6];
+                if(!$this->in_multi_array($drug_id, $rows,6)){
+                    array_push($rows, $row);
+                }
+            }
         }
 
         //then do similar search for active ingredients :(
@@ -152,8 +161,10 @@ class MedicineController extends BaseController {
             //check if rows already added
             foreach($data['rows'] as $row){
 
-
-
+                $drug_id = $row[6];
+                if(!$this->in_multi_array($drug_id, $rows,6)){
+                   array_push($rows, $row);
+                }
             }
 
         }
@@ -163,13 +174,32 @@ class MedicineController extends BaseController {
 
 
         foreach($rows as $row){
-            $cname = $row['4'];
+            $cname = $row[6];
             $result .= "$cname\n";
         }
 
-        return $result;
+        print $result;
     }
-    */
+
+
+    public function in_multi_array($elem, $array,$field)
+    {
+        $top = sizeof($array) - 1;
+        $bottom = 0;
+        while($bottom <= $top)
+        {
+            if($array[$bottom][$field] == $elem)
+                return true;
+            else
+                if(is_array($array[$bottom][$field]))
+                    if(in_multiarray($elem, ($array[$bottom][$field])))
+                        return true;
+
+            $bottom++;
+        }
+        return false;
+    }
+
 
 }
 

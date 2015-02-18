@@ -93,3 +93,14 @@ Route::get('reverse_geocode', function()
     }
     return $result;
 });
+Route::get('drugSuggestions', function()
+{
+    $name = Input::get('q');
+
+    $result = '';
+
+    if(isset($name)){
+        $result = (new MedicineController())->matchSearch($name);
+    }
+    return $result;
+});
