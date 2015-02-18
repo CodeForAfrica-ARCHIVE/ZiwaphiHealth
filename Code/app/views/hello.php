@@ -65,6 +65,8 @@
             matchContains: true,
             selectFirst: true
         });
+        //TOTHINK: does search generic need autocomplete?
+        /*
         //drug prices autocomplete
         $("#medicine_name").autocomplete("drugSuggestions", {
             width: 260,
@@ -77,6 +79,7 @@
             matchContains: true,
             selectFirst: true
         });
+        */
     });
 </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -119,8 +122,7 @@
             }});
         });
     });
-    //TOTHINK: does search generic need autocomplete?
-    /*
+
     $(document).ready(function(){
         $("#searchGeneric").click(function(){
             var name = $("#medicine_name2").val();
@@ -140,7 +142,7 @@
             }});
         });
     });
-    */
+
     $(document).ready(function(){
         $("#searchHospitals").click(function(){
             var name = $("#hospital_location").val();

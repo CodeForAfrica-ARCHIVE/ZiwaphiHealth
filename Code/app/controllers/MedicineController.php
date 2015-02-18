@@ -19,9 +19,9 @@ class MedicineController extends BaseController {
         $url = "https://www.googleapis.com/fusiontables/v1/query?";
 
         //Fusion Tables does not support OR WTF?
-        //$sql = "SELECT * FROM ".$table." WHERE ProprietaryName LIKE '%".$q."%' OR ActiveIngredients LIKE '%".$q."%'";
+        //$sql = "SELECT * FROM ".$table." WHERE ProprietaryName CONTAINS IGNORING CASE '".$q."' OR ActiveIngredients CONTAINS IGNORING CASE '".$q."'";
 
-        $sql = "SELECT * FROM ".$table." WHERE ProprietaryName LIKE '%".$q."%'";
+        $sql = "SELECT * FROM ".$table." WHERE ProprietaryName CONTAINS IGNORING CASE '".$q."'";
 
         $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
 
@@ -36,16 +36,14 @@ class MedicineController extends BaseController {
         if(array_key_exists('rows', $data)){
             foreach($data['rows'] as $row){
 
-                $drug_id = $row[6];
-                if(!$this->in_multi_array($drug_id, $rows,6)){
-                    array_push($rows, $row);
-                }
+                array_push($rows, $row);
+
             }
         }
 
         //then do similar search for active ingredients :(
 
-        $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients LIKE '%".$q."%'";
+        $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients CONTAINS IGNORING CASE '".$q."'";
         $options = array("sql"=>$sql2, "key"=>$key, "sensor"=>"false");
 
         $url .= http_build_query($options,'','&');
@@ -59,8 +57,8 @@ class MedicineController extends BaseController {
             //check if rows already added
             foreach($data['rows'] as $row){
 
-                $drug_id = $row[6];
-                if(!$this->in_multi_array($drug_id, $rows,6)){
+                $drug_id = $row[0];
+                if(!$this->in_multi_array($drug_id, $rows,0)){
                     array_push($rows, $row);
                 }
             }
@@ -72,7 +70,7 @@ class MedicineController extends BaseController {
 
 
         foreach($rows as $row){
-            $cname = $row[6];
+            $cname = $row[7];
             $result .= "$cname\n";
         }
 
@@ -89,7 +87,7 @@ class MedicineController extends BaseController {
 
         //Fusion Tables does not support OR WTF?
 
-        $sql = "SELECT * FROM ".$table." WHERE ProprietaryName LIKE '%".$q."%'";
+        $sql = "SELECT * FROM ".$table." WHERE ProprietaryName CONTAINS IGNORING CASE '".$q."'";
 
         $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
 
@@ -109,7 +107,7 @@ class MedicineController extends BaseController {
 
         //then do similar search for active ingredients :(
 
-        $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients LIKE '%".$q."%'";
+        $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients CONTAINS IGNORING CASE '".$q."'";
         $options = array("sql"=>$sql2, "key"=>$key, "sensor"=>"false");
 
         $url .= http_build_query($options,'','&');
@@ -123,8 +121,8 @@ class MedicineController extends BaseController {
             //check if rows already added
             foreach($data['rows'] as $row){
 
-                $drug_id = $row[6];
-                if(!$this->in_multi_array($drug_id, $rows,6)){
+                $drug_id = $row[0];
+                if(!$this->in_multi_array($drug_id, $rows,0)){
                     array_push($rows, $row);
                 }
             }
@@ -136,7 +134,7 @@ class MedicineController extends BaseController {
 
 
         foreach($rows as $row){
-            $cname = $row[6];
+            $cname = $row[7];
             $result .= "$cname\n";
         }
 
@@ -172,7 +170,7 @@ class MedicineController extends BaseController {
 
         //Fusion Tables does not support OR WTF?, hence $sql and $sql2
 
-        $sql = "SELECT * FROM ".$table." WHERE ProprietaryName LIKE '%".$q."%' AND originator_or_generic='Generic'";
+        $sql = "SELECT * FROM ".$table." WHERE ProprietaryName CONTAINS IGNORING CASE '".$q."' AND originator_or_generic='Generic'";
 
         $options = array("sql"=>$sql, "key"=>$key, "sensor"=>"false");
 
@@ -192,7 +190,7 @@ class MedicineController extends BaseController {
 
         //then do similar search for active ingredients :(
 
-        $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients LIKE '%".$q."%' AND  originator_or_generic='Generic'";
+        $sql2 = "SELECT * FROM ".$table." WHERE ActiveIngredients CONTAINS IGNORING CASE '".$q."' AND  originator_or_generic='Generic'";
         $options = array("sql"=>$sql2, "key"=>$key, "sensor"=>"false");
 
         $url .= http_build_query($options,'','&');
@@ -206,8 +204,8 @@ class MedicineController extends BaseController {
             //check if rows already added
             foreach($data['rows'] as $row){
 
-                $drug_id = $row[6];
-                if(!$this->in_multi_array($drug_id, $rows,6)){
+                $drug_id = $row[0];
+                if(!$this->in_multi_array($drug_id, $rows,0)){
                     array_push($rows, $row);
                 }
 
@@ -218,7 +216,7 @@ class MedicineController extends BaseController {
         $result = "";
 
         foreach($rows as $row){
-            $cname = $row[6];
+            $cname = $row[7];
             $result .= "$cname\n";
         }
 
