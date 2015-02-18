@@ -152,7 +152,7 @@
     </script>
 </head>
 <body>
-<div class="large-3 app-container">
+<div class="large-3 app-container"<?php if($widget!=1){print " style='display:none;'";}?>>
         <div class="app_header doctors">
             <i class="icon-user-md icon-2x app-icon"></i>
             <h4>Dodgy Doctors</h4>
@@ -174,7 +174,7 @@
             <!-- Modal for embed doctor details -->
             <div id="embedModal" class="reveal-modal" data-reveal>
                 <div><h4>Copy code below to embed this widget on your website</h4></div>
-                <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/');?>/dodgydocs_embed" scrolling="no" frameborder="0"></iframe></textarea>
+                <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/dodgydocs_embed');?>" scrolling="no" frameborder="0"></iframe></textarea>
                 <a class="close-reveal-modal">&#215;</a>
             </div>
 
@@ -198,7 +198,7 @@
     </div>
 
 
-    <div class="large-3 app-container">
+    <div class="large-3 app-container"<?php if($widget!=2){print " style='display:none;'";}?>>
         <div class="app_header medicine">
             <i class="icon-medkit icon-2x app-icon"></i>
             <h4>Medicine Prices</h4>
@@ -222,7 +222,7 @@
     </div>
 
 
-    <div class="large-3 app-container">
+    <div class="large-3 app-container"<?php if($widget!=3){print " style='display:none;'";}?>>
         <div class="app_header generics">
             <i class="icon-medkit icon-2x app-icon"></i>
             <h4>Find Generics</h4>
@@ -245,7 +245,7 @@
     </div>
 
 
-    <div class="large-3 app-container">
+    <div class="large-3 app-container"<?php if($widget!=4){print " style='display:none;'";}?>>
         <div class="app_header hospitals">
             <i class="icon-hospital icon-2x app-icon"></i>
             <h4>Find a Hospital</h4>

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/app/views/widget_view.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Code/app/views/dodgydocs_embed.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/routes.php" afterPath="$PROJECT_DIR$/Code/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/widget_view.php" afterPath="$PROJECT_DIR$/Code/app/views/widget_view.php" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,7 +77,7 @@
       <file leaf-file-name="widget_view.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/views/widget_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="19" selection-start="5471" selection-end="5471" vertical-scroll-proportion="0.36332768" vertical-offset="2096" max-vertical-offset="4440">
+            <state line="215" column="18" selection-start="8264" selection-end="8264" vertical-scroll-proportion="0.6095076" vertical-offset="2866" max-vertical-offset="4440">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -946,7 +943,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/widget_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="19" selection-start="5471" selection-end="5471" vertical-scroll-proportion="0.36332768" vertical-offset="2096" max-vertical-offset="4440">
+        <state line="215" column="18" selection-start="8264" selection-end="8264" vertical-scroll-proportion="0.6095076" vertical-offset="2866" max-vertical-offset="4440">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
