@@ -119,6 +119,8 @@
             }});
         });
     });
+    //TOTHINK: does search generic need autocomplete?
+    /*
     $(document).ready(function(){
         $("#searchGeneric").click(function(){
             var name = $("#medicine_name2").val();
@@ -138,6 +140,7 @@
             }});
         });
     });
+    */
     $(document).ready(function(){
         $("#searchHospitals").click(function(){
             var name = $("#hospital_location").val();

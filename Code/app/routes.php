@@ -49,6 +49,7 @@ Route::get('doctordetails', function()
     }
     return $result;
 });
+
 Route::get('medicine_price', function()
 {
     $name = Input::get('q');
@@ -56,10 +57,11 @@ Route::get('medicine_price', function()
     $result = '';
 
     if(isset($name)){
-        $result = MedicineController::getPrice($name);
+        $result = (new MedicineController())->drugDetails_FT($name);
     }
     return $result;
 });
+
 Route::get('medicine_generics', function()
 {
     $name = Input::get('q');
@@ -67,7 +69,7 @@ Route::get('medicine_generics', function()
     $result = '';
 
     if(isset($name)){
-        $result = MedicineController::getGeneric($name);
+        $result = (new MedicineController())->getGeneric($name);
     }
     return $result;
 });
