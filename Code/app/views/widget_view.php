@@ -171,13 +171,6 @@
 
             </div>
 
-            <!-- Modal for embed doctor details -->
-            <div id="embedModal" class="reveal-modal" data-reveal>
-                <div><h4>Copy code below to embed this widget on your website</h4></div>
-                <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/dodgydocs_embed');?>" scrolling="no" frameborder="0"></iframe></textarea>
-                <a class="close-reveal-modal">&#215;</a>
-            </div>
-
             <!-- Modal for doctor details -->
             <div id="myModal" class="reveal-modal" data-reveal>
                 <div id="dname"><h2>[Name]</h2></div>
@@ -217,7 +210,7 @@
             </p>
         </div>
         <div class="app_footer">
-            <span class="embed"><a href="#"><i class="icon-code"></i> Embed this widget</a></span>
+            <span class="embed"><a href="#" data-reveal-id="embedModal2"><i class="icon-code"></i> Embed this widget</a></span>
         </div>
     </div>
 
@@ -240,7 +233,7 @@
             </p>
         </div>
         <div class="app_footer">
-            <span class="embed"><a href="#"><i class="icon-code"></i> Embed this widget</a></span>
+            <span class="embed"><a href="#" data-reveal-id="embedModal3"><i class="icon-code"></i> Embed this widget</a></span>
         </div>
     </div>
 
@@ -263,10 +256,35 @@
             </p>
         </div>
         <div class="app_footer">
-            <span class="embed"><span class="near_me" style="cursor: pointer;"><i class="icon-location-arrow"></i> <span id="get_location_text" style="">My Location</span></span> &nbsp; <a href="#"><i class="icon-code"></i> Embed this widget</a></span>
+            <span class="embed"><span class="near_me" style="cursor: pointer;"><i class="icon-location-arrow"></i> <span id="get_location_text" style="">My Location</span></span> &nbsp; <a href="#" data-reveal-id="embedModal4"><i class="icon-code"></i> Embed this widget</a></span>
         </div>
 
     </div>
+
+<!-- Modal for embed doctor details -->
+<div id="embedModal" class="reveal-modal" data-reveal>
+    <div><h4>Copy code below to embed this widget on your website</h4></div>
+    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=1');?>" scrolling="no" frameborder="0"></iframe></textarea>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="embedModal2" class="reveal-modal" data-reveal>
+    <div><h4>Copy code below to embed this widget on your website</h4></div>
+    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=2');?>" scrolling="no" frameborder="0"></iframe></textarea>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="embedModal3" class="reveal-modal" data-reveal>
+    <div><h4>Copy code below to embed this widget on your website</h4></div>
+    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=3');?>" scrolling="no" frameborder="0"></iframe></textarea>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="embedModal4" class="reveal-modal" data-reveal>
+    <div><h4>Copy code below to embed this widget on your website</h4></div>
+    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=4');?>" scrolling="no" frameborder="0"></iframe></textarea>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
 
 <script>
     document.write('<script src=js/vendor/' +
