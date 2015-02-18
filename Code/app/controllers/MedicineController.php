@@ -224,6 +224,21 @@ class MedicineController extends BaseController {
 
     }
 
+    public function getDrugPrice($sep){
+        $vat = 1.14;
+
+        if ($sep < 85.70){
+            return $sep + ($sep * 0.46 + 6.95) * $vat;
+        }elseif($sep < 228.53){
+            return $sep + ($sep * 0.33 + 18.55) * $vat;
+        }elseif($sep < 799.85){
+            return $sep + ($sep * 0.15 + 59) * $vat;
+        }else{
+            return $sep + ($sep * 0.05 + 140) * $vat;
+        }
+
+    }
+
     /*
 
     public function getPrice($q){

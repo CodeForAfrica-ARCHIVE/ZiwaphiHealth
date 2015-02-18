@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/widget_view.php" afterPath="$PROJECT_DIR$/Code/app/views/widget_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="71" selection-start="10001" selection-end="10001" vertical-scroll-proportion="-0.55348045" vertical-offset="4151" max-vertical-offset="8835">
+            <state line="255" column="71" selection-start="10001" selection-end="10001" vertical-scroll-proportion="13.583333" vertical-offset="4151" max-vertical-offset="8835">
               <folding>
                 <element signature="n#style#0;n#img#0;n#li#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#li#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -57,11 +56,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedicineController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MedicineController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="328" column="1" selection-start="8520" selection-end="8520" vertical-scroll-proportion="-29.541666" vertical-offset="4136" max-vertical-offset="4950">
-              <folding />
+            <state line="163" column="30" selection-start="4128" selection-end="4138" vertical-scroll-proportion="-1.4380306" vertical-offset="3292" max-vertical-offset="5250">
+              <folding>
+                <element signature="e#6#86#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,11 +138,11 @@
         <option value="$PROJECT_DIR$/Code/public/.htaccess" />
         <option value="$PROJECT_DIR$/Code/public/main.css" />
         <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
-        <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
         <option value="$PROJECT_DIR$/Code/app/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/Code/app/routes.php" />
         <option value="$PROJECT_DIR$/Code/app/views/widget_view.php" />
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
+        <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
       </list>
     </option>
   </component>
@@ -880,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="1" selection-start="8520" selection-end="8520" vertical-scroll-proportion="-29.541666" vertical-offset="4136" max-vertical-offset="4950">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="44" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-8.125" vertical-offset="540" max-vertical-offset="2250">
@@ -926,7 +920,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="71" selection-start="10001" selection-end="10001" vertical-scroll-proportion="-0.55348045" vertical-offset="4151" max-vertical-offset="8835">
+        <state line="255" column="71" selection-start="10001" selection-end="10001" vertical-scroll-proportion="13.583333" vertical-offset="4151" max-vertical-offset="8835">
           <folding>
             <element signature="n#style#0;n#img#0;n#li#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#li#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -949,6 +943,15 @@
             <marker date="1424266152374" expanded="true" signature="17828:17849" placeholder="..." />
             <marker date="1424266152374" expanded="true" signature="17889:17911" placeholder="..." />
             <marker date="1424266152374" expanded="true" signature="19365:19382" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="30" selection-start="4128" selection-end="4138" vertical-scroll-proportion="-1.4380306" vertical-offset="3292" max-vertical-offset="5250">
+          <folding>
+            <element signature="e#6#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
