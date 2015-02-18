@@ -21,15 +21,25 @@ Route::get('/filterFeed', function()
     return (new HomeController())->filterFeed();
 });
 
+
+
+Route::get('embed_widget', function()
+{
+    $widget = Input::get('q');
+
+    return View::make('widget_view', array("widget"=>$widget));
+});
+
 Route::get('dodgydocs_embed/', function()
 {
-    return View::make('dodgydocs_embed');
+    $widget = 1;
+
+    return View::make('widget_view', array("widget"=>$widget));
 });
+
 Route::get('doctor', function()
 {
     $term = Input::get('q');
-
-    $name = Input::get('name');
 
     $result = '';
 
