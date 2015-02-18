@@ -491,7 +491,7 @@
 </div>
 
 
-<footer class="row">
+<div class="row footer">
     <div class="large-12 columns footer_section">
 
         <div class="row">
@@ -499,15 +499,20 @@
             </div>
             <div class="large-6 columns">
                 <ul class="inline-list right">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
+                    <li><a href="http://health.ziwaphi.com">Home</a></li>
+                    <li><a href="http://ziwaphi.com">Main Site</a></li>
+                    <li><a href="http://dlb.ziwaphi.com">Dead Letter Box</a></li>
                 </ul>
             </div>
+
+        </div>
+
+        <div class="footer_brand large-12 columns">
+            Built by Code4Africa
         </div>
     </div>
-</footer>
+
+</div>
 
 <script>
     document.write('<script src=js/vendor/' +

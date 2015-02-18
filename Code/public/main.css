@@ -1,3 +1,14 @@
+.footer{
+    padding:0 20px;
+
+}
+.footer a{
+    color:#fff;
+}
+.footer_brand{
+    color:#fff;
+    text-align:center;
+}
 .app_header{
     color: #dddddd;
     padding:3px !important;
