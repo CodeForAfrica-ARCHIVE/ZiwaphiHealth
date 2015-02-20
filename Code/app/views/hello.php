@@ -154,10 +154,13 @@
 <body>
 <div class="row">
     <div class="large-12 columns">
+        <div class="name">
+              <img src="img/logo.png" style="height:80px;">
+              <div class="h1">Health</div>
+        </div>
         <nav class="top-bar" data-topbar="" role="navigation">
             <!-- Title -->
             <ul class="title-area"">
-                <li class="name"><img src="img/logo.png" style="height: 80px; margin-top: -50px; "><h1 style="font-size: 5.5em; color:#fff; font-family: georgia, serif; display: inline;">Health</h1></li>
                 <!-- Mobile Menu Toggle -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>

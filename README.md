@@ -1,4 +1,12 @@
 HealthWatch
 ===========
 
-Nigeria health portal based on Kenya's StarHealth
+A suite of web based health applications
+
+INSTALLATION
+============
+
+1. 
+
+
+

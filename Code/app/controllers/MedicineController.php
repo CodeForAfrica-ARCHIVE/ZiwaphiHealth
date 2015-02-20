@@ -135,7 +135,10 @@ class MedicineController extends BaseController {
 
         foreach($rows as $row){
             $cname = $row[7];
-            $result .= "$cname\n";
+            $result .= $cname;
+            $result .= "<br />Price: ". $this->getDrugPrice($row[17]);
+            $result .= "<br />";
+
         }
 
         return $result;
@@ -225,6 +228,7 @@ class MedicineController extends BaseController {
     }
 
     public function getDrugPrice($sep){
+
         $vat = 1.14;
 
         if ($sep < 85.70){

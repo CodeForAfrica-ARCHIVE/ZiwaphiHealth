@@ -89,7 +89,7 @@ img {
 
 img {
   display: inline-block;
-  vertical-align: middle; }
+  }
 
 textarea {
   height: auto;
@@ -1767,10 +1767,10 @@ meta.foundation-mq-topbar {
 
 .top-bar {
   overflow: hidden;
-  height: 95px;
-  line-height: 95px;
+  height: 45px;
+  line-height: 45px;
   position: relative;
-  background: #333333;
+  background: #010000;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -1802,7 +1802,7 @@ meta.foundation-mq-topbar {
     margin: 0;
     font-size: 16px; }
     .top-bar .name h1 {
-      line-height: 95px;
+      line-height: 45px;
       font-size: 1.0625rem;
       margin: 0; }
       .top-bar .name h1 a {
@@ -2058,7 +2058,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #010001;
+    background: #333333;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -2103,14 +2103,14 @@ meta.foundation-mq-topbar {
         font-family:georgia;
         font-size:1.5em;
       padding: 0 25px;
-      line-height: 95px;
-      background: #010001; }
+      line-height: 45px;
+      background: #333333; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #3D566D;
         background:#3D566D; }
-    .top-bar-section li.active:not(.has-form) a:not(.button) {
+    .-section li.active:not(.has-form) a:not(.button) {
       padding: 0 15px;
-      line-height: 95px;
+      line-height: 45px;
       color: white;
       background: #008cba; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
@@ -2192,7 +2192,7 @@ meta.foundation-mq-topbar {
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background: #010001;
+      background: #333;
       padding: 0 15px;
       height: auto; }
     .top-bar-section .right li .dropdown {

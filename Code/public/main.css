@@ -1,6 +1,22 @@
+.name{
+    background-color: #010000;
+    height:90px;
+    padding:5px;
+}
+.h1{
+    font-size: 5.5em;
+    color:#fff;
+    font-family: georgia, serif;
+    line-height: 0 !important;
+    padding:5px;
+    margin-top: -50px;
+    margin-left: 65px;
+}
+.name img{
+    margin-right:20px;
+}
 .footer{
     padding:0 20px;
-
 }
 .footer a{
     color:#fff;
