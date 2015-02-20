@@ -18,7 +18,7 @@ class DoctorController extends BaseController {
         $q = strtoupper($q);
 
         $key = Config::get('custom_config.google_api_key');
-        $table = Config::get('custom_config.table');
+        $table = Config::get('custom_config.dodgy_docs_table');
 
         $url = "https://www.googleapis.com/fusiontables/v1/query?";
 
@@ -54,7 +54,7 @@ class DoctorController extends BaseController {
 
             $key = Config::get('custom_config.google_api_key');
 
-            $table = Config::get('custom_config.table');
+            $table = Config::get('custom_config.dodgy_docs_table');
 
             $url = "https://www.googleapis.com/fusiontables/v1/query?";
 

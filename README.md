@@ -6,19 +6,29 @@ A suite of web based health applications
 Installation
 ============
 
-1. Clone this repository to your working directory
+Clone this repository to your working directory
 
 <pre>
 git clone git@github.com:CodeForAfrica/ZiwaphiHealth.git
 </pre>
 
-2. Navigate into the Laravel directory
+You can now navigate <your localhost>/ZiwaphiHealth/Code/public to run the app
+
+Set Up
+===========
+
+HealthWatch uses Fusion Tables and Socrata to store the data and execute queries for the different apps. Here will walk you on the step by step for each of the appications
 
 
-<pre>
-cd ZiwaphiHealth/Code
-</pre>
+Dodgy Doctors
 
+This application helps you check if your doctor is registered, to confirm their area of practice and to check if they have malpractice cases. The data is hosted on Fusion Tables.
+To set up:
+1. Upload your data to Google Fusion Tables'
+2. Change the share settings to publicly availble on the web
+3. Grab the table id and set it accordingly on the custom config file: app/config/custom_config.php
+   Change the dodgy_docs_table to your table id
+4. Change google_api_key to your Google API key
 
 ### Built using Laravel PHP Framework
 
