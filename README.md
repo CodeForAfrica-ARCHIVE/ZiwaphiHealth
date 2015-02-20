@@ -25,9 +25,12 @@ Dodgy Doctors
 This application helps you check if your doctor is registered, to confirm their area of practice and to check if they have malpractice cases. The data is hosted on Fusion Tables.
 To set up:
 1. Upload your data to Google Fusion Tables'
+
 2. Change the share settings to publicly availble on the web
+
 3. Grab the table id and set it accordingly on the custom config file: app/config/custom_config.php
    Change the dodgy_docs_table to your table id
+
 4. Change google_api_key to your Google API key
 
 ### Built using Laravel PHP Framework

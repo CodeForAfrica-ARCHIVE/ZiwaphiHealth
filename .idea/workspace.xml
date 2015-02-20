@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/config/custom_config.php" afterPath="$PROJECT_DIR$/Code/app/config/custom_config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +55,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="30" selection-start="913" selection-end="929" vertical-scroll-proportion="0.65486723" vertical-offset="65" max-vertical-offset="690">
+            <state line="32" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.54867256" vertical-offset="170" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -159,8 +156,8 @@
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
         <option value="$PROJECT_DIR$/Code/public/main.css" />
         <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -789,7 +786,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="30" selection-start="913" selection-end="929" vertical-scroll-proportion="0.65486723" vertical-offset="65" max-vertical-offset="690">
+        <state line="32" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.54867256" vertical-offset="170" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
