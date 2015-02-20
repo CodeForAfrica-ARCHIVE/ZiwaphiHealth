@@ -14,7 +14,7 @@ class HomeController extends BaseController {
 
 
         //get all stories, loop and classify
-        $url = Config::get('custom_config.WPFeedRoot') . "?json=get_category_posts&id=2";
+        $url = Config::get('custom_config.WPFeedRoot') . "?json=get_category_posts&id=".Config::get('custom_config.WP_HealthCategory');
 
         $result = json_decode($this->file_get_contents_curl($url));
 

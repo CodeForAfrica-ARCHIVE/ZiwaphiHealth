@@ -57,6 +57,22 @@ This app helps users find hospitals around them. The data for this is hosted on 
 
 2. Change hospitals_table to the Socrata app id
 
+**New Feed**
+
+The final step is to set up the blog feed for the stories.
+
+You will need a Wordpress instance to feed the application with stories. For your instance to be usable you will need to do the following:
+
+1. Install JSON-API plugin
+
+2. Create a Health category
+
+3. In the custom config file change 'WPFeedRoot' to your Wordpress root
+
+4. Also, change 'WP_HealthCategory' to the category id of your Health category
+
+**Congrats! All done!**
+
 
 ### Built using Laravel PHP Framework
 
