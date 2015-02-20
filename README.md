@@ -6,11 +6,19 @@ A suite of web based health applications
 Installation
 ============
 
-Clone this repository to your working directory
+1. Clone this repository to your working directory
 
 <pre>
 git clone git@github.com:CodeForAfrica/ZiwaphiHealth.git
 </pre>
+
+2. Update composer
+<pre>
+cd Code/
+
+composer update
+</pre>
+
 
 You can now navigate <your localhost>/ZiwaphiHealth/Code/public to run the app
 
@@ -40,7 +48,7 @@ Dodgy Doctors except for #3 where you'll change the 'medicine_table' value to yo
 
 **Hospitals App**
 
-
+This app helps users find hospitals around them. The data for this is hosted on Socrata.
 
 
 ### Built using Laravel PHP Framework

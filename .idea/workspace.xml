@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/config/custom_config.php" afterPath="$PROJECT_DIR$/Code/app/config/custom_config.php" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +40,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.7079646" vertical-offset="230" max-vertical-offset="885">
+            <state line="18" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.45132744" vertical-offset="15" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -793,7 +791,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.7079646" vertical-offset="230" max-vertical-offset="885">
+        <state line="18" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.45132744" vertical-offset="15" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
