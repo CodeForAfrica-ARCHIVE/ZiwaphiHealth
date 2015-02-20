@@ -13,7 +13,7 @@ class MedicineController extends BaseController {
 
         $q = ucwords($q);
 
-        $key = Config::get('custom_config.api_key');
+        $key = Config::get('custom_config.google_api_key');
         $table = Config::get('custom_config.medicine_table_ft');
 
         $base_url = "https://www.googleapis.com/fusiontables/v1/query?";
@@ -80,7 +80,7 @@ class MedicineController extends BaseController {
     public function drugDetails_FT($q)
     {
 
-        $key = Config::get('custom_config.api_key');
+        $key = Config::get('custom_config.google_api_key');
         $table = Config::get('custom_config.medicine_table_ft');
 
         $base_url = "https://www.googleapis.com/fusiontables/v1/query?";
@@ -166,7 +166,7 @@ class MedicineController extends BaseController {
 
     public function getGeneric($q){
 
-        $key = Config::get('custom_config.api_key');
+        $key = Config::get('custom_config.google_api_key');
         $table = Config::get('custom_config.medicine_table_ft');
 
         $base_url = "https://www.googleapis.com/fusiontables/v1/query?";
