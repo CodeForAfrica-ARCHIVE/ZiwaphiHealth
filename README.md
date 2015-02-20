@@ -12,7 +12,9 @@ Installation
 git clone git@github.com:CodeForAfrica/ZiwaphiHealth.git
 </pre>
 
-2.
+2. Navigate into the repository
 
 
-
+<pre>
+cd ZiwaphiHealth/
+</pre>
