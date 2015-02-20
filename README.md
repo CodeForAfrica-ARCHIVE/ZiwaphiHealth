@@ -3,10 +3,16 @@ HealthWatch
 
 A suite of web based health applications
 
-INSTALLATION
+Installation
 ============
 
-1. 
+1. Clone this repository to your working directory
+
+<pre>
+git clone git@github.com:CodeForAfrica/ZiwaphiHealth.git
+</pre>
+
+2.
 
 
 

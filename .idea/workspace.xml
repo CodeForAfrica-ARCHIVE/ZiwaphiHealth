@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/clean/.~lock.Database Of Medicine Prices 23rd Dec 2014.csv#" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/css/foundation.css" afterPath="$PROJECT_DIR$/Code/public/css/foundation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/main.css" afterPath="$PROJECT_DIR$/Code/public/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +52,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="97" selection-end="97" vertical-scroll-proportion="0.20654045" vertical-offset="0" max-vertical-offset="581">
+            <state line="13" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="0.33562824" vertical-offset="0" max-vertical-offset="581">
               <folding />
             </state>
           </provider>
@@ -682,7 +676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="97" selection-end="97" vertical-scroll-proportion="0.20654045" vertical-offset="0" max-vertical-offset="581">
+        <state line="13" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="0.33562824" vertical-offset="0" max-vertical-offset="581">
           <folding />
         </state>
       </provider>
