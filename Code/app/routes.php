@@ -17,6 +17,13 @@ Route::get('/blog/wp-admin', function(){
 
 });
 
+Route::get('/match_drugs', function(){
+
+    $q = Input::get('q');
+
+    return (new MedicineController())->matchSearch_Socrata($q);
+});
+
 Route::get('/', function()
 {
 	return (new HomeController())->showWelcome();

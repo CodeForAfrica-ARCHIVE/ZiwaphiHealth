@@ -14,7 +14,7 @@
 
         'google_api_key'=>'AIzaSyBNhfmqCPpeM913ouoO_eZE6JZQDnluxq8',
 
-        'medicine_table_ft'=>'1kZM5_ZTJvVvP3F1f1_a_j-MAi7JEHrb39DCgXhb8'
+        'medicine_table_ft'=>'1JEZoa0eVF8Z7Cmm2Pp2G0F_HUCbbI2jtnw0PNdu5'
     );
 
 ?>

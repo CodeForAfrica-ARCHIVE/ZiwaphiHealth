@@ -11,8 +11,6 @@ class MedicineController extends BaseController {
     public function matchSearch($q)
     {
 
-        $q = ucwords($q);
-
         $key = Config::get('custom_config.google_api_key');
         $table = Config::get('custom_config.medicine_table_ft');
 
@@ -60,17 +58,17 @@ class MedicineController extends BaseController {
                 $drug_id = $row[0];
                 if(!$this->in_multi_array($drug_id, $rows,0)){
                     array_push($rows, $row);
-                }
+               }
             }
 
         }
 
 
-        $result = "";
+        $result = "";//"Results: ".count($rows);
 
 
         foreach($rows as $row){
-            $result .= $this->format_drug_row($row);
+            $result .= $row[7]." (".$row[9]." ".$row[10].")\n";
         }
 
         return $result;
@@ -287,6 +285,44 @@ class MedicineController extends BaseController {
 
     }
 
+    public function matchSearch_Socrata($q){
+        $view_uid = Config::get('custom_config.medicine_table');
+        $root_url = "https://data.code4sa.org/";
+        $app_token = Config::get('custom_config.app_token');
+        $response = NULL;
+
+        $socrata = new Socrata($root_url, $app_token);
+
+        $params = array("\$q" => "$q");
+
+        $response = $socrata->get("/resource/$view_uid.json", $params);
+
+        $result = "";
+
+        print "<pre>";
+        print_r($response);
+        print "</pre>";
+
+        if(count($response)<1){
+            $result .= "No drugs found with that name!";
+        }else{
+
+
+            $result .= "Found ".count($response)." results for '".$q."'";
+
+            foreach($response as $drug){
+
+                        $result .='<div>';
+                        $result .= $drug['proprietary_name'] ." (". $drug['strength'].$drug['unit'].")";
+                        $result .='</div>';
+
+
+            }
+
+        }
+
+        print $result;
+    }
     /*
 
     public function getPrice($q){
