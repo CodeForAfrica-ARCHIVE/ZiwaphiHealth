@@ -3,7 +3,7 @@
     return array(
         'dodgy_docs_table'=>'1Bwi9rbrbkr-Zc6CxMYM2O2Gj_SjtXtNKcKrBFBMm',
 
-        'WPFeedRoot'=>'http://health.ziwaphi.com/blog/',
+        'WPFeedRoot'=>'http://ziwaphihealth.codeforafrica.net/',
         'WP_HealthCategory'=>'2',
 
         'medicine_table'=>'mba4-xngh',

@@ -11,12 +11,6 @@
 |
 */
 
-Route::get('/blog/wp-admin', function(){
-
-    return Redirect::to("http://ziwaphihealth.codeforafrica.net/wp-admin");
-
-});
-
 Route::get('/', function()
 {
 	return (new HomeController())->showWelcome();

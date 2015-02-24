@@ -124,7 +124,24 @@
                 }});
             });
         });
+        $(document).ready(function(){
+            $('#site_search').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#site_search_submit').click();
+                    return false;    //<---- Add this line
+                }
+            });
 
+            $('#site_search_submit').click(function(){
+
+                if($('#site_search').val().length == 0){
+                    alert('Please enter a search query!');
+                }else{
+                    window.location = "<?php echo Config::get('custom_config.WPFeedRoot');?>?s=" + $('#site_search').val();
+                }
+
+            })
+        })
         $(document).ready(function(){
             jQuery(".near_me").click(initiate_geolocation);
             //$("#loading_hospitals").show();
@@ -170,17 +187,17 @@
                 <!-- Top Bar Right Nav Elements -->
                 <ul class="left" style="margin-left:20px; font-size: 0.8em;">
                     <li><a href="http://health.ziwaphi.com" target="_blank">Home</a></li>
-                    <li><a href="http://ziwaphi.com" target="_blank">Ziwaphi Main Site</a></li>
+                    <li><a href="http://ziwaphi.com" target="_blank">Ziwaphi</a></li>
                     <li><a href="http://dlb.ziwaphi.com" target="_blank">Dead Letter Box</a></li>
                 </ul>
                 <ul class="right">
                     <!-- Search | has-form wrapper -->
                     <li class="has-form">
                         <div class="row collapse">
-                            <div class="large-8 small-9 columns">
-                                <input type="text" placeholder="Enter key words">
-                            </div>
-                            <div class="large-4 small-3 columns">
+                                <div class="large-8 small-9 columns">
+                                    <input type="text" placeholder="Enter key words" name="s" id="site_search">
+                                </div>
+                            <div class="large-4 small-3 columns" id="site_search_submit">
                                 <a href="#" class="button expand">Search</a>
                             </div>
                         </div>
@@ -546,9 +563,9 @@
             </div>
             <div class="large-6 columns">
                 <ul class="inline-list right">
-                    <li><a href="http://health.ziwaphi.com">Home</a></li>
-                    <li><a href="http://ziwaphi.com">Main Site</a></li>
-                    <li><a href="http://dlb.ziwaphi.com">Dead Letter Box</a></li>
+                    <li><a href="http://health.ziwaphi.com" target="_blank">Home</a></li>
+                    <li><a href="http://ziwaphi.com" target="_blank">Ziwaphi</a></li>
+                    <li><a href="http://dlb.ziwaphi.com" target="_blank">Dead Letter Box</a></li>
                 </ul>
             </div>
 
