@@ -71,7 +71,9 @@ class MedicineController extends BaseController {
 
         foreach($rows as $row){
             $cname = $row[7];
-            $result .= "$cname\n";
+            $result .= $cname;
+            $result .= " - Price: R". round($this->getDrugPrice($row[17]), 1);
+            $result .= "<br />";
         }
 
         return $result;
@@ -136,7 +138,7 @@ class MedicineController extends BaseController {
         foreach($rows as $row){
             $cname = $row[7];
             $result .= $cname;
-            $result .= "<br />Price: ". $this->getDrugPrice($row[17]);
+            $result .= " - Price: R". round($this->getDrugPrice($row[17]), 1);
             $result .= "<br />";
 
         }
@@ -220,7 +222,9 @@ class MedicineController extends BaseController {
 
         foreach($rows as $row){
             $cname = $row[7];
-            $result .= "$cname\n";
+            $result .= $cname;
+            $result .= " - Price: R". round($this->getDrugPrice($row[17]), 1);
+            $result .= "<br />";
         }
 
         return $result;

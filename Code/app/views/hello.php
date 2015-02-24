@@ -47,6 +47,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+            $('#dodgy_docs_input').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#grabDetails').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
             $("#grabDetails").click(function(){
                 var name = $("#dodgy_docs_input").val();
 
@@ -66,6 +73,14 @@
             });
         });
         $(document).ready(function(){
+
+            $('#medicine_name').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#searchMedicine').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
             $("#searchMedicine").click(function(){
                 var name = $("#medicine_name").val();
 
@@ -86,6 +101,14 @@
         });
 
         $(document).ready(function(){
+
+            $('#medicine_name2').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#searchGeneric').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
             $("#searchGeneric").click(function(){
                 var name = $("#medicine_name2").val();
 
@@ -106,6 +129,14 @@
         });
 
         $(document).ready(function(){
+
+            $('#hospital_location').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#searchHospitals').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
             $("#searchHospitals").click(function(){
                 var name = $("#hospital_location").val();
 

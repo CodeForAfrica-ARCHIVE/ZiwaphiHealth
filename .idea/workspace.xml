@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Code/public/blog/index.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/config/custom_config.php" afterPath="$PROJECT_DIR$/Code/app/config/custom_config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/routes.php" afterPath="$PROJECT_DIR$/Code/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="45" selection-start="5266" selection-end="5266" vertical-scroll-proportion="0.8611111" vertical-offset="1725" max-vertical-offset="9120">
+            <state line="82" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="-14.25" vertical-offset="888" max-vertical-offset="9585">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -58,11 +55,11 @@
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1424758756352" expanded="true" signature="15071:15088" placeholder="..." />
-                <marker date="1424758756352" expanded="true" signature="17395:17412" placeholder="..." />
-                <marker date="1424758756352" expanded="true" signature="18537:18558" placeholder="..." />
-                <marker date="1424758756352" expanded="true" signature="18598:18620" placeholder="..." />
-                <marker date="1424758756352" expanded="true" signature="20074:20091" placeholder="..." />
+                <marker date="1424759928658" expanded="true" signature="16027:16044" placeholder="..." />
+                <marker date="1424759928658" expanded="true" signature="18351:18368" placeholder="..." />
+                <marker date="1424759928658" expanded="true" signature="19493:19514" placeholder="..." />
+                <marker date="1424759928658" expanded="true" signature="19554:19576" placeholder="..." />
+                <marker date="1424759928658" expanded="true" signature="21030:21047" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -98,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedicineController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MedicineController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="0" selection-start="4665" selection-end="4665" vertical-scroll-proportion="0.0" vertical-offset="2583" max-vertical-offset="5310">
+            <state line="74" column="27" selection-start="1959" selection-end="1959" vertical-scroll-proportion="1.8253968" vertical-offset="0" max-vertical-offset="5295">
               <folding />
             </state>
           </provider>
@@ -171,12 +168,12 @@
         <option value="$PROJECT_DIR$/Code/public/main.css" />
         <option value="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" />
         <option value="$PROJECT_DIR$/Code/app/storage/logs/laravel.log" />
-        <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Code/app/routes.php" />
         <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
+        <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
       </list>
     </option>
   </component>
@@ -721,13 +718,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="0" selection-start="4665" selection-end="4665" vertical-scroll-proportion="0.0" vertical-offset="2583" max-vertical-offset="5310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1935">
@@ -751,7 +741,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="45" selection-start="5266" selection-end="5266" vertical-scroll-proportion="0.8611111" vertical-offset="1725" max-vertical-offset="9120">
+        <state line="82" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="-14.25" vertical-offset="888" max-vertical-offset="9585">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -768,12 +758,19 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1424758756352" expanded="true" signature="15071:15088" placeholder="..." />
-            <marker date="1424758756352" expanded="true" signature="17395:17412" placeholder="..." />
-            <marker date="1424758756352" expanded="true" signature="18537:18558" placeholder="..." />
-            <marker date="1424758756352" expanded="true" signature="18598:18620" placeholder="..." />
-            <marker date="1424758756352" expanded="true" signature="20074:20091" placeholder="..." />
+            <marker date="1424759928658" expanded="true" signature="16027:16044" placeholder="..." />
+            <marker date="1424759928658" expanded="true" signature="18351:18368" placeholder="..." />
+            <marker date="1424759928658" expanded="true" signature="19493:19514" placeholder="..." />
+            <marker date="1424759928658" expanded="true" signature="19554:19576" placeholder="..." />
+            <marker date="1424759928658" expanded="true" signature="21030:21047" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="27" selection-start="1959" selection-end="1959" vertical-scroll-proportion="1.8253968" vertical-offset="0" max-vertical-offset="5295">
+          <folding />
         </state>
       </provider>
     </entry>
