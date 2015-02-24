@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-
+    <link href="prism/prism.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="autocomplete/jquery.autocomplete.css">
     <script type="text/javascript" src="autocomplete/jquery.js"></script>
     <script type='text/javascript' src='autocomplete/jquery.autocomplete.js'></script>
+    <script src="prism/prism.js"></script>
     <script type="text/javascript">
         $.noConflict();
         jQuery(document).ready(function($) {
@@ -262,7 +263,8 @@
             <!-- Modal for embed doctor details -->
             <div id="embedModal" class="reveal-modal" data-reveal>
                 <div><h4>Copy code below to embed this widget on your website</h4></div>
-                    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/');?>/dodgydocs_embed" scrolling="no" frameborder="0"></iframe></textarea>
+                    <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/');?>/dodgydocs_embed" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
+
                 <a class="close-reveal-modal">&#215;</a>
             </div>
 

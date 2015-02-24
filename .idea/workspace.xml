@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/prism/prism.css" afterPath="$PROJECT_DIR$/Code/public/prism/prism.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/prism/prism.js" afterPath="$PROJECT_DIR$/Code/public/prism/prism.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="392" column="25" selection-start="15851" selection-end="15851" vertical-scroll-proportion="-5.0" vertical-offset="5625" max-vertical-offset="9600">
+            <state line="265" column="188" selection-start="9982" selection-end="9982" vertical-scroll-proportion="0.47596154" vertical-offset="3777" max-vertical-offset="9630">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -75,11 +74,11 @@
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1424793358096" expanded="false" signature="15937:15954" placeholder="..." />
-                <marker date="1424793358096" expanded="false" signature="18283:18300" placeholder="..." />
-                <marker date="1424793358096" expanded="false" signature="19425:19446" placeholder="..." />
-                <marker date="1424793358096" expanded="false" signature="19486:19508" placeholder="..." />
-                <marker date="1424793358096" expanded="false" signature="20962:20979" placeholder="..." />
+                <marker date="1424795757576" expanded="false" signature="16057:16074" placeholder="..." />
+                <marker date="1424795757576" expanded="false" signature="18403:18420" placeholder="..." />
+                <marker date="1424795757576" expanded="false" signature="19545:19566" placeholder="..." />
+                <marker date="1424795757576" expanded="false" signature="19606:19628" placeholder="..." />
+                <marker date="1424795757576" expanded="false" signature="21082:21099" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -88,16 +87,16 @@
       <file leaf-file-name="prism.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/public/prism/prism.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="1" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
+            <state line="10" column="60" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="2100">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prism.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="prism.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/public/prism/prism.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="648" column="0" selection-start="20158" selection-end="20158" vertical-scroll-proportion="16.446701" vertical-offset="0" max-vertical-offset="10080">
+            <state line="21" column="22" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10080">
               <folding />
             </state>
           </provider>
@@ -175,9 +174,9 @@
         <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
         <option value="$PROJECT_DIR$/Code/public/css/foundation.css" />
         <option value="$PROJECT_DIR$/Code/public/main.css" />
-        <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
         <option value="$PROJECT_DIR$/Code/public/prism/prism.css" />
         <option value="$PROJECT_DIR$/Code/public/prism/prism.js" />
+        <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
       </list>
     </option>
   </component>
@@ -485,7 +484,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.49960968" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1908397" sideWeight="0.49960968" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1898928" sideWeight="0.49960968" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19601838" sideWeight="0.49960968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -812,9 +811,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/prism/prism.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="22" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/prism/prism.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="60" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="392" column="25" selection-start="15851" selection-end="15851" vertical-scroll-proportion="-5.0" vertical-offset="5625" max-vertical-offset="9600">
+        <state line="265" column="188" selection-start="9982" selection-end="9982" vertical-scroll-proportion="0.47596154" vertical-offset="3777" max-vertical-offset="9630">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -833,26 +846,12 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1424793358096" expanded="false" signature="15937:15954" placeholder="..." />
-            <marker date="1424793358096" expanded="false" signature="18283:18300" placeholder="..." />
-            <marker date="1424793358096" expanded="false" signature="19425:19446" placeholder="..." />
-            <marker date="1424793358096" expanded="false" signature="19486:19508" placeholder="..." />
-            <marker date="1424793358096" expanded="false" signature="20962:20979" placeholder="..." />
+            <marker date="1424795757576" expanded="false" signature="16057:16074" placeholder="..." />
+            <marker date="1424795757576" expanded="false" signature="18403:18420" placeholder="..." />
+            <marker date="1424795757576" expanded="false" signature="19545:19566" placeholder="..." />
+            <marker date="1424795757576" expanded="false" signature="19606:19628" placeholder="..." />
+            <marker date="1424795757576" expanded="false" signature="21082:21099" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/public/prism/prism.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="1" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/public/prism/prism.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="648" column="0" selection-start="20158" selection-end="20158" vertical-scroll-proportion="16.446701" vertical-offset="0" max-vertical-offset="10080">
-          <folding />
         </state>
       </provider>
     </entry>
