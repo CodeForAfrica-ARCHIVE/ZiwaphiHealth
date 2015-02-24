@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/public/prism/prism.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/public/prism/prism.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="381" column="121" selection-start="15389" selection-end="15389" vertical-scroll-proportion="0.16666667" vertical-offset="5625" max-vertical-offset="9600">
+            <state line="392" column="25" selection-start="15851" selection-end="15851" vertical-scroll-proportion="-5.0" vertical-offset="5625" max-vertical-offset="9600">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -74,12 +76,21 @@
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1424793102184" expanded="false" signature="15937:15954" placeholder="..." />
-                <marker date="1424793102184" expanded="false" signature="18283:18300" placeholder="..." />
-                <marker date="1424793102184" expanded="false" signature="19425:19446" placeholder="..." />
-                <marker date="1424793102184" expanded="false" signature="19486:19508" placeholder="..." />
-                <marker date="1424793102184" expanded="false" signature="20962:20979" placeholder="..." />
+                <marker date="1424793358096" expanded="false" signature="15937:15954" placeholder="..." />
+                <marker date="1424793358096" expanded="false" signature="18283:18300" placeholder="..." />
+                <marker date="1424793358096" expanded="false" signature="19425:19446" placeholder="..." />
+                <marker date="1424793358096" expanded="false" signature="19486:19508" placeholder="..." />
+                <marker date="1424793358096" expanded="false" signature="20962:20979" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prism.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Code/public/prism/prism.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2565">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -291,29 +302,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZiwaphiHealth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZiwaphiHealth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autocomplete" />
+              <option name="myItemId" value="prism" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -439,6 +428,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Code/public/prism" />
       <recent name="$PROJECT_DIR$/Code/public" />
       <recent name="$PROJECT_DIR$/Code/app/models" />
       <recent name="$PROJECT_DIR$/Code/app/controllers" />
@@ -535,15 +525,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="2250">
-          <folding>
-            <marker date="1424779273792" expanded="true" signature="2402:2414" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6874" column="200" selection-start="1047682" selection-end="1047684" vertical-scroll-proportion="0.0" vertical-offset="103000" max-vertical-offset="103485" />
@@ -843,7 +824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="381" column="121" selection-start="15389" selection-end="15389" vertical-scroll-proportion="0.16666667" vertical-offset="5625" max-vertical-offset="9600">
+        <state line="392" column="25" selection-start="15851" selection-end="15851" vertical-scroll-proportion="-5.0" vertical-offset="5625" max-vertical-offset="9600">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -862,12 +843,19 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1424793102184" expanded="false" signature="15937:15954" placeholder="..." />
-            <marker date="1424793102184" expanded="false" signature="18283:18300" placeholder="..." />
-            <marker date="1424793102184" expanded="false" signature="19425:19446" placeholder="..." />
-            <marker date="1424793102184" expanded="false" signature="19486:19508" placeholder="..." />
-            <marker date="1424793102184" expanded="false" signature="20962:20979" placeholder="..." />
+            <marker date="1424793358096" expanded="false" signature="15937:15954" placeholder="..." />
+            <marker date="1424793358096" expanded="false" signature="18283:18300" placeholder="..." />
+            <marker date="1424793358096" expanded="false" signature="19425:19446" placeholder="..." />
+            <marker date="1424793358096" expanded="false" signature="19486:19508" placeholder="..." />
+            <marker date="1424793358096" expanded="false" signature="20962:20979" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/prism/prism.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2565">
+          <folding />
         </state>
       </provider>
     </entry>
