@@ -49,6 +49,8 @@
 .app_header{
     color: #dddddd;
     padding:3px !important;
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
 }
 .hospitals{
     background: #ed2124;
