@@ -573,19 +573,20 @@
     <aside class="large-3 columns hide-for-small linksholder">
         <div class="big-title">Links</div>
         <div class="content_body">
-        <p><a href="http://code4sa.org" target="_blank"><img style="height: 80px" src="img/c4sa.png" id="c4sa_partner"></a>
+        <p><a href="http://code4sa.org" target="_blank"><img src="img/c4sa.png" id="partner_logo"></a>
             <br/>
             The data driven journalism + tools in ZiwaphiHealth section were kickstarted by <a href="http://code4kenya.org" target="_blank">Code4Kenya</a>
         </p>
-        <p>
+            <hr />
+        <div style="display:none;">
             <a href="http://github.com/CodeForAfrica/ZiwaphiHealth"><img src="img/github.png" id="cfa_icon"></a>
             <a href="http://data.the-star.co.ke"><img style="height:32px;margin-left:25px" src="img/data.png" id="ckan_icon"></a>
-            <br/>
-            The code & data for this page are open source. You can re-use it by visiting the above repositories.
+                </div>
+        <p>
+            The <a href="http://github.com/CodeForAfrica/ZiwaphiHealth">code</a> & <a href="https://github.com/CodeForAfrica/ZiwaphiHealth/tree/master/Data/clean">data</a> for this page are open source. You can re-use it by visiting the above repositories.
         </p>
-
-        <h4>Stay in Touch</h4>
-        <div class="social_media_icons">
+            <hr />
+        <div class="social_media_icons" style="text-align: center">
             <i class="icon-facebook icon-2x app-icon"></i>
             <i class="icon-twitter icon-2x app-icon"></i>
             <i class="icon-rss icon-2x app-icon"></i>

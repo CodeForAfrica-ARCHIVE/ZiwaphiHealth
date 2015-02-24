@@ -143,10 +143,18 @@
     font-size: 1.5em;
 }
 .linksholder{
-    text-align: center;
 }
 .linksholder p{
     margin-bottom: 30px;
+    padding: 10px;
+}
+#partner_logo{
+    float:left;
+    height:50px;
+    margin-right:5px;
+}
+.social_media_icons{
+    padding:10px;
 }
 .featured_title{
     font-weight:bold;
