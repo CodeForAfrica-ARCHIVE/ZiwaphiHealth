@@ -20,9 +20,9 @@
 }
 
 .name{
-    background-color: #010000;
     height:90px;
     padding:5px;
+    background: #010000 url("img/wallpaper.jpg") no-repeat right center;
 }
 .h1{
     font-size: 5.5em;
@@ -78,8 +78,11 @@
     color:#fff;
 }
 .footer_section{
-    background-color: #010000;
-    height:80px;
+    background-color: #333;
+    /* height: 80px; */
+    margin-top: 20px;
+    padding: 5px;
+    color:#7c7c7c;
 }
 .app_footer{
     text-align: center;
