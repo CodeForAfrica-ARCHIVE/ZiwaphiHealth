@@ -263,8 +263,7 @@
             <!-- Modal for embed doctor details -->
             <div id="embedModal" class="reveal-modal" data-reveal>
                 <div><h4>Copy code below to embed this widget on your website</h4></div>
-                    <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/');?>/dodgydocs_embed" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
-
+                    <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=1');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
                 <a class="close-reveal-modal">&#215;</a>
             </div>
 
@@ -356,25 +355,25 @@
     <!-- Modal for embed doctor details -->
     <div id="embedModal" class="reveal-modal" data-reveal>
         <div><h4>Copy code below to embed this widget on your website</h4></div>
-        <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=1');?>" scrolling="no" frameborder="0"></iframe></textarea>
+        <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=1');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
         <a class="close-reveal-modal">&#215;</a>
     </div>
 
     <div id="embedModal2" class="reveal-modal" data-reveal>
         <div><h4>Copy code below to embed this widget on your website</h4></div>
-        <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=2');?>" scrolling="no" frameborder="0"></iframe></textarea>
+        <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=2');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
         <a class="close-reveal-modal">&#215;</a>
     </div>
 
     <div id="embedModal3" class="reveal-modal" data-reveal>
         <div><h4>Copy code below to embed this widget on your website</h4></div>
-        <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=3');?>" scrolling="no" frameborder="0"></iframe></textarea>
+        <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=3');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
         <a class="close-reveal-modal">&#215;</a>
     </div>
 
     <div id="embedModal4" class="reveal-modal" data-reveal>
         <div><h4>Copy code below to embed this widget on your website</h4></div>
-        <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=4');?>" scrolling="no" frameborder="0"></iframe></textarea>
+        <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=4');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
         <a class="close-reveal-modal">&#215;</a>
     </div>
 </div>
