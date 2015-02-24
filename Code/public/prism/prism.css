@@ -1,166 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
 
-<meta charset="utf-8" />
-<link rel="shortcut icon" href="favicon.png" />
-<title>Download ▲ Prism</title>
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="themes/prism.css" data-noprefix />
-<style>
-form label {
-	display: block;
-	padding: .2em;
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
 }
 
-form input {
-	margin-right: .7em;
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background: #b3d4fc;
 }
 
-form > p:first-of-type > label {
-	font-size: 150%;
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #b3d4fc;
 }
 
-	form > p:first-of-type > label input {
-		vertical-align: .3em;
-	}
-	
-.filesize:empty {
-	display: none;
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
 }
 
-.filesize::before,
-.filesize::after {
-	font-weight: normal;
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
 }
 
-.filesize::before {
-	content: '(';
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #f5f2f0;
 }
 
-.filesize::after {
-	content: ')';
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
 }
 
-#components {
-	overflow: hidden;
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
 }
 
-section.options {
-	width: 33.3%;
-	width: calc(100% / 3);
-	float: left;
+.token.punctuation {
+    color: #999;
 }
 
-section.options#category-languages {
-	width: 100%;
-	float: none;
-	column-count: 3;
-	padding-top: 2em;
-	overflow: visible;
+.namespace {
+    opacity: .7;
 }
 
-	section.options#category-languages > h1 {
-		margin-top: 0;
-		column-span: all;
-	}
-
-section.options#category-themes {
-	width: 66.6%;
-	width: calc(100% * 2/3);
-	column-count: 2;
-	overflow: visible;
-	float: none;
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
 }
 
-	section.options#category-themes > h1 {
-		column-span: all;
-	}
-
-section.download {
-	width: 50%;
-	float: left;
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
 }
 
-#download {
-	overflow: hidden;
-	padding: .3em;
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #a67f59;
+    background: hsla(0, 0%, 100%, .5);
 }
 
-	#download .error {
-		color: #B61500;
-		display: none;
-	}
-	#download pre {
-		height: 20em;
-		word-wrap: break-word;
-	}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
 
-	#download-js .download-button {
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-	
-	#download-css .download-button {
-		background-color: #dc9e23;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-	}
-</style>
-<script src="prefixfree.min.js"></script>
+.token.function {
+    color: #DD4A68;
+}
 
-<script>var _gaq = [['_setAccount', 'UA-33746269-1'], ['_trackPageview']];</script>
-<script src="http://www.google-analytics.com/ga.js" async></script>
-</head>
-<body>
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
 
-<header>
-	<div class="intro" data-src="templates/header-main.html" data-type="text/html"></div>
-	
-	<h2>Customize your download</h2>
-	<p>Select your compression level, as well as the languages and plugins you need.</p>
-</header>
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
 
-<section>
-	<form>
-		<p>
-			Compression level:
-			<label><input type="radio" name="compression" value="0" /> Development version</label>
-			<label><input type="radio" name="compression" value="1" checked /> Minified version</label>
-		</p>
-		
-		<section id="components"></section>
-		
-		<p>
-			Total filesize: <strong id="filesize"></strong> (<strong id="percent-js"></strong> JavaScript + <strong id="percent-css"></strong> CSS)
-		</p>
-		<p><strong>Note:</strong> The filesizes displayed refer to non-gizipped files and include any CSS code required. The CSS code is not minified.</p>
-		
-		<section id="download">
-			<div class="error"></div>
-			<section id="download-js" class="download">
-				<pre><code class="language-javascript"></code></pre>
-				<a href="#" class="download-button" download="prism.js" target="_blank">Download JS</a>
-			</section>
-			
-			<section id="download-css" class="download">
-				<pre><code class="language-css"></code></pre>
-				<a href="#" class="download-button" download="prism.css" target="_blank">Download CSS</a>
-			</section>
-		</section>
-		
-	</form>
-	
-</section>
-
-<footer data-src="templates/footer.html" data-type="text/html"></footer>
-
-<script src="prism.js"></script>
-<script src="utopia.js"></script>
-<script src="components.js"></script>
-<script src="code.js"></script>
-<script src="vendor/promise.js"></script>
-<script src="download.js"></script>
-
-</body>
-</html>
+.token.entity {
+    cursor: help;
+}
