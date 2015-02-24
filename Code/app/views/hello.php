@@ -47,32 +47,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('#dodgy_docs_input').keypress(function (e) {
-                if (e.which == 13) {
-                    $('#grabDetails').click();
-                    return false;    //<---- Add this line
-                }
-            });
-
-            $("#grabDetails").click(function(){
-                var name = $("#dodgy_docs_input").val();
-
-                $("#dname").html("<h4>" + name + "</h4>");
-
-                $("#doctorDetails").html("");
-
-                $("#loading").show();
-
-                $.ajax({url:"doctordetails?name=" + name,success:function(result){
-                    $("#dodgy_docs_input").val("");
-
-                    $("#doctorDetails").html(result);
-
-                    $("#loading").hide();
-                }});
-            });
-        });
-        $(document).ready(function(){
 
             $('#medicine_name').keypress(function (e) {
                 if (e.which == 13) {
@@ -98,9 +72,35 @@
                     $("#loading").hide();
                 }});
             });
-        });
 
-        $(document).ready(function(){
+            $('#dodgy_docs_input').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#grabDetails').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
+            $("#grabDetails").click(function(){
+                var name = $("#dodgy_docs_input").val();
+
+                $("#dname").html("<h4>" + name + "</h4>");
+
+                $("#doctorDetails").html("");
+
+                $("#loading").show();
+
+                $.ajax({url:"doctordetails?name=" + name,success:function(result){
+                    $("#dodgy_docs_input").val("");
+
+                    $("#doctorDetails").html(result);
+
+                    $("#loading").hide();
+                }});
+            });
+
+
+
+
 
             $('#medicine_name2').keypress(function (e) {
                 if (e.which == 13) {
@@ -126,9 +126,7 @@
                     $("#loading").hide();
                 }});
             });
-        });
 
-        $(document).ready(function(){
 
             $('#hospital_location').keypress(function (e) {
                 if (e.which == 13) {
@@ -154,8 +152,7 @@
                     $("#loading").hide();
                 }});
             });
-        });
-        $(document).ready(function(){
+
             $('#site_search').keypress(function (e) {
                 if (e.which == 13) {
                     $('#site_search_submit').click();
@@ -171,11 +168,11 @@
                     window.location = "<?php echo Config::get('custom_config.WPFeedRoot');?>?s=" + $('#site_search').val();
                 }
 
-            })
-        })
-        $(document).ready(function(){
+            });
+
             jQuery(".near_me").click(initiate_geolocation);
             //$("#loading_hospitals").show();
+
         });
 
         function initiate_geolocation() {

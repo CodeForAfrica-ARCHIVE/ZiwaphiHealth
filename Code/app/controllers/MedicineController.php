@@ -70,10 +70,7 @@ class MedicineController extends BaseController {
 
 
         foreach($rows as $row){
-            $cname = $row[7];
-            $result .= $cname;
-            $result .= " - Price: R". round($this->getDrugPrice($row[17]), 1);
-            $result .= "<br />";
+            $result .= $this->format_drug_row($row);
         }
 
         return $result;
@@ -136,16 +133,24 @@ class MedicineController extends BaseController {
 
 
         foreach($rows as $row){
-            $cname = $row[7];
-            $result .= $cname;
-            $result .= " - Price: R". round($this->getDrugPrice($row[17]), 1);
-            $result .= "<br />";
+
+            $result .= $this->format_drug_row($row);
 
         }
 
         return $result;
     }
 
+    public function format_drug_row($row){
+        $result = "";
+
+        $cname = $row[7];
+        $result .= $cname;
+        $result .= " - Price: R". round($this->getDrugPrice($row[17]), 1);
+        $result .= "<br />";
+
+        return $result;
+    }
 
 
     public function in_multi_array($elem, $array,$field)
@@ -221,10 +226,7 @@ class MedicineController extends BaseController {
         $result = "";
 
         foreach($rows as $row){
-            $cname = $row[7];
-            $result .= $cname;
-            $result .= " - Price: R". round($this->getDrugPrice($row[17]), 1);
-            $result .= "<br />";
+            $result .= $this->format_drug_row($row);
         }
 
         return $result;
