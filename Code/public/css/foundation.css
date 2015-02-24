@@ -3436,9 +3436,10 @@ ul.pagination {
     font-weight: normal; }
     .side-nav li a:not(.button) {
       display: block;
-      color: #3D566D;
+      background: #e5e5e5;
       margin: 0;
-      padding: 0.4375rem 0.875rem; }
+      padding: 9px;
+    }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
         background: #e8f3f2;
          }

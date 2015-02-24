@@ -396,7 +396,7 @@
                         print "<h5 style='text-align:center'>No related stories at this time</h5>";
                     }
                     foreach($related as $r){
-                        print '<li style="margin:3px !important;"><a href="'.$r->url.'" data-search="">'.$r->title.'</a></li>';
+                        print '<li><a href="'.$r->url.'" data-search="">'.$r->title.'</a></li>';
                     }
                     ?>
                 </ul>
