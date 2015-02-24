@@ -162,6 +162,9 @@
     padding: 10px;
     font-weight: bold;
     font-family: Vollkorn,serif;
+
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
 }
 .content_body{
     background-color:#fff;
