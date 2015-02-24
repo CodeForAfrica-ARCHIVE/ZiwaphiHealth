@@ -27,6 +27,7 @@
                 matchContains: true,
                 selectFirst: true
             });
+            /*
             //TOTHINK: does search generic need autocomplete?
 
              //drug prices autocomplete
@@ -35,6 +36,7 @@
              matchContains: true,
              selectFirst: true
              });
+
              //drug generics autocomplete
              $("#medicine_name2").autocomplete("drugSuggestions", {
              width: 260,
@@ -42,6 +44,7 @@
              selectFirst: true
              });
 
+            */
         });
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

@@ -66,9 +66,15 @@ class MedicineController extends BaseController {
 
         $result = "";//"Results: ".count($rows);
 
+        function compareSEP($a, $b)
+        {
+            return $a[17] - $b[17];
+        }
+
+        usort($rows, 'compareSEP');
 
         foreach($rows as $row){
-            $result .= $row[7]." (".$row[9]." ".$row[10].")\n";
+            $result .= $this->format_drug_row($row);
         }
 
         return $result;
@@ -126,8 +132,14 @@ class MedicineController extends BaseController {
 
         }
 
-
         $result = "";
+
+        function compareSEP($a, $b)
+        {
+            return $a[17] - $b[17];
+        }
+
+        usort($rows, 'compareSEP');
 
 
         foreach($rows as $row){
@@ -142,10 +154,9 @@ class MedicineController extends BaseController {
     public function format_drug_row($row){
         $result = "<div class='drug_row'>";
 
-
         $cname = $row[7];
 
-        $type = $row[10];
+        $type = $row[11];
 
         $result .= "<img src='img/".$this->drug_symbol($type)."'>";
 
@@ -154,6 +165,7 @@ class MedicineController extends BaseController {
         $result .= "<span class='drug_price'>R". round($this->getDrugPrice($row[17]), 1)."</span>";
 
         $result .= "</div>";
+
         return $result;
     }
 
@@ -261,6 +273,13 @@ class MedicineController extends BaseController {
 
         $result = "";
 
+        function compareSEP($a, $b)
+        {
+            return $a[17] - $b[17];
+        }
+
+        usort($rows, 'compareSEP');
+        
         foreach($rows as $row){
             $result .= $this->format_drug_row($row);
         }
@@ -282,6 +301,7 @@ class MedicineController extends BaseController {
         }else{
             return $sep + ($sep * 0.05 + 140) * $vat;
         }
+
 
     }
 
