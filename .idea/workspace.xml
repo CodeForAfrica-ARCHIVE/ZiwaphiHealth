@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css" afterPath="$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/main.css" afterPath="$PROJECT_DIR$/Code/public/main.css" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="MedicineController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="8" selection-start="7198" selection-end="7198" vertical-scroll-proportion="-0.9932088" vertical-offset="4725" max-vertical-offset="6735">
+            <state line="327" column="0" selection-start="8345" selection-end="8345" vertical-scroll-proportion="0.5670628" vertical-offset="4496" max-vertical-offset="6675">
               <folding />
             </state>
           </provider>
@@ -705,7 +702,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="8" selection-start="7198" selection-end="7198" vertical-scroll-proportion="-0.9932088" vertical-offset="4725" max-vertical-offset="6735">
+        <state line="327" column="0" selection-start="8345" selection-end="8345" vertical-scroll-proportion="0.5670628" vertical-offset="4496" max-vertical-offset="6675">
           <folding />
         </state>
       </provider>

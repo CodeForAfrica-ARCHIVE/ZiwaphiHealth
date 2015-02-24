@@ -279,7 +279,7 @@ class MedicineController extends BaseController {
         }
 
         usort($rows, 'compareSEP');
-        
+
         foreach($rows as $row){
             $result .= $this->format_drug_row($row);
         }
@@ -318,10 +318,6 @@ class MedicineController extends BaseController {
         $response = $socrata->get("/resource/$view_uid.json", $params);
 
         $result = "";
-
-        print "<pre>";
-        print_r($response);
-        print "</pre>";
 
         if(count($response)<1){
             $result .= "No drugs found with that name!";
