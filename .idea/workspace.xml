@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/main.css" afterPath="$PROJECT_DIR$/Code/public/main.css" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="588" column="38" selection-start="23888" selection-end="23906" vertical-scroll-proportion="-8.25" vertical-offset="8622" max-vertical-offset="9750">
+            <state line="585" column="229" selection-start="23808" selection-end="23808" vertical-scroll-proportion="0.34537247" vertical-offset="8622" max-vertical-offset="9750">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1424804141872" expanded="false" signature="16152:16169" placeholder="..." />
-                <marker date="1424804141872" expanded="false" signature="19266:19283" placeholder="..." />
-                <marker date="1424804141872" expanded="false" signature="20408:20429" placeholder="..." />
-                <marker date="1424804141872" expanded="false" signature="20469:20491" placeholder="..." />
-                <marker date="1424804141872" expanded="false" signature="22004:22021" placeholder="..." />
+                <marker date="1424804326576" expanded="false" signature="16152:16169" placeholder="..." />
+                <marker date="1424804326576" expanded="false" signature="19266:19283" placeholder="..." />
+                <marker date="1424804326576" expanded="false" signature="20408:20429" placeholder="..." />
+                <marker date="1424804326576" expanded="false" signature="20469:20491" placeholder="..." />
+                <marker date="1424804326576" expanded="false" signature="22004:22021" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -62,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/public/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="17" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.6313466" vertical-offset="2054" max-vertical-offset="3450">
+            <state line="156" column="17" selection-start="2539" selection-end="2539" vertical-scroll-proportion="-10.592592" vertical-offset="2054" max-vertical-offset="3450">
               <folding />
             </state>
           </provider>
@@ -162,8 +161,8 @@
         <option value="$PROJECT_DIR$/Code/app/views/widget_view.php" />
         <option value="$PROJECT_DIR$/Code/public/css/foundation.css" />
         <option value="$PROJECT_DIR$/Code/app/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
         <option value="$PROJECT_DIR$/Code/public/main.css" />
+        <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
       </list>
     </option>
   </component>
@@ -805,26 +804,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="17" selection-start="2539" selection-end="2539" vertical-scroll-proportion="-10.592592" vertical-offset="2054" max-vertical-offset="3450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="588" column="38" selection-start="23888" selection-end="23906" vertical-scroll-proportion="-8.25" vertical-offset="8622" max-vertical-offset="9750">
+        <state line="585" column="229" selection-start="23808" selection-end="23808" vertical-scroll-proportion="0.34537247" vertical-offset="8622" max-vertical-offset="9750">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1424804141872" expanded="false" signature="16152:16169" placeholder="..." />
-            <marker date="1424804141872" expanded="false" signature="19266:19283" placeholder="..." />
-            <marker date="1424804141872" expanded="false" signature="20408:20429" placeholder="..." />
-            <marker date="1424804141872" expanded="false" signature="20469:20491" placeholder="..." />
-            <marker date="1424804141872" expanded="false" signature="22004:22021" placeholder="..." />
+            <marker date="1424804326576" expanded="false" signature="16152:16169" placeholder="..." />
+            <marker date="1424804326576" expanded="false" signature="19266:19283" placeholder="..." />
+            <marker date="1424804326576" expanded="false" signature="20408:20429" placeholder="..." />
+            <marker date="1424804326576" expanded="false" signature="20469:20491" placeholder="..." />
+            <marker date="1424804326576" expanded="false" signature="22004:22021" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/public/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="17" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.6313466" vertical-offset="2054" max-vertical-offset="3450">
-          <folding />
         </state>
       </provider>
     </entry>

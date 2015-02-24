@@ -583,7 +583,7 @@
             <a href="http://data.the-star.co.ke"><img style="height:32px;margin-left:25px" src="img/data.png" id="ckan_icon"></a>
                 </div>
         <p>
-            The <a href="http://github.com/CodeForAfrica/ZiwaphiHealth">code</a> & <a href="https://github.com/CodeForAfrica/ZiwaphiHealth/tree/master/Data/clean">data</a> for this page are open source. You can re-use it by visiting the above repositories.
+            The <a href="http://github.com/CodeForAfrica/ZiwaphiHealth">code</a> & <a href="https://github.com/CodeForAfrica/ZiwaphiHealth/tree/master/Data/clean">data</a> for this project are open source and available for re-use.
         </p>
             <hr />
         <div class="social_media_icons" style="text-align: center">
