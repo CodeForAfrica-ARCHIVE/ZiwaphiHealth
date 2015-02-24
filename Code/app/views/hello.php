@@ -559,7 +559,7 @@
                             print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
                         }
                         print $story->excerpt.'</p>
-                                <p class="story-metadata">Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</p>
+                                <p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
                             </div>';
                     }
 
