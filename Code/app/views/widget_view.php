@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="icons/foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr.js"></script>
-
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href="prism/prism.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="autocomplete/jquery.autocomplete.css">
     <script type="text/javascript" src="autocomplete/jquery.js"></script>
     <script type='text/javascript' src='autocomplete/jquery.autocomplete.js'></script>
+    <script src="prism/prism.js"></script>
     <script type="text/javascript">
         $.noConflict();
         jQuery(document).ready(function($) {
@@ -27,49 +29,40 @@
                 matchContains: true,
                 selectFirst: true
             });
+
             //TOTHINK: does search generic need autocomplete?
-            /*
-             //drug prices autocomplete
-             $("#medicine_name").autocomplete("drugSuggestions", {
-             width: 260,
-             matchContains: true,
-             selectFirst: true
-             });
-             //drug generics autocomplete
-             $("#medicine_name2").autocomplete("drugSuggestions", {
-             width: 260,
-             matchContains: true,
-             selectFirst: true
-             });
-             */
+
+            //drug prices autocomplete
+            $("#medicine_name").autocomplete("drugSuggestions", {
+                width: 260,
+                matchContains: true,
+                selectFirst: true
+            });
+
+            //drug generics autocomplete
+            $("#medicine_name2").autocomplete("drugSuggestions", {
+                width: 260,
+                matchContains: true,
+                selectFirst: true
+            });
+
         });
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("#grabDetails").click(function(){
-                var name = $("#dodgy_docs_input").val();
 
-                $("#dname").html("<h4>" + name + "</h4>");
-
-                $("#doctorDetails").html("");
-
-                $("#loading").show();
-
-                $.ajax({url:"doctordetails?name=" + name,success:function(result){
-                    $("#dodgy_docs_input").val("");
-
-                    $("#doctorDetails").html(result);
-
-                    $("#loading").hide();
-                }});
+            $('#medicine_name').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#searchMedicine').click();
+                    return false;    //<---- Add this line
+                }
             });
-        });
-        $(document).ready(function(){
+
             $("#searchMedicine").click(function(){
                 var name = $("#medicine_name").val();
 
-                $("#dname").html("<h4>" + name + "</h4>");
+                $("#dname").html("<h4>Results for: " + name + "</h4>");
 
                 $("#doctorDetails").html("");
 
@@ -83,13 +76,47 @@
                     $("#loading").hide();
                 }});
             });
-        });
 
-        $(document).ready(function(){
+            $('#dodgy_docs_input').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#grabDetails').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
+            $("#grabDetails").click(function(){
+                var name = $("#dodgy_docs_input").val();
+
+                $("#dname").html("<h4>Results for: " + name + "</h4>");
+
+                $("#doctorDetails").html("");
+
+                $("#loading").show();
+
+                $.ajax({url:"doctordetails?name=" + name,success:function(result){
+                    $("#dodgy_docs_input").val("");
+
+                    $("#doctorDetails").html(result);
+
+                    $("#loading").hide();
+                }});
+            });
+
+
+
+
+
+            $('#medicine_name2').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#searchGeneric').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
             $("#searchGeneric").click(function(){
                 var name = $("#medicine_name2").val();
 
-                $("#dname").html("<h4>" + name + "</h4>");
+                $("#dname").html("<h4>Results for: " + name + "</h4>");
 
                 $("#doctorDetails").html("");
 
@@ -103,13 +130,19 @@
                     $("#loading").hide();
                 }});
             });
-        });
 
-        $(document).ready(function(){
+
+            $('#hospital_location').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#searchHospitals').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
             $("#searchHospitals").click(function(){
                 var name = $("#hospital_location").val();
 
-                $("#dname").html("<h4>" + name + "</h4>");
+                $("#dname").html("<h4>Results for: " + name + "</h4>");
 
                 $("#doctorDetails").html("");
 
@@ -123,11 +156,27 @@
                     $("#loading").hide();
                 }});
             });
-        });
 
-        $(document).ready(function(){
+            $('#site_search').keypress(function (e) {
+                if (e.which == 13) {
+                    $('#site_search_submit').click();
+                    return false;    //<---- Add this line
+                }
+            });
+
+            $('#site_search_submit').click(function(){
+
+                if($('#site_search').val().length == 0){
+                    alert('Please enter a search query!');
+                }else{
+                    window.location = "<?php echo Config::get('custom_config.WPFeedRoot');?>?s=" + $('#site_search').val();
+                }
+
+            });
+
             jQuery(".near_me").click(initiate_geolocation);
             //$("#loading_hospitals").show();
+
         });
 
         function initiate_geolocation() {
@@ -264,25 +313,25 @@
 <!-- Modal for embed doctor details -->
 <div id="embedModal" class="reveal-modal" data-reveal>
     <div><h4>Copy code below to embed this widget on your website</h4></div>
-    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=1');?>" scrolling="no" frameborder="0"></iframe></textarea>
+    <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=1');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
     <a class="close-reveal-modal">&#215;</a>
 </div>
 
 <div id="embedModal2" class="reveal-modal" data-reveal>
     <div><h4>Copy code below to embed this widget on your website</h4></div>
-    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=2');?>" scrolling="no" frameborder="0"></iframe></textarea>
+    <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=2');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
     <a class="close-reveal-modal">&#215;</a>
 </div>
 
 <div id="embedModal3" class="reveal-modal" data-reveal>
     <div><h4>Copy code below to embed this widget on your website</h4></div>
-    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=3');?>" scrolling="no" frameborder="0"></iframe></textarea>
+    <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=3');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
     <a class="close-reveal-modal">&#215;</a>
 </div>
 
 <div id="embedModal4" class="reveal-modal" data-reveal>
     <div><h4>Copy code below to embed this widget on your website</h4></div>
-    <textarea disabled><iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=4');?>" scrolling="no" frameborder="0"></iframe></textarea>
+    <pre><code class="language-markup">&lt;iframe height="100px" width="300px" src="<?php print URL::to('/embed_widget?q=4');?>" scrolling="no" frameborder="0">&lt;/iframe></code></pre>
     <a class="close-reveal-modal">&#215;</a>
 </div>
 

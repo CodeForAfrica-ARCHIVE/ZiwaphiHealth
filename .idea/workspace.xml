@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/widget_view.php" afterPath="$PROJECT_DIR$/Code/app/views/widget_view.php" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,6 +34,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="265" column="33" selection-start="9794" selection-end="9996" vertical-scroll-proportion="-11.875" vertical-offset="3690" max-vertical-offset="9615">
+              <folding>
+                <marker date="1424796232648" expanded="false" signature="16152:16169" placeholder="..." />
+                <marker date="1424796232648" expanded="false" signature="18498:18515" placeholder="..." />
+                <marker date="1424796232648" expanded="false" signature="19640:19661" placeholder="..." />
+                <marker date="1424796232648" expanded="false" signature="19701:19723" placeholder="..." />
+                <marker date="1424796232648" expanded="false" signature="21177:21194" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="jquery.autocomplete.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,38 +63,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="94" column="14" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0" vertical-offset="932" max-vertical-offset="3120">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="372" column="0" selection-start="14995" selection-end="14995" vertical-scroll-proportion="0.1514423" vertical-offset="5517" max-vertical-offset="9615">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#span#0;n#div#2;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1424796232648" expanded="false" signature="16152:16169" placeholder="..." />
-                <marker date="1424796232648" expanded="false" signature="18498:18515" placeholder="..." />
-                <marker date="1424796232648" expanded="false" signature="19640:19661" placeholder="..." />
-                <marker date="1424796232648" expanded="false" signature="19701:19723" placeholder="..." />
-                <marker date="1424796232648" expanded="false" signature="21177:21194" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,15 +85,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="1" selection-start="682" selection-end="682" vertical-scroll-proportion="43.041668" vertical-offset="1303" max-vertical-offset="1905">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="foundation.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/public/css/foundation.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -118,6 +92,15 @@
               <folding>
                 <element signature="e#38629#38952#2" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="widget_view.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Code/app/views/widget_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="333" column="122" selection-start="13203" selection-end="13203" vertical-scroll-proportion="0.8306998" vertical-offset="4627" max-vertical-offset="5445">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,7 +145,6 @@
         <option value="$PROJECT_DIR$/Code/app/models/Socrata.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/Hospitals.php" />
         <option value="$PROJECT_DIR$/Code/public/.htaccess" />
-        <option value="$PROJECT_DIR$/Code/app/views/widget_view.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/DoctorController.php" />
         <option value="$PROJECT_DIR$/Code/app/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -177,6 +159,7 @@
         <option value="$PROJECT_DIR$/Code/public/prism/prism.css" />
         <option value="$PROJECT_DIR$/Code/public/prism/prism.js" />
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
+        <option value="$PROJECT_DIR$/Code/app/views/widget_view.php" />
       </list>
     </option>
   </component>
@@ -717,13 +700,6 @@
         <state line="13" column="31" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/views/widget_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="43" selection-start="8923" selection-end="8952" vertical-scroll-proportion="0.0" vertical-offset="3461" max-vertical-offset="4710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="16" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="725" max-vertical-offset="1350">
@@ -827,31 +803,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="372" column="0" selection-start="14995" selection-end="14995" vertical-scroll-proportion="0.1514423" vertical-offset="5517" max-vertical-offset="9615">
+        <state line="265" column="33" selection-start="9794" selection-end="9996" vertical-scroll-proportion="-11.875" vertical-offset="3690" max-vertical-offset="9615">
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#2;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#p#1;n#div#1;n#aside#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1424796232648" expanded="false" signature="16152:16169" placeholder="..." />
             <marker date="1424796232648" expanded="false" signature="18498:18515" placeholder="..." />
             <marker date="1424796232648" expanded="false" signature="19640:19661" placeholder="..." />
             <marker date="1424796232648" expanded="false" signature="19701:19723" placeholder="..." />
             <marker date="1424796232648" expanded="false" signature="21177:21194" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/views/widget_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="333" column="122" selection-start="13203" selection-end="13203" vertical-scroll-proportion="0.8306998" vertical-offset="4627" max-vertical-offset="5445">
+          <folding />
         </state>
       </provider>
     </entry>
