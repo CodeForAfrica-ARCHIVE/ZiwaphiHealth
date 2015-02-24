@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/main.css" afterPath="$PROJECT_DIR$/Code/public/main.css" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
@@ -35,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="393" column="25" selection-start="16066" selection-end="16066" vertical-scroll-proportion="0.4401806" vertical-offset="5700" max-vertical-offset="9600">
+            <state line="393" column="25" selection-start="16066" selection-end="16066" vertical-scroll-proportion="-8.125" vertical-offset="5700" max-vertical-offset="9600">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -77,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/public/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="21" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3240">
+            <state line="142" column="21" selection-start="2348" selection-end="2348" vertical-scroll-proportion="0.49889624" vertical-offset="1904" max-vertical-offset="3255">
               <folding />
             </state>
           </provider>
@@ -177,8 +176,8 @@
         <option value="$PROJECT_DIR$/Code/public/prism/prism.js" />
         <option value="$PROJECT_DIR$/Code/app/views/widget_view.php" />
         <option value="$PROJECT_DIR$/Code/public/css/foundation.css" />
-        <option value="$PROJECT_DIR$/Code/public/main.css" />
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
+        <option value="$PROJECT_DIR$/Code/public/main.css" />
       </list>
     </option>
   </component>
@@ -820,16 +819,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/public/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="393" column="25" selection-start="16066" selection-end="16066" vertical-scroll-proportion="0.4401806" vertical-offset="5700" max-vertical-offset="9600">
+        <state line="393" column="25" selection-start="16066" selection-end="16066" vertical-scroll-proportion="-8.125" vertical-offset="5700" max-vertical-offset="9600">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#section#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -855,6 +847,13 @@
             <marker date="1424799214012" expanded="true" signature="19717:19739" placeholder="..." />
             <marker date="1424799214012" expanded="true" signature="21193:21210" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="21" selection-start="2348" selection-end="2348" vertical-scroll-proportion="0.49889624" vertical-offset="1904" max-vertical-offset="3255">
+          <folding />
         </state>
       </provider>
     </entry>
