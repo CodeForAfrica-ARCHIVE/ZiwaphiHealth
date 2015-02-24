@@ -42,8 +42,6 @@
 }
 
 .ac_over {
-	/*
-	    background-color: #0A246A;
-	*/
-    color: white;
+	background-color: #0A246A;
+	color: white;
 }

@@ -66,13 +66,19 @@ class HospitalsController extends BaseController {
         //format result and return nearest 10
         $i = 0;
 
+        if(count($hospitals)<1){
+            $result .= "No results found for search term. Try a different result <br />";
+        }else{
+            $result .= "Found ".count($hospitals)." results for '".$q."' <br />";
+        }
+
         foreach($hospitals as $h){
 
             if($i<15){
 
                 $rating = round($h['rating']/20, 0);
 
-                $result .= "<div>";
+                $result .= "<div class='drug_row'>";
                 $result .= $h['name']." (";
                 $result .= $h['type'].")";
                 $result .= "<span style='float:right;'>";
@@ -87,7 +93,7 @@ class HospitalsController extends BaseController {
 
                 $result .= "</span>";
                 $result .= "<br />";
-                $result .= $h['distance']. " Km away";
+                $result .= "<span class='result_proximity'>".$h['distance']. " Km away</span>";
                 $result .= "</div>";
 
             }

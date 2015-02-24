@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css" afterPath="$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/main.css" afterPath="$PROJECT_DIR$/Code/public/main.css" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +31,7 @@
       <file leaf-file-name="MedicineController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-9.375" vertical-offset="360" max-vertical-offset="6495">
+            <state line="153" column="23" selection-start="4172" selection-end="4172" vertical-scroll-proportion="-5.0" vertical-offset="1965" max-vertical-offset="6765">
               <folding />
             </state>
           </provider>
@@ -38,25 +40,25 @@
       <file leaf-file-name="jquery.autocomplete.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="4" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="825">
+            <state line="44" column="4" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/public/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="27" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3000">
+            <state line="19" column="1" selection-start="384" selection-end="384" vertical-scroll-proportion="0.4718543" vertical-offset="0" max-vertical-offset="3045">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="51" selection-start="4817" selection-end="4817" vertical-scroll-proportion="0.44444445" vertical-offset="1833" max-vertical-offset="9570">
+            <state line="156" column="0" selection-start="5305" selection-end="5305" vertical-scroll-proportion="-21.125" vertical-offset="1833" max-vertical-offset="9570">
               <folding>
                 <marker date="1424777651536" expanded="false" signature="15811:15828" placeholder="..." />
                 <marker date="1424777651536" expanded="false" signature="18135:18152" placeholder="..." />
@@ -98,6 +100,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="HospitalsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="95" column="57" selection-start="2811" selection-end="2827" vertical-scroll-proportion="-12.75" vertical-offset="1119" max-vertical-offset="2340">
+              <folding>
+                <marker date="1424779273792" expanded="true" signature="2402:2414" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -117,7 +130,6 @@
         <option value="$PROJECT_DIR$/Code/app/start/global.php" />
         <option value="$PROJECT_DIR$/Code/app/models/Socrata.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/Hospitals.php" />
-        <option value="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
         <option value="$PROJECT_DIR$/Code/public/.htaccess" />
         <option value="$PROJECT_DIR$/Code/app/views/widget_view.php" />
         <option value="$PROJECT_DIR$/Code/public/css/foundation.css" />
@@ -127,10 +139,11 @@
         <option value="$PROJECT_DIR$/Code/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/Code/app/routes.php" />
         <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
-        <option value="$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css" />
-        <option value="$PROJECT_DIR$/Code/public/main.css" />
-        <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
+        <option value="$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css" />
+        <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
+        <option value="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
+        <option value="$PROJECT_DIR$/Code/public/main.css" />
       </list>
     </option>
   </component>
@@ -345,6 +358,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -457,7 +492,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="0" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="2250">
           <folding>
-            <marker date="1424074152811" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424779273792" expanded="true" signature="2402:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -679,20 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="2250">
-          <folding>
-            <marker date="1424074152811" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/DoctorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="56" selection-start="316" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1590" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="16" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="725" max-vertical-offset="1350">
@@ -717,27 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/config/custom_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="473" selection-end="473" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="4" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/public/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3000">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10225" column="12" selection-start="1500572" selection-end="1500574" vertical-scroll-proportion="-8.461538" vertical-offset="153155" max-vertical-offset="153720">
@@ -748,16 +748,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-9.375" vertical-offset="360" max-vertical-offset="6495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="51" selection-start="4817" selection-end="4817" vertical-scroll-proportion="0.44444445" vertical-offset="1833" max-vertical-offset="9570">
+        <state line="156" column="0" selection-start="5305" selection-end="5305" vertical-scroll-proportion="-21.125" vertical-offset="1833" max-vertical-offset="9570">
           <folding>
             <marker date="1424777651536" expanded="false" signature="15811:15828" placeholder="..." />
             <marker date="1424777651536" expanded="false" signature="18135:18152" placeholder="..." />
@@ -765,6 +758,50 @@
             <marker date="1424777651536" expanded="false" signature="19338:19360" placeholder="..." />
             <marker date="1424777651536" expanded="false" signature="20814:20831" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="4" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/DoctorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="56" selection-start="316" selection-end="330" vertical-scroll-proportion="-1.25" vertical-offset="935" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/config/custom_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="56" selection-start="473" selection-end="473" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="23" selection-start="4172" selection-end="4172" vertical-scroll-proportion="-5.0" vertical-offset="1965" max-vertical-offset="6765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/controllers/HospitalsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="57" selection-start="2811" selection-end="2827" vertical-scroll-proportion="-12.75" vertical-offset="1119" max-vertical-offset="2340">
+          <folding>
+            <marker date="1424779273792" expanded="true" signature="2402:2414" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="384" selection-end="384" vertical-scroll-proportion="0.4718543" vertical-offset="0" max-vertical-offset="3045">
+          <folding />
         </state>
       </provider>
     </entry>

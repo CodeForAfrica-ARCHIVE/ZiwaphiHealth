@@ -130,12 +130,18 @@ class MedicineController extends BaseController {
 
         usort($rows, 'compareSEP');
 
+        if(count($rows)<1){
+            $result .= "No results found for search term. Try a different result <br />";
+        }else{
+            $result .= "Found ".count($rows)." results for '".$q."' <br />";
+        }
 
         foreach($rows as $row){
 
             $result .= $this->format_drug_row($row);
 
         }
+
 
         return $result;
     }
@@ -144,6 +150,12 @@ class MedicineController extends BaseController {
         $result = "<div class='drug_row'>";
 
         $cname = $row[7];
+
+        if($cname==''){
+            $cname = $row[8];
+        }
+
+        $cname = "$cname ($row[9] / $row[10])";
 
         $type = $row[11];
 
@@ -268,6 +280,12 @@ class MedicineController extends BaseController {
         }
 
         usort($rows, 'compareSEP');
+
+        if(count($rows)<1){
+            $result .= "No results found for search term. Try a different result <br />";
+        }else{
+            $result .= "Found ".count($rows)." results for '".$q."' <br />";
+        }
 
         foreach($rows as $row){
             $result .= $this->format_drug_row($row);
