@@ -379,7 +379,7 @@
 
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
-        <div style="padding:5px;background:#fff;"><a href="<?php print $featured->url;?>"><h4 class="featured_title"><?php print $featured->title;?></h4></a></div>
+        <div style="padding:5px;background:#fff;"><a href="<?php print $featured->url;?>"><h4 class="featured_title"> >> <?php print $featured->title;?></h4></a></div>
         <div class="large-7 columns"  style="background-color: #fff; height:500px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
             <?php
             if($featured != null){
