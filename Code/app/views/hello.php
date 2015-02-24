@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="icons/foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="autocomplete/jquery.autocomplete.css">
     <script type="text/javascript" src="autocomplete/jquery.js"></script>
@@ -215,7 +216,7 @@
             <!-- Top Bar Section -->
             <section class="top-bar-section">
                 <!-- Top Bar Right Nav Elements -->
-                <ul class="left" style="margin-left:20px; font-size: 0.8em;">
+                <ul class="left" style="font-size: 0.8em;">
                     <li><a href="http://health.ziwaphi.com" target="_blank">Home</a></li>
                     <li><a href="http://ziwaphi.com" target="_blank">Ziwaphi</a></li>
                     <li><a href="http://dlb.ziwaphi.com" target="_blank">Dead Letter Box</a></li>
@@ -378,11 +379,12 @@
 
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
+        <div style="padding:5px;background:#fff;"><a href="<?php print $featured->url;?>"><h4 class="featured_title"><?php print $featured->title;?></h4></a></div>
         <div class="large-7 columns"  style="background-color: #fff; height:500px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
             <?php
             if($featured != null){
                 ?>
-                <a href="<?php print $featured->url;?>"><h4 class="featured_title"><?php print $featured->title;?></h4></a>
+
                 <?php print $featured->excerpt;?>
                 <h5>The story so far</h5>
 
@@ -423,7 +425,7 @@
         </div>
     </div>
     <div class="large-3 columns sidebar">
-        <div class="big-title">Help Desk</div>
+        <div class="big-title" style="display:none;">Help Desk</div>
         <div class="content_body" style="height: 455px;">
             <h5><i class="icon-phone"></i> Helplines</h5>
             <ul class="side-nav">

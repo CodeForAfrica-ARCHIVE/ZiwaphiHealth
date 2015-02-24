@@ -27,7 +27,7 @@
 .h1{
     font-size: 5.5em;
     color:#fff;
-    font-family: georgia, serif;
+    font-family: Vollkorn, serif;
     line-height: 0 !important;
     padding:5px;
     margin-top: -50px;
@@ -63,16 +63,16 @@
     background: #ed2124;
 }
 #grabDetails{
-    background: #3d566d;
+    background: #333;
 }
 #grabPrices{
-    background: #3d566d;
+    background: #333;
 }
 #grabGenerics{
-    background: #3d566d;
+    background: #333;
 }
 #grabHospitals{
-    background: #3d566d;
+    background: #333;
 }
 .icon-search{
     color:#fff;
@@ -84,14 +84,14 @@
 .app_footer{
     text-align: center;
     padding:3px;
-    background-color: #333333;
+    background-color: #ed2124;
     color:#fff;
 }
 .app_footer a{
     color:#fff;
 }
 #get_location_text{
-    color:#dddddd;
+    color:#fff;
 }
 .app_section{
     margin-bottom: 10px;
@@ -107,7 +107,7 @@
 .app-container h4{
     color: #fff;
     display:inline;
-    font-family: georgia,serif;
+    font-family: Vollkorn,serif;
 }
 .app-icon{
     margin-right: 10px;
@@ -117,9 +117,9 @@
 }
 .sidebar h5{
     font-weight:bold;
-    font-family: georgia,serif;
-    color: #6E6E6E;
-    background: #D6E5E3;
+    font-family: Vollkorn,serif;
+    color: #efefef;
+    background: #7c7c7c;
     padding: 5px;
 }
 .feedback p{
@@ -136,18 +136,18 @@
 }
 .featured_title{
     font-weight:bold;
-    font-family: georgia,serif;
+    font-family: Vollkorn,serif;
     color: #fff;
-    background: #3d566d;
+    background: #333;
     padding: 5px;
 }
 .big-title{
-    background-color: #3d566d;
+    background-color: #333;
     color: #fff;
     border-bottom: 0;
     padding: 10px;
     font-weight: bold;
-    font-family: georgia,serif;
+    font-family: Vollkorn,serif;
 }
 .content_body{
     background-color:#fff;
@@ -162,7 +162,7 @@
     margin-right: 10px;
 }
 .story h4{
-    font-family: georgia,serif;
+    font-family: Vollkorn,serif;
 }
 .story-metadata{
     font-size: 0.7em;
@@ -176,7 +176,7 @@
     height:15px;
 }
 .embed a{
-    color:#CACFD6;
+    color:#fff;
 }
 .top-bar{
     margin-bottom: 20px;
