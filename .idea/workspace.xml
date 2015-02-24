@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" afterPath="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/app/views/hello.php" afterPath="$PROJECT_DIR$/Code/app/views/hello.php" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MedicineController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MedicineController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="327" column="0" selection-start="8345" selection-end="8345" vertical-scroll-proportion="0.5670628" vertical-offset="4496" max-vertical-offset="6675">
+            <state line="44" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-9.375" vertical-offset="360" max-vertical-offset="6495">
               <folding />
             </state>
           </provider>
@@ -52,18 +53,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="hello.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1830" selection-end="1830" vertical-scroll-proportion="-13.0" vertical-offset="258" max-vertical-offset="9585">
+            <state line="139" column="51" selection-start="4817" selection-end="4817" vertical-scroll-proportion="0.44444445" vertical-offset="1833" max-vertical-offset="9570">
               <folding>
-                <marker date="1424775666524" expanded="true" signature="1550:2063" placeholder="/*...*/" />
-                <marker date="1424775666524" expanded="false" signature="15788:15805" placeholder="..." />
-                <marker date="1424775666524" expanded="false" signature="18112:18129" placeholder="..." />
-                <marker date="1424775666524" expanded="false" signature="19254:19275" placeholder="..." />
-                <marker date="1424775666524" expanded="false" signature="19315:19337" placeholder="..." />
-                <marker date="1424775666524" expanded="false" signature="20791:20808" placeholder="..." />
+                <marker date="1424777651536" expanded="false" signature="15811:15828" placeholder="..." />
+                <marker date="1424777651536" expanded="false" signature="18135:18152" placeholder="..." />
+                <marker date="1424777651536" expanded="false" signature="19277:19298" placeholder="..." />
+                <marker date="1424777651536" expanded="false" signature="19338:19360" placeholder="..." />
+                <marker date="1424777651536" expanded="false" signature="20814:20831" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="laravel.log" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10225" column="12" selection-start="1500572" selection-end="1500574" vertical-scroll-proportion="-8.461538" vertical-offset="153155" max-vertical-offset="153720">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,8 +129,8 @@
         <option value="$PROJECT_DIR$/Code/app/config/custom_config.php" />
         <option value="$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css" />
         <option value="$PROJECT_DIR$/Code/public/main.css" />
-        <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
+        <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
       </list>
     </option>
   </component>
@@ -282,6 +294,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ZiwaphiHealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -628,14 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9683" column="104" selection-start="1411215" selection-end="1411384" vertical-scroll-proportion="-7.3076925" vertical-offset="145055" max-vertical-offset="145620" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/controllers/DoctorController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="56" selection-start="316" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1590" />
@@ -686,24 +738,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
+    <entry file="file://$PROJECT_DIR$/Code/app/storage/logs/laravel.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1830" selection-end="1830" vertical-scroll-proportion="-13.0" vertical-offset="258" max-vertical-offset="9585">
-          <folding>
-            <marker date="1424775666524" expanded="true" signature="1550:2063" placeholder="/*...*/" />
-            <marker date="1424775666524" expanded="false" signature="15788:15805" placeholder="..." />
-            <marker date="1424775666524" expanded="false" signature="18112:18129" placeholder="..." />
-            <marker date="1424775666524" expanded="false" signature="19254:19275" placeholder="..." />
-            <marker date="1424775666524" expanded="false" signature="19315:19337" placeholder="..." />
-            <marker date="1424775666524" expanded="false" signature="20791:20808" placeholder="..." />
-          </folding>
+        <state line="10225" column="12" selection-start="1500572" selection-end="1500574" vertical-scroll-proportion="-8.461538" vertical-offset="153155" max-vertical-offset="153720">
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/controllers/MedicineController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="327" column="0" selection-start="8345" selection-end="8345" vertical-scroll-proportion="0.5670628" vertical-offset="4496" max-vertical-offset="6675">
+        <state line="44" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-9.375" vertical-offset="360" max-vertical-offset="6495">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="51" selection-start="4817" selection-end="4817" vertical-scroll-proportion="0.44444445" vertical-offset="1833" max-vertical-offset="9570">
+          <folding>
+            <marker date="1424777651536" expanded="false" signature="15811:15828" placeholder="..." />
+            <marker date="1424777651536" expanded="false" signature="18135:18152" placeholder="..." />
+            <marker date="1424777651536" expanded="false" signature="19277:19298" placeholder="..." />
+            <marker date="1424777651536" expanded="false" signature="19338:19360" placeholder="..." />
+            <marker date="1424777651536" expanded="false" signature="20814:20831" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

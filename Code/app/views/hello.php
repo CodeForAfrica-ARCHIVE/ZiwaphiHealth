@@ -27,7 +27,7 @@
                 matchContains: true,
                 selectFirst: true
             });
-            /*
+
             //TOTHINK: does search generic need autocomplete?
 
              //drug prices autocomplete
@@ -44,7 +44,6 @@
              selectFirst: true
              });
 
-            */
         });
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -61,7 +60,7 @@
             $("#searchMedicine").click(function(){
                 var name = $("#medicine_name").val();
 
-                $("#dname").html("<h4>" + name + "</h4>");
+                $("#dname").html("<h4>Results for: " + name + "</h4>");
 
                 $("#doctorDetails").html("");
 
@@ -86,7 +85,7 @@
             $("#grabDetails").click(function(){
                 var name = $("#dodgy_docs_input").val();
 
-                $("#dname").html("<h4>" + name + "</h4>");
+                $("#dname").html("<h4>Results for: " + name + "</h4>");
 
                 $("#doctorDetails").html("");
 
@@ -115,7 +114,7 @@
             $("#searchGeneric").click(function(){
                 var name = $("#medicine_name2").val();
 
-                $("#dname").html("<h4>" + name + "</h4>");
+                $("#dname").html("<h4>Results for: " + name + "</h4>");
 
                 $("#doctorDetails").html("");
 
@@ -141,7 +140,7 @@
             $("#searchHospitals").click(function(){
                 var name = $("#hospital_location").val();
 
-                $("#dname").html("<h4>" + name + "</h4>");
+                $("#dname").html("<h4>Results for: " + name + "</h4>");
 
                 $("#doctorDetails").html("");
 

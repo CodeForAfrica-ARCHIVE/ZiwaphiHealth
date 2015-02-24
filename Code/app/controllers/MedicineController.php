@@ -10,6 +10,8 @@ class MedicineController extends BaseController {
 
     public function matchSearch($q)
     {
+        //match search to provide only name suggesstions before full search
+        $final_result = array();
 
         $key = Config::get('custom_config.google_api_key');
         $table = Config::get('custom_config.medicine_table_ft');
@@ -34,7 +36,9 @@ class MedicineController extends BaseController {
         if(array_key_exists('rows', $data)){
             foreach($data['rows'] as $row){
 
-                array_push($rows, $row);
+                if(!in_array(strtolower($row[7]), $final_result)){
+                    $final_result[] = strtolower($row[7]);
+                }
 
             }
         }
@@ -55,29 +59,14 @@ class MedicineController extends BaseController {
             //check if rows already added
             foreach($data['rows'] as $row){
 
-                $drug_id = $row[0];
-                if(!$this->in_multi_array($drug_id, $rows,0)){
-                    array_push($rows, $row);
-               }
+                if(!in_array(strtolower($row[7]), $final_result)){
+                    $final_result[] = strtolower($row[7]);
+                }
             }
 
         }
 
-
-        $result = "";//"Results: ".count($rows);
-
-        function compareSEP($a, $b)
-        {
-            return $a[17] - $b[17];
-        }
-
-        usort($rows, 'compareSEP');
-
-        foreach($rows as $row){
-            $result .= $this->format_drug_row($row);
-        }
-
-        return $result;
+        return implode("\n", $final_result);
     }
 
     public function drugDetails_FT($q)
@@ -331,7 +320,6 @@ class MedicineController extends BaseController {
                         $result .='<div>';
                         $result .= $drug['proprietary_name'] ." (". $drug['strength'].$drug['unit'].")";
                         $result .='</div>';
-
 
             }
 
