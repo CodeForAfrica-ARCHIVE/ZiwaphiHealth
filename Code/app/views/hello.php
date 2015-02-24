@@ -413,8 +413,18 @@
             ?>
 
             <div class="feedback">
-                <a href="#">Tell us More</a>
+                <a href="#" data-reveal-id="feedbackModal">Tell us More</a>
                 <p>Do you have more information? Help us improve this story by sharing your experiences/evidence.</p>
+            </div>
+            <div id="feedbackModal" class="reveal-modal" data-reveal>
+                <div><h4>Share your experience with us</h4></div>
+                <input type="text" placeholder="Your full names" name="name">
+                <input type="text" placeholder="Email Address" name="email">
+                <input type="text" placeholder="RE: <?php print $featured->title;?>" disabled>
+                <input type="hidden" placeholder="RE: <?php print $featured->title;?>" name="post">
+                <textarea rows="4" placeholder="Your message goes here"></textarea>
+                <input type="submit" class="button" value="Send Feedback">
+                <a class="close-reveal-modal">&#215;</a>
             </div>
             <?php
             }else{
