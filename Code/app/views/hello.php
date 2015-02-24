@@ -538,7 +538,7 @@
 
     <div class="large-6 columns">
         <div class="big-title">Feed</div>
-        <div class="content_body">
+        <div class="content_body" style="background-color: inherit !important; padding:0px;">
         <div class="tagName" style="text-align:center;" id="tagName">
         </div>
         <div class="loadingFeed" style="text-align:center;display:none" id="loadingFeed">
@@ -560,8 +560,7 @@
                         }
                         print $story->excerpt.'</p>
                                 <p class="story-metadata">Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</p>
-                            </div>
-                            <hr/>';
+                            </div>';
                     }
 
             ?>

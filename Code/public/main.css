@@ -171,8 +171,9 @@
     padding:5px;
 }
 .story{
-    margin-top: -10px;
     padding:10px;
+    background-color:#fff;
+    margin-bottom:15px;
 }
 .story img{
     float:left;
