@@ -142,14 +142,52 @@ class MedicineController extends BaseController {
     }
 
     public function format_drug_row($row){
-        $result = "";
+        $result = "<div class='drug_row'>";
+
 
         $cname = $row[7];
-        $result .= $cname;
-        $result .= " - Price: R". round($this->getDrugPrice($row[17]), 1);
-        $result .= "<br />";
 
+        $type = $row[10];
+
+        $result .= "<img src='img/".$this->drug_symbol($type)."'>";
+
+        $result .= $cname;
+
+        $result .= "<span class='drug_price'>R". round($this->getDrugPrice($row[17]), 1)."</span>";
+
+        $result .= "</div>";
         return $result;
+    }
+
+    public function drug_symbol($type){
+
+
+        switch($type){
+            case "TAB":
+                $img =  "pill.png";
+                break;
+            case "SYR":
+                $img =  "syrup.png";
+                break;
+            case "INJ":
+                $img =  "syringe.png";
+                break;
+            case "SOL":
+                $img =  "bottle.png";
+                break;
+            case "INH":
+                $img =  "inhaler.png";
+                break;
+            case "SPO":
+                $img =  "inhaler.png";
+                break;
+            default:
+                $img = "capsule.png";
+                break;
+        }
+
+        return $img;
+
     }
 
 
