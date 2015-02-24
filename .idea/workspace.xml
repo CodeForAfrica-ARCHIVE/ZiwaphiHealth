@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb30635-7bc6-468b-8093-0b6c12e671bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/css/foundation.css" afterPath="$PROJECT_DIR$/Code/public/css/foundation.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/public/main.css" afterPath="$PROJECT_DIR$/Code/public/main.css" />
     </list>
     <ignored path="ZiwaphiHealth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/public/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="29" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0" vertical-offset="1427" max-vertical-offset="3045">
+            <state line="115" column="32" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.12086093" vertical-offset="1652" max-vertical-offset="3045">
               <folding />
             </state>
           </provider>
@@ -105,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foundation.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="foundation.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/public/css/foundation.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1783" column="13" selection-start="42568" selection-end="42568" vertical-scroll-proportion="0.6400709" vertical-offset="26384" max-vertical-offset="93000">
+            <state line="1783" column="13" selection-start="42568" selection-end="42568" vertical-scroll-proportion="-35.037037" vertical-offset="25799" max-vertical-offset="93000">
               <folding>
                 <element signature="e#38629#38952#2" expanded="true" />
               </folding>
@@ -166,9 +166,9 @@
         <option value="$PROJECT_DIR$/Code/public/autocomplete/jquery.autocomplete.css" />
         <option value="$PROJECT_DIR$/Code/app/controllers/HospitalsController.php" />
         <option value="$PROJECT_DIR$/Code/app/controllers/MedicineController.php" />
-        <option value="$PROJECT_DIR$/Code/public/main.css" />
         <option value="$PROJECT_DIR$/Code/app/views/hello.php" />
         <option value="$PROJECT_DIR$/Code/public/css/foundation.css" />
+        <option value="$PROJECT_DIR$/Code/public/main.css" />
       </list>
     </option>
   </component>
@@ -825,13 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/public/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="29" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0" vertical-offset="1427" max-vertical-offset="3045">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/app/views/hello.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="389" column="0" selection-start="15752" selection-end="15752" vertical-scroll-proportion="-3.8235295" vertical-offset="5640" max-vertical-offset="9600">
@@ -864,10 +857,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/public/css/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1783" column="13" selection-start="42568" selection-end="42568" vertical-scroll-proportion="0.6400709" vertical-offset="26384" max-vertical-offset="93000">
+        <state line="1783" column="13" selection-start="42568" selection-end="42568" vertical-scroll-proportion="-35.037037" vertical-offset="25799" max-vertical-offset="93000">
           <folding>
             <element signature="e#38629#38952#2" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/public/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="32" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.12086093" vertical-offset="1652" max-vertical-offset="3045">
+          <folding />
         </state>
       </provider>
     </entry>
