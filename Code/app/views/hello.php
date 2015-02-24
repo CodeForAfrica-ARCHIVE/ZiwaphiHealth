@@ -381,7 +381,7 @@
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
         <div style="padding:5px;background:#fff;"><a href="<?php print $featured->url;?>"><h4 class="featured_title"> >> <?php print $featured->title;?></h4></a></div>
-        <div class="large-7 columns"  style="background-color: #fff; height:500px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
+        <div class="large-7 columns"  style="background-color: #fff; height:410px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
             <?php
             if($featured != null){
                 ?>
@@ -400,10 +400,9 @@
                     }
                     ?>
                 </ul>
-            <h5>Evidence dossier</h5>
-            Data Repository
+            <div class="evidence"><i class="fa fa-envelope" style="margin-right:5px;"></i>Evidence Dossier</div>
         </div>
-        <div class="large-5 columns" style="background-color: #fff; height:500px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
+        <div class="large-5 columns" style="background-color: #fff; height:410px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
             <?php
                 if(!property_exists($featured, 'thumbnail')){
                     print '<img src="http://placehold.it/500x500&amp;text=[%20img%201%20]" width="100%">';
