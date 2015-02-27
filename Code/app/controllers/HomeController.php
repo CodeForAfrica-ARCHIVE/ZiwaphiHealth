@@ -18,7 +18,9 @@ class HomeController extends BaseController {
 
         $result = json_decode($this->file_get_contents_curl($url));
 
-        $sorted_posts = array("major_stories"=>array(), "other_stories"=>array(), "tags"=>array(), "featured"=>null);
+        $helpdesk = array("helpline"=>$this->getHelpLine(), "supportgroup"=>$this->getSupportGroup(), "socialmedia"=>$this->getSocialMedia());
+
+        $sorted_posts = array("major_stories"=>array(), "other_stories"=>array(), "tags"=>array(), "featured"=>null, "helpdesk"=>$helpdesk);
 
         if ($result != null){
             $posts = $result->posts;
@@ -95,6 +97,28 @@ class HomeController extends BaseController {
 
         return $sorted_posts;
 
+    }
+
+    public function getHelpLine(){
+        $url = Config::get('custom_config.WPFeedRoot') . "?json=helpdesk/get_helpline";
+
+        $result = json_decode($this->file_get_contents_curl($url));
+
+        return $result->helpline;
+    }
+    public function getSupportGroup(){
+        $url = Config::get('custom_config.WPFeedRoot') . "?json=helpdesk/get_supportgroup";
+
+        $result = json_decode($this->file_get_contents_curl($url));
+
+        return $result->supportgroup;
+    }
+    public function getSocialMedia(){
+        $url = Config::get('custom_config.WPFeedRoot') . "?json=helpdesk/get_socialmedia";
+
+        $result = json_decode($this->file_get_contents_curl($url));
+
+        return $result->socialmedia;
     }
 
 

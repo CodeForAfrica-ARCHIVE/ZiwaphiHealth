@@ -381,11 +381,10 @@
 <div class="row" style="margin-bottom: 20px">
     <div class="large-9 columns sidebar">
         <div style="padding:5px;background:#fff;"><a href="<?php print $featured->url;?>"><h4 class="featured_title"> >> <?php print $featured->title;?></h4></a></div>
-        <div class="large-7 columns"  style="background-color: #fff; height:410px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
+        <div class="large-7 columns"  style="background-color: #fff; height:510px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
             <?php
             if($featured != null){
                 ?>
-
                 <?php print $featured->excerpt;?>
                 <h5>The story so far</h5>
 
@@ -402,7 +401,7 @@
                 </ul>
             <div class="evidence"><i class="fa fa-envelope" style="margin-right:5px;"></i>Evidence Dossier</div>
         </div>
-        <div class="large-5 columns" style="background-color: #fff; height:410px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
+        <div class="large-5 columns" style="background-color: #fff; height:510px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
             <?php
                 if(!property_exists($featured, 'thumbnail')){
                     print '<img src="http://placehold.it/500x500&amp;text=[%20img%201%20]" width="100%">';
@@ -436,23 +435,55 @@
     </div>
     <div class="large-3 columns sidebar">
         <div class="big-title" style="display:none;">Help Desk</div>
-        <div class="content_body" style="height: 455px;">
+        <div class="content_body" style="height: 555px; font-size:0.8em;">
             <h5><i class="icon-phone"></i> Helplines</h5>
+
             <ul class="side-nav">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+                <?php
+                    $i = 0;
+                    foreach($helpdesk['helpline'] as $h){
+
+                        if($i<3){
+                            print "<li>".create_link($h->title)."</li>";
+                        }
+                        $i++;
+                    }
+                ?>
             </ul>
             <h5><i class="fi-anchor"></i> Support groups</h5>
             <ul class="side-nav">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+                <?php
+                $i = 0;
+                foreach($helpdesk['supportgroup'] as $h){
+
+                    if($i<3){
+                        print "<li>".create_link($h->title)."</li>";
+                    }
+                }
+                ?>
             </ul>
             <h5><i class="fi-torsos-all"></i> Social media</h5>
             <ul class="side-nav">
-                <li>Item 1</li>
-                <li>Item 2</li>
+                <?php
+                $i = 0;
+                foreach($helpdesk['socialmedia'] as $h){
+
+                    if($i<3){
+                        print "<li>".create_link($h->title)."</li>";
+                    }
+                }
+
+                function create_link($htitle){
+
+                    $parts = explode('|', $htitle);
+                    if(count($parts)>1){
+                        return "<a href='".$parts[1]."' target='_blank' style='background:none; padding:2px'>".$parts[0]."</a>";
+                    }else{
+                        return $htitle;
+                    }
+
+                }
+                ?>
             </ul>
         </div>
     </div>
@@ -544,6 +575,7 @@
         <div class="loadingFeed" style="text-align:center;display:none" id="loadingFeed">
             <img src="img/preloader.gif" style="height:80px;">
         </div>
+
         <div id="newsFeed">
 
             <?php
@@ -598,6 +630,7 @@
 
 
 <div class="row footer">
+
     <div class="large-12 columns footer_section">
 
         <div class="row">
@@ -610,11 +643,10 @@
                     <li><a href="http://dlb.ziwaphi.com" target="_blank">Dead Letter Box</a></li>
                 </ul>
             </div>
-
         </div>
 
         <div class="footer_brand large-12 columns">
-            Built by Code4Africa
+            <a href="http://codeforafrica.org" target="_blank">Built by Code for Africa</a>
         </div>
     </div>
 
