@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ZiwaphiHealth | Home</title>
+    <?php
+        $story = $post->post;
+    ?>
+    <title><?php echo $story->title; ?> | ZiwaphiHealth</title>
     <meta name="description" content="South Africa Health Portal"/>
     <meta name="author" content="Nick Hargreaves"/>
     <meta name="copyright" content="CodeForAfrica Copyright (c) 2014"/>
@@ -378,273 +381,19 @@
     </div>
 </div>
 
-<div class="row" style="margin-bottom: 20px">
-    <div class="large-9 columns sidebar">
-        <div style="padding:5px;background:#fff;"><a href="<?php print URL::to("/single_story?q=".$featured->id);?>"><h4 class="featured_title"> >> <?php print $featured->title;?></h4></a></div>
-        <div class="large-7 columns"  style="background-color: #fff; height:510px;padding-top: 0.9375rem; border: 0px solid #cacaca; border-right: none;">
-            <?php
-            if($featured != null){
-                ?>
-                <?php
-                    $description = explode("&hellip;", $featured->excerpt);
+<div class="row">
 
-                    print $description[0];
-
-                    print '<a href="'.URL::to("/single_story?q=".$featured->id).'"> &hellip; more</a>';
-
-                ?>
-                <h5>The story so far</h5>
-
-                <ul class="side-nav" style="padding:0 !important;">
-
-                    <?php
-                    if(count($related)<1){
-                        print "<h5 style='text-align:center'>No related stories at this time</h5>";
-                    }
-                    foreach($related as $r){
-                        print '<li><a href="'.URL::to("/single_story?q=".$r->id).'" data-search="">'.$r->title.'</a></li>';
-                    }
-                    ?>
-                </ul>
-            <div class="evidence"><i class="fa fa-envelope" style="margin-right:5px;"></i>Evidence Dossier</div>
-        </div>
-        <div class="large-5 columns" style="background-color: #fff; height:510px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
-            <?php
-                if(!property_exists($featured, 'thumbnail')){
-                    print '<img src="http://placehold.it/500x500&amp;text=[%20img%201%20]" width="100%">';
-                }else{
-
-                    print '<img src="'.$featured->thumbnail.'" width="100%">';
-                }
-            ?>
-
-            <div class="feedback">
-                <a href="#" data-reveal-id="feedbackModal">Tell us More</a>
-                <p>Do you have more information? Help us improve this story by sharing your experiences/evidence.</p>
-            </div>
-            <div id="feedbackModal" class="reveal-modal" data-reveal>
-                <div><h4>Share your experience with us</h4></div>
-                <input type="text" placeholder="Your full names" name="name">
-                <input type="text" placeholder="Email Address" name="email">
-                <input type="text" placeholder="RE: <?php print $featured->title;?>" disabled>
-                <input type="hidden" placeholder="RE: <?php print $featured->title;?>" name="post">
-                <textarea rows="4" placeholder="Your message goes here"></textarea>
-                <input type="submit" class="button" value="Send Feedback">
-                <a class="close-reveal-modal">&#215;</a>
-            </div>
-            <?php
-            }else{
-                   print "<h5>No featured story created</h5>";
-            }
-
-            ?>
-        </div>
-    </div>
-    <div class="large-3 columns sidebar">
-        <div class="big-title" style="display:none;">Help Desk</div>
-        <div class="content_body" style="height: 555px; font-size:0.8em;">
-            <h5><i class="icon-phone"></i> Helplines</h5>
-
-            <ul class="side-nav">
-                <?php
-                    $i = 0;
-                    foreach($helpdesk['helpline'] as $h){
-
-                        if($i<3){
-                            print "<li>".create_link($h->title)."</li>";
-                        }
-                        $i++;
-                    }
-                ?>
-            </ul>
-            <h5><i class="fi-anchor"></i> Support groups</h5>
-            <ul class="side-nav">
-                <?php
-                $i = 0;
-                foreach($helpdesk['supportgroup'] as $h){
-
-                    if($i<3){
-                        print "<li>".create_link($h->title)."</li>";
-                    }
-                }
-                ?>
-            </ul>
-            <h5><i class="fi-torsos-all"></i> Social media</h5>
-            <ul class="side-nav">
-                <?php
-                $i = 0;
-                foreach($helpdesk['socialmedia'] as $h){
-
-                    if($i<3){
-                        print "<li>".create_link($h->title)."</li>";
-                    }
-                }
-
-                function create_link($htitle){
-
-                    $parts = explode('|', $htitle);
-                    if(count($parts)>1){
-                        return "<a href='".$parts[1]."' target='_blank' style='background:none; padding:2px'>".$parts[0]."</a>";
-                    }else{
-                        return $htitle;
-                    }
-
-                }
-                ?>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<div class="row further-reading">
-    <div class="large-3 columns ">
-        <div class="big-title">Major Stories</div>
-        <div class="content_body">
-        <dl class="accordion" data-accordion>
-            <?php
-            if(count($major_stories)<1){
-                print "<h3 style='text-align:center'>No major stories found</h3>";
-            }
-            $i = 0;
-            foreach($major_stories as $story){
-                $i++;
-                print'<dd class="accordion-navigation">
-                <a href="#major-story-panel'.$i.'">'.$story->title.'<i class="icon-chevron-sign-down" style="float:right; margin-top:0px; margin-right:5px;"></i></a>';
-
-                //if($i==1){
-                //    print '<div id="major-story-panel'.$i.'" class="content active">';
-                //}else{
-                    print '<div id="major-story-panel'.$i.'" class="content">';
-                //}
-                if(property_exists($story, 'thumbnail')){
-                    print '<img src="'.$story->thumbnail.'" style="width:100%">';
-                }
-
-                $description = explode("&hellip;", $story->excerpt);
-
-                print $description[0];
-
-                print '<a href="'.URL::to("/single_story?q=".$story->id).'"> &hellip; more</a>';
-
-                print '</div>
-            </dd>';
-            }
-            ?>
-        </dl>
-            </div>
-
-        <div class="big-title">Feed Filters</div>
-        <div class="content_body">
+    <div class="large-12 columns">
         <?php
-
-            print '<ul class="side-nav" style="padding:0 !important;">';
-
-                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="all" data-tagtitle="All">All</a></li>';
-
-            foreach($tags as $slug=>$title){
-
-                print '<li style="margin:3px !important;"><a class="filterFeed" data-tag="'.$slug.'" data-tagtitle="'.$title.'">'.$title.'</a></li>';
-
-            }
-
-            print '</ul>';
-
+            print '<div class="story">';
+                print '<a href="'.$story->url.'"><h4>'.$story->title.'</h4></a>';
+                print $story->content.'
+                <p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
+            </div>';
         ?>
-            </div>
-
     </div>
-
-    <script>
-        $(document).ready(function(){
-            $(".filterFeed").click(function(){
-                var tag = $(this).data('tag');
-                var tagTitle = $(this).data('tagtitle');
-
-                $("#tagName").html("<h4>" + tagTitle + "</h4>");
-
-                $("#newsFeed").html("");
-
-                $("#loadingFeed").show();
-
-                $.ajax({url:"filterFeed?tag=" + tag,success:function(result){
-
-                    $("#newsFeed").html(result);
-
-                    $("#loadingFeed").hide();
-                }});
-            });
-        });
-    </script>
-
-    <div class="large-6 columns">
-        <div class="big-title">Feed</div>
-        <div class="content_body" style="background-color: inherit !important; padding:0px;">
-        <div class="tagName" style="text-align:center;" id="tagName">
-        </div>
-        <div class="loadingFeed" style="text-align:center;display:none" id="loadingFeed">
-            <img src="img/preloader.gif" style="height:80px;">
-        </div>
-
-        <div id="newsFeed">
-
-            <?php
-
-                    if(count($other_stories)<1){
-                        print "<h3 style='text-align:center'>No stories found</h3>";
-                    }
-
-                    foreach($other_stories as $story){
-                        print '<div class="story">';
-                        print '<a href="'.URL::to("/single_story?q=".$story->id).'"><h4>'.$story->title.'</h4></a>';
-                        if(property_exists($story, 'thumbnail')){
-                            print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
-                        }
-
-                        $description = explode("&hellip;", $story->excerpt);
-
-                        print $description[0];
-
-                        print '<a href="'.URL::to("/single_story?q=".$story->id).'"> &hellip; more</a>';
-
-                        print '</p>
-                                <p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
-                            </div>';
-                    }
-
-            ?>
-
-        </div>
-            </div>
-
-    </div>
-
-    <aside class="large-3 columns hide-for-small linksholder">
-        <div class="big-title">Links</div>
-        <div class="content_body">
-        <p><a href="http://code4sa.org" target="_blank"><img src="img/c4sa.png" id="partner_logo"></a>
-            <br/>
-            The data driven journalism + tools in ZiwaphiHealth section were kickstarted by <a href="http://code4kenya.org" target="_blank">Code4Kenya</a>
-        </p>
-            <hr />
-        <div style="display:none;">
-            <a href="http://github.com/CodeForAfrica/ZiwaphiHealth"><img src="img/github.png" id="cfa_icon"></a>
-            <a href="http://data.the-star.co.ke"><img style="height:32px;margin-left:25px" src="img/data.png" id="ckan_icon"></a>
-                </div>
-        <p>
-            The <a href="http://github.com/CodeForAfrica/ZiwaphiHealth">code</a> & <a href="https://github.com/CodeForAfrica/ZiwaphiHealth/tree/master/Data/clean">data</a> for this project are open source and available for re-use.
-        </p>
-            <hr />
-        <div class="social_media_icons" style="text-align: center">
-            <i class="icon-facebook icon-2x app-icon"></i>
-            <i class="icon-twitter icon-2x app-icon"></i>
-            <i class="icon-rss icon-2x app-icon"></i>
-        </div>
-            </div>
-    </aside>
 
 </div>
-
 
 <div class="row footer">
 

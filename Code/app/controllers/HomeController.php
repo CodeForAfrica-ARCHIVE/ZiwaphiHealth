@@ -99,6 +99,14 @@ class HomeController extends BaseController {
 
     }
 
+    public function singleStory($q){
+        $url = Config::get('custom_config.WPFeedRoot') . "?json=get_post&id=" . $q;
+
+        $result = json_decode($this->file_get_contents_curl($url));
+
+        return View::make('single_story', array("post"=>$result));
+    }
+
     public function getHelpLine(){
         $url = Config::get('custom_config.WPFeedRoot') . "?json=helpdesk/get_helpline";
 

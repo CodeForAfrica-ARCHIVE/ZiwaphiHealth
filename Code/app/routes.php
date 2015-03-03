@@ -29,6 +29,13 @@ Route::get('/', function()
 	return (new HomeController())->showWelcome();
 });
 
+Route::get('single_story', function()
+{
+    $q = Input::get('q');
+
+    return (new HomeController())->singleStory($q);
+});
+
 Route::get('/filterFeed', function()
 {
     return (new HomeController())->filterFeed();
