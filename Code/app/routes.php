@@ -35,7 +35,12 @@ Route::get('single_story', function()
 
     return (new HomeController())->singleStory($q);
 });
+Route::get('search_stories', function()
+{
+    $q = Input::get('q');
 
+    return (new HomeController())->searchStories($q);
+});
 Route::get('/filterFeed', function()
 {
     return (new HomeController())->filterFeed();

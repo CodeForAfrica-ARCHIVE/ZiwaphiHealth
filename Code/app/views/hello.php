@@ -169,7 +169,7 @@
                 if($('#site_search').val().length == 0){
                     alert('Please enter a search query!');
                 }else{
-                    window.location = "<?php echo Config::get('custom_config.WPFeedRoot');?>?s=" + $('#site_search').val();
+                    window.location = "<?php echo URL::to('search_stories');?>?q=" + $('#site_search').val();
                 }
 
             });

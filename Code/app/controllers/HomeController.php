@@ -105,7 +105,14 @@ class HomeController extends BaseController {
 
         return View::make('single_story', array("post"=>$result));
     }
+    public function searchStories($q){
+        $url = Config::get('custom_config.WPFeedRoot') . "?json=get_search_results&s=" . $q;
 
+        $result = json_decode($this->file_get_contents_curl($url));
+
+        return View::make('search_results', array("posts"=>$result->posts));
+
+    }
     public function getHelpLine(){
         $url = Config::get('custom_config.WPFeedRoot') . "?json=helpdesk/get_helpline";
 
@@ -181,7 +188,7 @@ class HomeController extends BaseController {
             print $description[0];
 
             print '<a href="'.URL::to("/single_story?q=".$story->id).'"> &hellip; more</a>';
-            
+
             print '</p>
                 <p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
             </div>';

@@ -4,10 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <?php
-        $story = $post->post;
-    ?>
-    <title><?php echo $story->title; ?> | ZiwaphiHealth</title>
+    <title><?php echo "Search: " . $_GET['q'] ?> | ZiwaphiHealth</title>
     <meta name="description" content="South Africa Health Portal"/>
     <meta name="author" content="Nick Hargreaves"/>
     <meta name="copyright" content="CodeForAfrica Copyright (c) 2014"/>
@@ -172,7 +169,7 @@
                 if($('#site_search').val().length == 0){
                     alert('Please enter a search query!');
                 }else{
-                    window.location = "<?php echo URL::to('search_stories');?>?q=" + $('#site_search').val();
+                    window.location = "<?php echo Config::get('custom_config.WPFeedRoot');?>?s=" + $('#site_search').val();
                 }
 
             });
@@ -384,13 +381,43 @@
 <div class="row">
 
     <div class="large-12 columns">
-        <?php
-            print '<div class="story">';
-                print '<a href="'.$story->url.'"><h4>'.$story->title.'</h4></a>';
-                print $story->content.'
-                <p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
-            </div>';
-        ?>
+
+
+            <div class="content_body" style="background-color: inherit !important; padding:0px;">
+                <div id="newsFeed">
+                    
+                    <?php
+
+                    if(count($posts)==1){
+                        print "<div class='big-title'>1 result found for : ".$_GET['q']."</div>";
+                    }else{
+                        print "<div class='big-title'>".count($posts)." results found for : ".$_GET['q']."</div>";
+                    }
+
+                    foreach($posts as $story){
+                        print '<div class="story">';
+
+                        print '<a href="'.URL::to("/single_story?q=".$story->id).'"><h4>'.$story->title.'</h4></a>';
+
+                        if(property_exists($story, 'thumbnail')){
+                            print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
+                        }
+
+                        $description = explode("&hellip;", $story->excerpt);
+
+                        print $description[0];
+
+                        print '<a href="'.URL::to("/single_story?q=".$story->id).'"> &hellip; more</a>';
+
+                        print '<p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
+                            </div>';
+                    }
+
+                    ?>
+
+                </div>
+            </div>
+
     </div>
 
 </div>
