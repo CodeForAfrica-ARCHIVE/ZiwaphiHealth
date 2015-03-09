@@ -7,6 +7,7 @@ class HomeController extends BaseController {
 	{
 
         $data = $this->getStories();
+
         return View::make('hello', $data);
 	}
 
@@ -24,7 +25,6 @@ class HomeController extends BaseController {
 
         if ($result != null){
             $posts = $result->posts;
-
 
             $featured = 0;
 
@@ -59,7 +59,6 @@ class HomeController extends BaseController {
                     if($featured==0){
                         //first major story is featured
                         $sorted_posts['featured'] = $p;
-
 
                         //add story so far
                         $sorted_posts['related'] = array();
@@ -173,11 +172,17 @@ class HomeController extends BaseController {
 
         foreach($finalPosts as $story){
             print '<div class="story">';
-            print '<a href="'.$story->url.'"><h4>'.$story->title.'</h4></a>';
+            print '<a href="'.URL::to("/single_story?q=".$story->id).'"><h4>'.$story->title.'</h4></a>';
             if(property_exists($story, 'thumbnail')){
                 print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
             }
-            print $story->excerpt.'</p>
+            $description = explode("&hellip;", $story->excerpt);
+
+            print $description[0];
+
+            print '<a href="'.URL::to("/single_story?q=".$story->id).'"> &hellip; more</a>';
+            
+            print '</p>
                 <p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
             </div>';
         }

@@ -218,7 +218,7 @@
             <section class="top-bar-section">
                 <!-- Top Bar Right Nav Elements -->
                 <ul class="left" style="font-size: 0.8em;">
-                    <li><a href="http://health.ziwaphi.com" target="_blank">Home</a></li>
+                    <li><a href="http://health.ziwaphi.com">Home</a></li>
                     <li><a href="http://ziwaphi.com" target="_blank">Ziwaphi</a></li>
                     <li><a href="http://dlb.ziwaphi.com" target="_blank">Dead Letter Box</a></li>
                 </ul>
@@ -410,10 +410,10 @@
         </div>
         <div class="large-5 columns" style="background-color: #fff; height:510px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
             <?php
+
                 if(!property_exists($featured, 'thumbnail')){
                     print '<img src="http://placehold.it/500x500&amp;text=[%20img%201%20]" width="100%">';
                 }else{
-
                     print '<img src="'.$featured->thumbnail.'" width="100%">';
                 }
             ?>
@@ -596,7 +596,9 @@
 
                     foreach($other_stories as $story){
                         print '<div class="story">';
+
                         print '<a href="'.URL::to("/single_story?q=".$story->id).'"><h4>'.$story->title.'</h4></a>';
+
                         if(property_exists($story, 'thumbnail')){
                             print '<img src="'.$story->thumbnail.'" style="float:left;width:100px">';
                         }
@@ -607,8 +609,7 @@
 
                         print '<a href="'.URL::to("/single_story?q=".$story->id).'"> &hellip; more</a>';
 
-                        print '</p>
-                                <p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
+                        print '<p class="story-metadata"><i>Written by '.$story->author->nickname.' | Posted on '.date("l jS \of F Y h:i:s A", strtotime($story->date)).'</i></p>
                             </div>';
                     }
 

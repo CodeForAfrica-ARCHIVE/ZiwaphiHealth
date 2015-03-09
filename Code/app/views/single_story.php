@@ -221,7 +221,7 @@
             <section class="top-bar-section">
                 <!-- Top Bar Right Nav Elements -->
                 <ul class="left" style="font-size: 0.8em;">
-                    <li><a href="http://health.ziwaphi.com" target="_blank">Home</a></li>
+                    <li><a href="http://health.ziwaphi.com">Home</a></li>
                     <li><a href="http://ziwaphi.com" target="_blank">Ziwaphi</a></li>
                     <li><a href="http://dlb.ziwaphi.com" target="_blank">Dead Letter Box</a></li>
                 </ul>
