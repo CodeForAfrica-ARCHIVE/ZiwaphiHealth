@@ -649,9 +649,8 @@
         </p>
             <hr />
         <div class="social_media_icons" style="text-align: center">
-            <i class="icon-facebook icon-2x app-icon"></i>
-            <i class="icon-twitter icon-2x app-icon"></i>
-            <i class="icon-rss icon-2x app-icon"></i>
+            <a href="https://www.facebook.com/ziwaphi?ref=br_rs" target="_blank"><i class="icon-facebook icon-2x app-icon"></i></a>
+            <a href="https://twitter.com/Ziwaphinews" target="_blank"><i class="icon-twitter icon-2x app-icon"></i></a>
         </div>
             </div>
     </aside>
