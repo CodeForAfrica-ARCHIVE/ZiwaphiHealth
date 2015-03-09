@@ -406,7 +406,19 @@
                     }
                     ?>
                 </ul>
-            <div class="evidence"><i class="fa fa-envelope" style="margin-right:5px;"></i>Evidence Dossier</div>
+                <?php
+                if(property_exists($featured, "custom_fields")){
+                    if(property_exists($featured->custom_fields, "evidence_dossier")){
+                        $evidence = $featured->custom_fields->evidence_dossier;
+
+                        if(is_array($evidence)){
+                            $evidence = $evidence[0];
+                            print '<a href="'.$evidence.'" target="_blank"><div class="evidence" style="margin-top:30px"><i class="fa fa-envelope" style="margin-right:5px;"></i>Evidence Dossier</div></a>';
+                        }
+                    }
+                }
+                ?>
+
         </div>
         <div class="large-5 columns" style="background-color: #fff; height:510px;padding-top: 0.9375rem;  border: 0px solid #cacaca; border-left: none;">
             <?php
