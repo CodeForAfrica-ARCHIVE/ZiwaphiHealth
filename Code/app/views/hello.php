@@ -638,6 +638,8 @@
         <p><a href="http://code4sa.org" target="_blank"><img src="img/c4sa.png" id="partner_logo"></a>
             <br/>
             The data driven journalism + tools in ZiwaphiHealth section were kickstarted by <a href="http://code4kenya.org" target="_blank">Code4Kenya</a>
+            <br />
+            The 'Medicine Prices' and 'Find Generics' tools originated from Code4SA's <a href="http://mpr.code4sa.org/">Medicine Prices tool</a>
         </p>
             <hr />
         <div style="display:none;">
